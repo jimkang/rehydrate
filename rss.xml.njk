@@ -1,0 +1,72 @@
+---
+permalink: rss.xml
+metadata:
+  title: Rehydrate
+  url: https://rehydrate.space
+  author:
+    name: Jim Kang
+    email: rehydrate@fastmail.com
+  description: A podcast about the Three-Body Problem and the rest of the Remembrance of Earth's Past series.
+  imageURL: https://rehydrate.space/media/small-findings.jpg
+  feed:
+    filename: rss.xml
+    path: rss.xml
+    url: https://rehydrate.space/rss.xml
+    id: https://rehydrate.space/
+---
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:anchor="https://anchor.fm/xmlns">
+  <channel>
+    <title><![CDATA[{{ metadata.title }}]]></title>
+    <description><![CDATA[{{ metadata.description }}]]></description>
+		<link>{{ metadata.url }}</link>
+		<image>
+			<url>{{ metadata.imageURL }}</url>
+      <title>{{ metadata.title }}</title>
+      <link>{{ metadata.url }}</link>
+		</image>
+		<generator>Smidgeo Podcasts</generator>
+    <lastBuildDate>{{ collections.episodes | rssLastUpdatedDate }}</lastBuildDate>
+		<atom:link href="{{ metadata.feed.url}}" rel="self" type="application/rss+xml"/>
+		<author><![CDATA[{{ metadata.author.name }}]]></author>
+		<copyright><![CDATA[{{ metadata.author.name }}]]></copyright>
+		<language><![CDATA[en]]></language>
+		<itunes:author>{{ metadata.author.name }}</itunes:author>
+		<itunes:summary>{{ metadata.description }}</itunes:summary>
+		<itunes:type>episodic</itunes:type>
+		<itunes:owner>
+			<itunes:name>{{ metadata.author.name }}</itunes:name>
+			<itunes:email>{{ metadata.author.email }}</itunes:email>
+		</itunes:owner>
+		<itunes:explicit>No</itunes:explicit>
+		<itunes:category text="Education">
+      <itunes:category text="Self-Improvement"/>
+		</itunes:category>
+		<itunes:image href="{{ metadata.imageURL }}" />
+    {%- for episode in collections.episodes -%}
+      {%- set src = episode.data.stuff -%}
+      {%- set filename -%}rehydrate-{{ src.number }}-{{ src.slug }}.mp3{%- endset -%}
+      {%- set fileURL -%}{{ metadata.url }}/episodes/{{ filename }}{%- endset -%}
+      {%- set pageURL -%}{{ metadata.url }}/episodes/{{ src.slug }}{%- endset -%}
+      {%- set filePath -%}episodes/{{ filename }}{%- endset -%}
+      {%- set imageURL -%}{{ metadata.url }}/media/{{ src.imageFilename }}{%- endset -%}
+      <item>
+        <title><![CDATA[{{ src.title }}]]></title>
+        <description><![CDATA[
+            {%- include 'findings.njk' -%}
+]]></description>
+        <link href="{{ pageURL }}"/>
+        <guid isPermaLink="false">{{ fileURL }}</guid>
+        <dc:creator><![CDATA[{{ metadata.author.name }}]]></dc:creator>
+        <pubDate>{{ src.date }}</pubDate>
+        <enclosure type="audio/mpeg" url="{{ fileURL }}" length="{{ filePath | length }}"/>
+        <itunes:summary>{{ src.summary }}</itunes:summary>
+        <itunes:explicit>No</itunes:explicit>
+        <itunes:duration>{{ src.seconds }}</itunes:duration>
+        <itunes:image href="{{ imageURL }}"/>
+        <itunes:season>{{ src.season }}</itunes:season>
+        <itunes:episode>{{ src.number }}</itunes:episode>
+        <itunes:episodeType>full</itunes:episodeType>
+      </item>
+      {%- endfor -%}
+	</channel>
+</rss>

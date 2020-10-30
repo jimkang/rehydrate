@@ -1,0 +1,17 @@
+          <li class="pane">
+            <div class="episode-title">
+              <a href="/episodes/{{ src.slug }}">{{ src.title }}</a>
+            </div>
+            <img src="/media/{{ src.imageFilename }}" alt="Episode image" />
+            <audio
+              class="episode-player"
+              controls=""
+              loop="true"
+              preload="metadata"
+              src="/episodes/rehydrate-{{ src.number }}-{{ src.slug }}.mp3"
+            ></audio>
+            {% include 'findings.njk' %}
+            <div class="time-stamp entry-meta">
+              <time datetime="{{ src.date }}">{{ src.date }}</time>
+            </div>
+          </li>

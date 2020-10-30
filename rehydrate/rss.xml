@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:anchor="https://anchor.fm/xmlns">
+  <channel>
+    <title><![CDATA[Rehydrate]]></title>
+    <description><![CDATA[A podcast about the Three-Body Problem and the rest of the Remembrance of Earth&#39;s Past series.]]></description>
+		<link>https://rehydrate.space</link>
+		<image>
+			<url>https://rehydrate.space/media/small-findings.jpg</url>
+      <title>Rehydrate</title>
+      <link>https://rehydrate.space</link>
+		</image>
+		<generator>Smidgeo Podcasts</generator>
+    <lastBuildDate>2020-11-01T19:00:00-05:00</lastBuildDate>
+		<atom:link href="https://rehydrate.space/rss.xml" rel="self" type="application/rss+xml"/>
+		<author><![CDATA[Jim Kang]]></author>
+		<copyright><![CDATA[Jim Kang]]></copyright>
+		<language><![CDATA[en]]></language>
+		<itunes:author>Jim Kang</itunes:author>
+		<itunes:summary>A podcast about the Three-Body Problem and the rest of the Remembrance of Earth&#39;s Past series.</itunes:summary>
+		<itunes:type>episodic</itunes:type>
+		<itunes:owner>
+			<itunes:name>Jim Kang</itunes:name>
+			<itunes:email>rehydrate@fastmail.com</itunes:email>
+		</itunes:owner>
+		<itunes:explicit>No</itunes:explicit>
+		<itunes:category text="Education">
+      <itunes:category text="Self-Improvement"/>
+		</itunes:category>
+		<itunes:image href="https://rehydrate.space/media/small-findings.jpg" /><item>
+        <title><![CDATA[Episode 1: Silent Spring
+]]></title>
+        <description><![CDATA[<div class="text-caption">
+  The findings this week:
+  <ol class="findings-list"><li>
+        <div>Surnameless cultures</div>
+        
+          <ul class="finding-links">
+          
+             <li><a href="https://www.goodreads.com/book/show/44075878-the-hidden-history-of-burma?qid=DqEahLTBzj&amp;rank=1">The Hidden History of Burma</a></li>
+          
+             <li><a href="https://en.wikipedia.org/wiki/Mononymous_person#Mononym-normal">Wikipedia on Mononyms</a></li>
+          
+             <li><a href="https://en.wikipedia.org/wiki/Javanese_name">Javanese names</a></li>
+          
+          </ul>
+        
+        
+      </li><li>
+        <div>The gömböc</div>
+        
+          <ul class="finding-links">
+          
+             <li><a href="https://en.wikipedia.org/wiki/G%C3%B6mb%C3%B6c">Wikipedia on the gömböc</a></li>
+          
+          </ul>
+        
+        
+      </li><li>
+        <div>Lenin&#39;s style and stance on state capitalism</div>
+        
+          <ul class="finding-links">
+          
+             <li><a href="https://www.marxists.org/archive/lenin/works/1918/may/09.htm">V.I. Lenin&#39;s “Left-Wing” Childishness</a></li>
+          
+             <li><a href="https://www.nytimes.com/2020/08/05/books/review/true-crimes-and-misdemeanors-jeffrey-toobin.html">Jeffrey Toobin&#39;s True Crimes and Misdemeanors review</a></li>
+          
+             <li><a href="https://rehydrate.space/episodes/when-theres-lightning">Episode 3, with a segment about China&#39;s state capitalism</a></li>
+          
+             <li><a href="https://en.wikipedia.org/wiki/Vladimir_Lenin">Lenin&#39;s Wikipedia article</a></li>
+          
+          </ul>
+        
+        
+      </li></ol>
+Email me any findings you want to share (or questions) at rehydrate@fastmail.com!
+</div>
+]]></description>
+        <link href="https://rehydrate.space/episodes/silent-spring"/>
+        <guid isPermaLink="false">https://rehydrate.space/episodes/rehydrate-1-silent-spring.mp3</guid>
+        <dc:creator><![CDATA[Jim Kang]]></dc:creator>
+        <pubDate>Sun Nov 01 2020 19:00:00 GMT-0500 (Eastern Standard Time)</pubDate>
+        <enclosure type="audio/mpeg" url="https://rehydrate.space/episodes/rehydrate-1-silent-spring.mp3" length="26657280"/>
+        <itunes:summary></itunes:summary>
+        <itunes:explicit>No</itunes:explicit>
+        <itunes:duration></itunes:duration>
+        <itunes:image href="https://rehydrate.space/media/gomboc.gif"/>
+        <itunes:season>1</itunes:season>
+        <itunes:episode>1</itunes:episode>
+        <itunes:episodeType>full</itunes:episodeType>
+      </item></channel>
+</rss>

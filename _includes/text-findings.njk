@@ -1,0 +1,6 @@
+    {%- for finding in src.findings -%}
+      - {{ finding.text }}
+        {% if finding.note %}
+          {{ finding.note }}
+        {% endif %}
+    {%- endfor -%}

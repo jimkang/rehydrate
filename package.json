@@ -1,0 +1,29 @@
+{
+  "name": "rehydrate",
+  "version": "1.0.0",
+  "description": "The source for the Rehydrate podcast.",
+  "private": true,
+  "main": "index.html",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:jimkang/rehydrate.git"
+  },
+  "keywords": [
+    "request",
+    "http"
+  ],
+  "author": "Jim Kang",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jimkang/rehydrate/issues"
+  },
+  "homepage": "https://github.com/jimkang/rehydrate",
+  "devDependencies": {
+    "eslint": "^6.8.0"
+  },
+  "dependencies": {
+    "@11ty/eleventy": "^0.10.0",
+    "@11ty/eleventy-plugin-rss": "^1.0.7"
+  }
+}
