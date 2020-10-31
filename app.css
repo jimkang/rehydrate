@@ -171,9 +171,6 @@ header h1 {
   margin-bottom: 1em;
 }
 
-.text-caption {
-}
-
 .episode-title {
   font-size: 1.2em;
   margin-bottom: 1em;
@@ -183,9 +180,17 @@ header h1 {
   margin-top: 1em;
 }
 
+.findings-list li {
+  margin-bottom: 1rem;
+}
+
 .finding-links {
   font-size: 0.8em;
   margin-top: 0.5em;
+}
+
+.comment-info {
+  margin-top: 2rem;
 }
 
 @media all and (max-width: 586px) {

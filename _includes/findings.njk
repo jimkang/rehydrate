@@ -1,21 +1,28 @@
-<div class="text-caption">
-  The findings this week:
-  <ol class="findings-list">
-    {%- for finding in src.findings -%}
+<div>
+  <ul class="findings-list">
+    {% if src.topics %}
       <li>
-        <div>{{ finding.text }}</div>
-        {% if finding.links %}
-          <ul class="finding-links">
-          {% for link in finding.links %}
-             <li><a href="{{link.url}}">{{ link.name }}</a></li>
-          {% endfor %}
-          </ul>
-        {% endif %}
-        {% if finding.note %}
-          <div>{{ finding.note }}</div>
-        {% endif %}
+        <h3>Topics</h3>
+        <ul class="finding-links">
+        {% for topic in src.topics %}
+          <li>{{ topic }}</li>
+        {% endfor %}
+        </ul>
       </li>
-    {%- endfor -%}
-  </ol>
-Email me any findings you want to share (or questions) at rehydrate@fastmail.com!
+    {% endif %}
+
+    {% if src.links %}
+      <li>
+        <h3>References</h3>
+        <ul class="finding-links">
+        {% for link in src.links %}
+           <li><a href="{{link.url}}">{{ link.name }}</a></li>
+        {% endfor %}
+        </ul>
+      </li>
+    {% endif %}
+  </ul>
+  <div class="comment-info">
+    Do you have comments or questions for Rehydrate? Send them to rehydrate@fastmail.com!
+  </div>
 </div>
