@@ -4,9 +4,9 @@ metadata:
   title: Rehydrate
   url: https://rehydrate.space
   author:
-    name: Jim Kang
+    name: Jim, Dan, Tim, and Amin
     email: rehydrate@fastmail.com
-  description: A podcast about the Three-Body Problem and the rest of the Remembrance of Earth's Past series.
+  description: A podcast about Liu Cixin's Three-Body Problem and the rest of the Remembrance of Earth's Past series.
   imageURL: https://rehydrate.space/media/small-findings.jpg
   feed:
     filename: rss.xml
@@ -38,8 +38,14 @@ metadata:
 			<itunes:email>{{ metadata.author.email }}</itunes:email>
 		</itunes:owner>
 		<itunes:explicit>No</itunes:explicit>
-		<itunes:category text="Education">
-      <itunes:category text="Self-Improvement"/>
+		<itunes:category text="Arts">
+      <itunes:category text="Books"/>
+		</itunes:category>
+    <itunes:category text="Fiction">
+      <itunes:category text="Science Fiction"/>
+		</itunes:category>
+    <itunes:category text="TV &amp; Film">
+      <itunes:category text="TV Reviews"/>
 		</itunes:category>
 		<itunes:image href="{{ metadata.imageURL }}" />
     {%- for episode in collections.episodes -%}
