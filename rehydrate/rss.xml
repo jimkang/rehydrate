@@ -9,7 +9,7 @@
       <link>https://rehydrate.space</link>
 		</image>
 		<generator>Smidgeo Podcasts</generator>
-    <lastBuildDate>2020-11-01T16:00:00-08:00</lastBuildDate>
+    <lastBuildDate>2020-11-01T19:00:00-05:00</lastBuildDate>
 		<atom:link href="https://rehydrate.space/rss.xml" rel="self" type="application/rss+xml"/>
 		<author><![CDATA[Jim, Dan, Tim, and Amin]]></author>
 		<copyright><![CDATA[Jim, Dan, Tim, and Amin]]></copyright>
@@ -76,7 +76,7 @@
         <link href="https://rehydrate.space/episodes/silent-spring"/>
         <guid isPermaLink="false">https://rehydrate.space/episodes/rehydrate-1-silent-spring.mp3</guid>
         <dc:creator><![CDATA[Jim, Dan, Tim, and Amin]]></dc:creator>
-        <pubDate>Sun Nov 01 2020 16:00:00 GMT-0800 (Pacific Standard Time)</pubDate>
+        <pubDate>Sun Nov 01 2020 19:00:00 GMT-0500 (Eastern Standard Time)</pubDate>
         <enclosure type="audio/mpeg" url="https://rehydrate.space/episodes/rehydrate-1-silent-spring.mp3" length="12332639"/>
         <itunes:summary></itunes:summary>
         <itunes:explicit>No</itunes:explicit>

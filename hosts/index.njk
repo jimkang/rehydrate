@@ -1,0 +1,48 @@
+<html>
+  <head>
+    <title>Rehydrate</title>
+    <link rel="stylesheet" href="app.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" />
+    <meta property="og:url" content="https://rehydrate.space" />
+    <meta property="og:title" content="Rehydrate" />
+    <meta
+      property="og:description"
+      content="A podcast about the Three-Body Problem and the rest of the Remembrance of Earth's Past series."
+    />
+    <meta property="og:site_name" content="Rehydrate" />
+  </head>
+
+  <body class="centered-col">
+    <header>
+      <h1>Hosts</h1>
+    </header>
+
+    <section class="middle">
+      <section class="media">
+        <ul class="media-list centered-col">
+          {%- for host in collections.hosts -%}
+            {% set src = host.data.stuff %}
+            {% include 'host-pane.njk' %}
+          {%- endfor -%}
+        </ul>
+      </section>
+    </section>
+
+    <hr class="separator" />
+
+    <footer id="footer">
+      <div>
+        Comments? Questions? Email them to
+        <a href="mailto:rehydrate@fastmail.com"
+          >rehydrate@fastmail.com</a
+        >!
+      </div>
+      <br />
+      <div>
+        This site (and podcast feed) is built via
+        <a href="https://www.11ty.dev/">Eleventy</a>. <br /><br />
+      </div>
+    </footer>
+  </body>
+</html>
