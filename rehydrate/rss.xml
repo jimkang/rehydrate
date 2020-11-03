@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:anchor="https://anchor.fm/xmlns">
   <channel>
     <title><![CDATA[Rehydrate]]></title>
-    <description><![CDATA[A podcast about the Three-Body Problem and the rest of the Remembrance of Earth&#39;s Past series.]]></description>
+    <description><![CDATA[A podcast about Liu Cixin&#39;s Three-Body Problem and the rest of the Remembrance of Earth&#39;s Past series.]]></description>
 		<link>https://rehydrate.space</link>
 		<image>
 			<url>https://rehydrate.space/media/small-findings.jpg</url>
@@ -9,21 +9,27 @@
       <link>https://rehydrate.space</link>
 		</image>
 		<generator>Smidgeo Podcasts</generator>
-    <lastBuildDate>2020-11-01T19:00:00-05:00</lastBuildDate>
+    <lastBuildDate>2020-11-01T16:00:00-08:00</lastBuildDate>
 		<atom:link href="https://rehydrate.space/rss.xml" rel="self" type="application/rss+xml"/>
-		<author><![CDATA[Jim Kang]]></author>
-		<copyright><![CDATA[Jim Kang]]></copyright>
+		<author><![CDATA[Jim, Dan, Tim, and Amin]]></author>
+		<copyright><![CDATA[Jim, Dan, Tim, and Amin]]></copyright>
 		<language><![CDATA[en]]></language>
-		<itunes:author>Jim Kang</itunes:author>
-		<itunes:summary>A podcast about the Three-Body Problem and the rest of the Remembrance of Earth&#39;s Past series.</itunes:summary>
+		<itunes:author>Jim, Dan, Tim, and Amin</itunes:author>
+		<itunes:summary>A podcast about Liu Cixin&#39;s Three-Body Problem and the rest of the Remembrance of Earth&#39;s Past series.</itunes:summary>
 		<itunes:type>episodic</itunes:type>
 		<itunes:owner>
-			<itunes:name>Jim Kang</itunes:name>
+			<itunes:name>Jim, Dan, Tim, and Amin</itunes:name>
 			<itunes:email>rehydrate@fastmail.com</itunes:email>
 		</itunes:owner>
 		<itunes:explicit>No</itunes:explicit>
-		<itunes:category text="Education">
-      <itunes:category text="Self-Improvement"/>
+		<itunes:category text="Arts">
+      <itunes:category text="Books"/>
+		</itunes:category>
+    <itunes:category text="Fiction">
+      <itunes:category text="Science Fiction"/>
+		</itunes:category>
+    <itunes:category text="TV &amp; Film">
+      <itunes:category text="TV Reviews"/>
 		</itunes:category>
 		<itunes:image href="https://rehydrate.space/media/small-findings.jpg" /><item>
         <title><![CDATA[Episode 1: Silent Spring
@@ -69,8 +75,8 @@
 ]]></description>
         <link href="https://rehydrate.space/episodes/silent-spring"/>
         <guid isPermaLink="false">https://rehydrate.space/episodes/rehydrate-1-silent-spring.mp3</guid>
-        <dc:creator><![CDATA[Jim Kang]]></dc:creator>
-        <pubDate>Sun Nov 01 2020 19:00:00 GMT-0500 (Eastern Standard Time)</pubDate>
+        <dc:creator><![CDATA[Jim, Dan, Tim, and Amin]]></dc:creator>
+        <pubDate>Sun Nov 01 2020 16:00:00 GMT-0800 (Pacific Standard Time)</pubDate>
         <enclosure type="audio/mpeg" url="https://rehydrate.space/episodes/rehydrate-1-silent-spring.mp3" length="12332639"/>
         <itunes:summary></itunes:summary>
         <itunes:explicit>No</itunes:explicit>
