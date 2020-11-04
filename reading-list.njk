@@ -1,0 +1,28 @@
+---
+layout: episode-page.njk
+---
+<div id="reading-list">
+  {%- for season in readingList.seasons -%}
+  <h3>Season {{ season.number }} - {{ season.title }} </h3>
+  <ul>
+  {%- for episode in season.episodes -%}
+    <li>{{ episode.number }} - 
+        {% if episode.url == null %}
+            {{episode.title}}
+        {% else %}
+            <a href="{{ episode.url}}">{{episode.title}}</a>
+        {% endif %}
+    </li>
+    <ul>
+        <li>Part {{episode.chapters.part}} - Chapters {{episode.chapters.start}} - {{episode.chapters.end}}</li>
+        {%- if episode.pages.start != null -%}
+        <li>Pages {{episode.pages.start}} - {{episode.pages.end}}</li>
+        {%- endif -%}
+        {%- if episode.chapters.endLine != null -%}
+        <li>End line: <q>{{ episode.chapters.endLine }}</li>
+        {%- endif -%}
+    </ul>
+  {%- endfor -%}
+  </ul>
+  {%- endfor -%}
+</div>
