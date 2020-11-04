@@ -12,3 +12,6 @@ pushall: sync
 
 sync:
 	s3cmd sync --acl-public rehydrate/ s3://$(BUCKET)/$(APPDIR)/
+
+prettier:
+	prettier --single-quote --write "**/*.js"

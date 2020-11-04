@@ -1,8 +1,11 @@
 var pluginRss = require('@11ty/eleventy-plugin-rss');
 var fs = require('fs');
 var curry = require('lodash.curry');
+const yaml = require('yamljs');
 
 module.exports = function(eleventyConfig) {
+  eleventyConfig.addDataExtension('yaml', contents => yaml.parse(contents));
+
   eleventyConfig.addPassthroughCopy('media/*');
   eleventyConfig.addPassthroughCopy('app.css');
   eleventyConfig.addPassthroughCopy('episodes/**/*.mp3');
