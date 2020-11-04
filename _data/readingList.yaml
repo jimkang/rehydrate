@@ -1,372 +1,406 @@
 ---
 seasons:
-- number: 1
-  title: The Three Body Problem
-  episodes:
-  - number: 1
-    title: Silent Spring
-    chapters:
-      part: 1
-      start: 1
-      end: 2
-    pages: 
-    dateRecorded: '2020-10-25'
-    url: episodes/silent-spring/index.html
-  - number: 2
-    title: Frotiers of Science
-    chapters:
-      part: 2
-      start: 3
-      end: 4
-    pages: 
-    dateRecorded: 
-    url: 
-  - number: 3
-    title: A Game of Pool
-    chapters:
-      part: 2
-      start: 5
-      end: 6
-    pages: 
-    dateRecorded: 
-    url: 
-  - number: 4
-    title: The Universe Flickers
-    chapters:
-      part: 2
-      start: 7
-      end: 9
-    pages: 
-    dateRecorded: 
-    url: 
-  - number: 5
-    title: Da Shi
-    chapters:
-      part: 2
-      start: 10
-      end: 11
-    dateRecorded: 
-    url: 
-  - number: 6
-    title: Red Coast
-    chapters:
-      part: 2
-      start: 12
-      end: 14
-    pages: 
-    dateRecorded: 
-    url: 
-  - number: 7
-    title: Syzygy
-    chapters:
-      part: 2
-      start: 15
-      end: 17
-    pages: 
-    dateRecorded: 
-    url: 
-  - number: 8
-    title: The Pendulum Monument
-    chapters:
-      part: 2
-      start: 18
-      end: 20
-    pages: 
-    dateRecorded: 
-    url: 
-  - number: 9
-    title: Sunset for Humanity
-    chapters:
-      part: 3
-      start: 21
-      end: 24
-    pages: 
-    dateRecorded: 
-    url: 
-  - number: 10
-    title: No One Repents
-    chapters:
-      part: 3
-      start: 25
-      end: 26
-    pages: 
-    dateRecorded: 
-    url: 
-  - number: 11
-    title: ETO
-    chapters:
-      part: 3
-      start: 27
-      end: 31
-    pages: 
-    dateRecorded: 
-    url: 
-  - number: 12
-    title: Bugs
-    chapters:
-      part: 3
-      start: 32
-      end: 35
-    pages: 
-    dateRecorded: 
-    url: 
-- number: 2
-  title: The Dark Forest
-  episodes:
-  - number: 1
-    title: TBD
-    chapters:
-      part: 1
-      start: Prologue
-      end: 1.1
-      endLine: By the time its hoofbeats had dissipated, the small sun had become
-        a shooting star, and a cloak of darkness descended upon the world
-    pages:
-      start: 7
-      end: 45
-    dateRecorded: 
-    url: 
-  - number: 2
-    title: TBD
-    chapters:
-      part: 1
-      start: 1.2
-      end: 1.2
-      endLine: imagining it was the light of a fireplace, and drifted off to sleep.
-    pages:
-      start: 45
-      end: 83
-    dateRecorded: 
-    url: 
-  - number: 3
-    title: TBD
-    chapters:
-      part: 1
-      start: 1.3
-      end: 1.3
-      endLine: No matter how frightening they might be, weapons are a good thing.…
-    pages:
-      start: 83
-      end: 124
-    dateRecorded: 
-    url: 
-  - number: 4
-    title: TBD
-    chapters:
-      part: 1
-      start: 1.4
-      end: 1.4
-      endLine: 
-    pages:
-      start: 124
-      end: 168
-    dateRecorded: 
-    url: 
-  - number: 5
-    title: TBD
-    chapters:
-      part: 2
-      start: 1
-      end: 1
-      endLine: 
-    pages:
-      start: 170
-      end: 215
-    dateRecorded: 
-    url: 
-  - number: 6
-    title: TBD
-    chapters:
-      part: 2
-      start: 2
-      end: 3
-      endLine: 
-    pages:
-      start: 216
-      end: 279
-    dateRecorded: 
-    url: 
-  - number: 7
-    title: TBD
-    chapters:
-      part: 3
-      start: 1.1
-      end: 1.1
-      endLine: Lots. But you can still live quite well on the surface.
-    pages:
-      start: 280
-      end: 324
-    dateRecorded: 
-    url: 
-  - number: 8
-    title: TBD
-    chapters:
-      part: 3
-      start: 1.2
-      end: 1.2
-      endLine: the sun was shining through the window and the revelries were still
-        going on outside.
-    pages:
-      start: 324
-      end: 364
-    dateRecorded: 
-    url: 
-  - number: 9
-    title: TBD
-    chapters:
-      part: 3
-      start: 1.3
-      end: 1.3
-      endLine: No, Dad. You really can’t rest. It’s not over. It’s started up again.
-    pages:
-      start: 364
-      end: 405
-    dateRecorded: 
-    url: 
-  - number: 10
-    title: TBD
-    chapters:
-      part: 3
-      start: 1.4
-      end: 1.4
-      endLine: 
-    pages:
-      start: 405
-      end: 456
-    dateRecorded: 
-    url: 
-  - number: 11
-    title: TBD
-    chapters:
-      part: 3
-      start: 2
-      end: 3
-      endLine: 
-    pages:
-      start: 457
-      end: 473
-    dateRecorded: 
-    url: 
-- number: 3
-  title: Death's End
-  episodes:
-  - number: 1
-    title: TBD
-    chapters:
-      part: 1
-      start: 1
-      end: 5
-      endLine: 
-    pages:
-      start: 11
-      end: 54
-    dateRecorded: 
-    url: 
-  - number: 2
-    title: TBD
-    chapters:
-      part: 1
-      start: 7
-      end: 10
-      endLine: 
-    pages:
-      start: 55
-      end: 93
-    dateRecorded: 
-    url: 
-  - number: 3
-    title: TBD
-    chapters:
-      part: 2
-      start: 1
-      end: 15
-      endLine: 
-    pages:
-      start: 94
-      end: 159
-    dateRecorded: 
-    url: 
-  - number: 4
-    title: TBD
-    chapters:
-      part: 2
-      start: 16
-      end: 26
-      endLine: 
-    pages:
-      start: 154
-      end: 239
-    dateRecorded: 
-    url: 
-  - number: 5
-    title: TBD
-    chapters:
-      part: 3
-      start: 1
-      end: 9
-      endLine: 
-    pages:
-      start: 241
-      end: 286
-    dateRecorded: 
-    url: 
-  - number: 6
-    title: TBD
-    chapters:
-      part: 3
-      start: 10
-      end: 13
-      endLine: 
-    pages:
-      start: 287
-      end: 323
-    dateRecorded: 
-    url: 
-  - number: 7
-    title: TBD
-    chapters:
-      part: 3
-      start: 14
-      end: 25
-      endLine: 
-    pages:
-      start: 324
-      end: 386
-    dateRecorded: 
-    url: 
-  - number: 8
-    title: TBD
-    chapters:
-      part: 4
-      start: 1
-      end: 3
-      endLine: 
-    pages:
-      start: 387
-      end: 428
-    dateRecorded: 
-    url: 
-  - number: 9
-    title: TBD
-    chapters:
-      part: 5
-      start: 1
-      end: 5
-      endLine: 
-    pages:
-      start: 429
-      end: 500
-    dateRecorded: 
-    url: 
-  - number: 10
-    title: TBD
-    chapters:
-      part: 6
-      start: 1
-      end: 5
-      endLine: 
-    pages:
-      start: 501
-      end: 558
-    dateRecorded: 
-    url: 
+  -
+    episodes:
+      -
+        chapters:
+          end: 2
+          part: 1
+          start: 1
+        dateRecorded: "2020-10-25"
+        number: 1
+        pages: ~
+        title: "Silent Spring"
+        url: episodes/silent-spring/index.html
+      -
+        chapters:
+          end: 4
+          part: 2
+          start: 3
+        dateRecorded: ~
+        number: 2
+        pages: ~
+        title: "Frontiers of Science"
+        url: ~
+      -
+        chapters:
+          end: 6
+          part: 2
+          start: 5
+        dateRecorded: ~
+        number: 3
+        pages: ~
+        title: "A Game of Pool"
+        url: ~
+      -
+        chapters:
+          end: 9
+          part: 2
+          start: 7
+        dateRecorded: ~
+        number: 4
+        pages: ~
+        title: "The Universe Flickers"
+        url: ~
+      -
+        chapters:
+          end: 11
+          part: 2
+          start: 10
+        dateRecorded: ~
+        number: 5
+        title: "Da Shi"
+        url: ~
+      -
+        chapters:
+          end: 14
+          part: 2
+          start: 12
+        dateRecorded: ~
+        number: 6
+        pages: ~
+        title: "Red Coast"
+        url: ~
+      -
+        chapters:
+          end: 17
+          part: 2
+          start: 15
+        dateRecorded: ~
+        number: 7
+        pages: ~
+        title: Syzygy
+        url: ~
+      -
+        chapters:
+          end: 20
+          part: 2
+          start: 18
+        dateRecorded: ~
+        number: 8
+        pages: ~
+        title: "The Pendulum Monument"
+        url: ~
+      -
+        chapters:
+          end: 24
+          part: 3
+          start: 21
+        dateRecorded: ~
+        number: 9
+        pages: ~
+        title: "Sunset for Humanity"
+        url: ~
+      -
+        chapters:
+          end: 26
+          part: 3
+          start: 25
+        dateRecorded: ~
+        number: 10
+        pages: ~
+        title: "No One Repents"
+        url: ~
+      -
+        chapters:
+          end: 31
+          part: 3
+          start: 27
+        dateRecorded: ~
+        number: 11
+        pages: ~
+        title: ETO
+        url: ~
+      -
+        chapters:
+          end: 35
+          part: 3
+          start: 32
+        dateRecorded: ~
+        number: 12
+        pages: ~
+        title: Bugs
+        url: ~
+    number: 1
+    title: "The Three Body Problem"
+  -
+    episodes:
+      -
+        chapters:
+          end: 1.1
+          endLine: "By the time its hoofbeats had dissipated, the small sun had become a shooting star, and a cloak of darkness descended upon the world"
+          part: 1
+          start: Prologue
+        dateRecorded: ~
+        number: 1
+        pages:
+          end: 45
+          start: 7
+        title: TBD
+        url: ~
+      -
+        chapters:
+          end: 1.2
+          endLine: "Imagining it was the light of a fireplace, and drifted off to sleep."
+          part: 1
+          start: 1.2
+        dateRecorded: ~
+        number: 2
+        pages:
+          end: 83
+          start: 45
+        title: TBD
+        url: ~
+      -
+        chapters:
+          end: 1.3
+          endLine: "No matter how frightening they might be, weapons are a good thing…"
+          part: 1
+          start: 1.3
+        dateRecorded: ~
+        number: 3
+        pages:
+          end: 124
+          start: 83
+        title: TBD
+        url: ~
+      -
+        chapters:
+          end: 1.4
+          endLine: ~
+          part: 1
+          start: 1.4
+        dateRecorded: ~
+        number: 4
+        pages:
+          end: 168
+          start: 124
+        title: TBD
+        url: ~
+      -
+        chapters:
+          end: 1
+          endLine: ~
+          part: 2
+          start: 1
+        dateRecorded: ~
+        number: 5
+        pages:
+          end: 215
+          start: 170
+        title: TBD
+        url: ~
+      -
+        chapters:
+          end: 3
+          endLine: ~
+          part: 2
+          start: 2
+        dateRecorded: ~
+        number: 6
+        pages:
+          end: 279
+          start: 216
+        title: TBD
+        url: ~
+      -
+        chapters:
+          end: 1.1
+          endLine: "Lots. But you can still live quite well on the surface."
+          part: 3
+          start: 1.1
+        dateRecorded: ~
+        number: 7
+        pages:
+          end: 324
+          start: 280
+        title: TBD
+        url: ~
+      -
+        chapters:
+          end: 1.2
+          endLine: "the sun was shining through the window and the revelries were still going on outside."
+          part: 3
+          start: 1.2
+        dateRecorded: ~
+        number: 8
+        pages:
+          end: 364
+          start: 324
+        title: TBD
+        url: ~
+      -
+        chapters:
+          end: 1.3
+          endLine: "No, Dad. You really can’t rest. It’s not over. It’s started up again."
+          part: 3
+          start: 1.3
+        dateRecorded: ~
+        number: 9
+        pages:
+          end: 405
+          start: 364
+        title: TBD
+        url: ~
+      -
+        chapters:
+          end: 1.4
+          endLine: ~
+          part: 3
+          start: 1.4
+        dateRecorded: ~
+        number: 10
+        pages:
+          end: 456
+          start: 405
+        title: TBD
+        url: ~
+      -
+        chapters:
+          end: 3
+          endLine: ~
+          part: 3
+          start: 2
+        dateRecorded: ~
+        number: 11
+        pages:
+          end: 473
+          start: 457
+        title: TBD
+        url: ~
+    number: 2
+    title: "The Dark Forest"
+  -
+    episodes:
+      -
+        chapters:
+          end: 5
+          endLine: ~
+          part: 1
+          start: 1
+        dateRecorded: ~
+        number: 1
+        pages:
+          end: 54
+          start: 11
+        title: TBD
+        url: ~
+      -
+        chapters:
+          end: 10
+          endLine: ~
+          part: 1
+          start: 7
+        dateRecorded: ~
+        number: 2
+        pages:
+          end: 93
+          start: 55
+        title: TBD
+        url: ~
+      -
+        chapters:
+          end: 15
+          endLine: ~
+          part: 2
+          start: 1
+        dateRecorded: ~
+        number: 3
+        pages:
+          end: 159
+          start: 94
+        title: TBD
+        url: ~
+      -
+        chapters:
+          end: 26
+          endLine: ~
+          part: 2
+          start: 16
+        dateRecorded: ~
+        number: 4
+        pages:
+          end: 239
+          start: 154
+        title: TBD
+        url: ~
+      -
+        chapters:
+          end: 9
+          endLine: ~
+          part: 3
+          start: 1
+        dateRecorded: ~
+        number: 5
+        pages:
+          end: 286
+          start: 241
+        title: TBD
+        url: ~
+      -
+        chapters:
+          end: 13
+          endLine: ~
+          part: 3
+          start: 10
+        dateRecorded: ~
+        number: 6
+        pages:
+          end: 323
+          start: 287
+        title: TBD
+        url: ~
+      -
+        chapters:
+          end: 25
+          endLine: ~
+          part: 3
+          start: 14
+        dateRecorded: ~
+        number: 7
+        pages:
+          end: 386
+          start: 324
+        title: TBD
+        url: ~
+      -
+        chapters:
+          end: 3
+          endLine: ~
+          part: 4
+          start: 1
+        dateRecorded: ~
+        number: 8
+        pages:
+          end: 428
+          start: 387
+        title: TBD
+        url: ~
+      -
+        chapters:
+          end: 5
+          endLine: ~
+          part: 5
+          start: 1
+        dateRecorded: ~
+        number: 9
+        pages:
+          end: 500
+          start: 429
+        title: TBD
+        url: ~
+      -
+        chapters:
+          end: 5
+          endLine: ~
+          part: 6
+          start: 1
+        dateRecorded: ~
+        number: 10
+        pages:
+          end: 558
+          start: 501
+        title: TBD
+        url: ~
+    number: 3
+    title: "Death's End"
