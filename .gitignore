@@ -4,3 +4,4 @@ node_modules
 config.mk
 config.js
 src-audio
+rehydrate/*
