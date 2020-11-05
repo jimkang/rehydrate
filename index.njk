@@ -14,6 +14,7 @@
     {% set latestEpisodeStuff = collections.episodes[0].data.stuff %}
     {% include 'latest-episode-unfurl.njk' %}
   </head>
+
   <body class="centered-col">
     <header>
       <img src="media/small-findings-wily-square.jpg" alt="Dr. Wily, a cat" />
@@ -42,21 +43,7 @@
       </section>
     </section>
 
-    <hr class="separator" />
+    {% include 'footer.njk' %}
 
-    <footer id="footer">
-      <div>
-        Comments? Findings to share? Email them to
-        <a href="mailto:rehydrate@fastmail.com"
-          >rehydrate@fastmail.com</a
-        >!
-      </div>
-      <br />
-      <div>
-        This site (and podcast feed) is built via
-        <a href="https://www.11ty.dev/">Eleventy</a>. <br /><br />
-        {% include 'recommendations.njk' %}
-      </div>
-    </footer>
   </body>
 </html>

@@ -5,12 +5,17 @@ html {
 body {
   font-family: Ubuntu, roboto, noto, segoe ui, futura, arial, -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue, helvetica, sans-serif;
   font-size: 30px;
-  color: #302525;
   background-color: #fff;
+  color: #252530;
   margin: 0;
   max-width: 50em;
   margin-left: auto;
   margin-right: auto;
+}
+
+body > * {
+  width: 40rem;
+  max-width: 100%;
 }
 
 .centered-col {
@@ -20,17 +25,18 @@ body {
 }
 
 a:link {
-  color: #302525;
+  color: #252530;
   /*! font-weight: bold; */
 }
 
 a:visited {
-  color: #252528;
+  color: #282525;
 }
 
 footer {
   padding: 1em;
   font-size: 0.8em;
+  margin-bottom: 2rem;
 }
 
 ul {
@@ -45,7 +51,7 @@ ul {
 }
 
 .entry-meta {
-  color: hsl(341, 10%, 20%);
+  color: hsl(41, 10%, 20%);
   /*! font-weight: bold; */
 }
 
@@ -69,11 +75,11 @@ ul {
 
 .media-list .pane {
   margin-bottom: 1em;
-  background-color: hsla(0, 70%, 16.7%, 0.05);
   padding: 1em;
   display: flex;
   flex-direction: column;
-  border-radius: 8px;
+  border-radius: 0.25em;
+  border: hsla(210, 0%, 66%, 0.8) 4px solid;
 }
 
 .pane img {
@@ -152,7 +158,8 @@ header h1 {
   margin-top: 1em;
   padding: 1em;
   border-radius: 0.25em;
-  border: hsla(0, 80%, 66%, 0.8) 3px solid;
+  /* border: hsla(152.2, 77.4%, 38.2%, 0.8) 3px solid; */
+  border: hsla(210, 80%, 66%, 0.8) 4px solid;
 }
 
 .platform-directions {
@@ -191,6 +198,33 @@ header h1 {
 
 .comment-info {
   margin-top: 2rem;
+}
+
+.host-name {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.pane > dl > dt {
+  font-weight: bold;
+  text-align: center;
+}
+
+dt {
+  font-size: 1.5rem;
+}
+
+dd {
+  margin-top: 0.5rem;
+  margin-bottom: 1.5rem;
+  margin-left: 0;
+}
+
+.bigger-link {
+  font-size: 1.2rem;
+  margin-bottom: 1.2rem;
+  display: block;
 }
 
 @media all and (max-width: 586px) {

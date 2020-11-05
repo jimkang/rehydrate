@@ -1,5 +1,28 @@
-          <li class="pane">
-            <div class="episode-title">
-               {{ src.name }}
-            </div>
-          </li>
+  <li class="pane">
+    <div class="host-name">
+       <a href="/hosts/{{ src.name | slug }}">{{ src.name }}</a>
+    </div>
+    <dl>
+      <dt>Background</dt>
+      <dd>{{ src.background }}</dd>
+      {%- if src.podcastRecs and src.podcastRecs.length > 0 %}
+        <dt>Podcast recommendations</dt>
+        <dd>
+          {% block podRecs %}
+            {% set src = src.podcastRecs %}
+            {% include 'recs-pane.njk' %}
+          {% endblock %}
+        </dd>
+      {% endif %}
+
+      {%- if src.bookRecs and src.bookRecs.length > 0 %}
+        <dt>Book recommendations</dt>
+        <dd>
+          {% block bookRecs %}
+            {% set src = src.bookRecs %}
+            {% include 'recs-pane.njk' %}
+          {% endblock %}
+        </dd>
+      {% endif %}
+    </dl>
+  </li>
