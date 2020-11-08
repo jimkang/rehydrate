@@ -1,0 +1,10 @@
+<dl class="recs-root">
+  {%- for rec in src %}
+    <dt>
+      <a href="{{ rec.url }}">{{ rec.title }} by {{ rec.author }}</a>
+    </dt>
+    <dd>
+      {{ rec.desc }}
+    </dd>
+  {%- endfor -%}
+</dl>
