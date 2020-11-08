@@ -10,7 +10,7 @@
         <dd>
           {% block podRecs %}
             {% set src = src.podcastRecs %}
-            {% include 'recs-pane.njk' %}
+            {% include 'recs-pane-podcast.njk' %}
           {% endblock %}
         </dd>
       {% endif %}
@@ -20,7 +20,7 @@
         <dd>
           {% block bookRecs %}
             {% set src = src.bookRecs %}
-            {% include 'recs-pane.njk' %}
+            {% include 'recs-pane-book.njk' %}
           {% endblock %}
         </dd>
       {% endif %}
