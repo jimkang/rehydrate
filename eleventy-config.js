@@ -21,6 +21,7 @@ module.exports = function(eleventyConfig) {
 
   eleventyConfig.addPlugin(pluginRss);
   eleventyConfig.addFilter('length', getFileLength);
+  eleventyConfig.addFilter('getReadingListEntry', getReadingListEntry);
 };
 
 function compareDatesDesc(a, b) {
@@ -43,6 +44,16 @@ function addFilteredCollection(glob, collection) {
     .filter(notIndex)
     .sort(compareDatesDesc);
   return filteredCollection;
+}
+
+function getReadingListEntry(ep, readingList) {
+  let season = readingList.seasons.find(s => s.number === ep.season)
+  let episode = season.episodes.find(e => e.number === ep.number)
+
+  return {
+    season: season,
+    episode: episode
+  }
 }
 
 // TODO: Duration filter via music-metadata.

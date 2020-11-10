@@ -137,6 +137,15 @@ header img {
   border-radius: 8px;
 }
 
+#main-header {
+  text-align: center;
+  width: 100%;
+}
+
+#main-header h1 {
+  width: 100%;
+}
+
 header h1 {
   font-size: 4rem;
   flex-grow: 1;

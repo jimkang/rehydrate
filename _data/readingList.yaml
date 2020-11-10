@@ -11,7 +11,7 @@ seasons:
         number: 1
         pages: ~
         title: "Silent Spring"
-        url: episodes/silent-spring/index.html
+        url: /episodes/silent-spring/index.html
       -
         chapters:
           end: 4

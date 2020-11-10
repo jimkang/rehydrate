@@ -1,53 +1,30 @@
-<html>
-  <head>
-    <title>Rehydrate</title>
-    <link rel="stylesheet" href="app.css" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta charset="utf-8" />
-    <meta property="og:url" content="https://rehydrate.space" />
-    <meta property="og:title" content="Rehydrate" />
-    <meta
-      property="og:description"
-      content="A podcast about the Three-Body Problem and the rest of the Remembrance of Earth's Past series."
-    />
-    <meta property="og:site_name" content="Rehydrate" />
-    {% set latestEpisodeStuff = collections.episodes[0].data.stuff %}
-    {% include 'latest-episode-unfurl.njk' %}
-  </head>
+---
+layout: layouts/main.njk
+title: Rehydrate
+---
 
-  <body class="centered-col">
-    <header>
-      <img src="media/rehydrate-logo.png" alt="Rehydrate Logo" />
-      <h1>Rehydrate</h1>
-    </header>
+<section class="middle">
+  <div class="podcast-summary">
+    A podcast about the Three-Body Problem and the rest of the Remembrance of Earth's Past series.
+  </div>
+  <div class="listening-directions">
+    Point your podcast app at the <a href="rss.xml">RSS feed</a> to listen!
+  </div>
+  <br>
+  {% include 'platform-links.njk' %}
 
-    <section class="middle">
-      <div class="podcast-summary">
-        A podcast about the Three-Body Problem and the rest of the Remembrance of Earth's Past series.
-      </div>
-      <div class="listening-directions">
-        Point your podcast app at the <a href="rss.xml">RSS feed</a> to listen!
-      </div>
-      <br>
-      {% include 'platform-links.njk' %}
+  <h2>Reading List</h2>
+  You can read along with the show or at your own pace. Our <a href="/reading-list">Podcast Reading List</a> lays out
+  how the episodes will be broken down
 
-      <h2>Reading List</h2>
-      You can read along with the show or at your own pace. Our <a href="/reading-list">Podcast Reading List</a> lays out
-      how the episodes will be broken down
+  <h2>Episodes</h2>
 
-      <h2>Episodes</h2>
-
-      <section class="media">
-        <ul class="media-list centered-col">
-          {%- for episode in collections.episodes -%}
-            {% set src = episode.data.stuff %}
-            {% include 'episode-pane.njk' %}
-          {%- endfor -%}
-        </ul>
-      </section>
-    </section>
-
-    {% include 'footer.njk' %}
-
-  </body>
-</html>
+  <section class="media">
+    <ul class="media-list centered-col">
+      {%- for episode in collections.episodes -%}
+        {% set src = episode.data.stuff %}
+        {% include 'episode-pane.njk' %}
+      {%- endfor -%}
+    </ul>
+  </section>
+</section>

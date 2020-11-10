@@ -1,5 +1,14 @@
+{% set rl = src | getReadingListEntry(readingList) %}
+
 <div>
   <ul class="findings-list">
+    <li>
+      <h3>Episode Info</h3>
+      <ul class="finding-links">
+        <li>Book: <u>{{ rl.season.title }}</u>
+        <li>Chapters {{rl.episode.chapters.start}} - {{ rl.episode.chapters.end }}</li>
+      </ul>
+    </li>
     {% if src.topics %}
       <li>
         <h3>Topics</h3>
@@ -22,7 +31,4 @@
       </li>
     {% endif %}
   </ul>
-  <div class="comment-info">
-    Do you have comments or questions for Rehydrate? Send them to rehydrate@fastmail.com!
-  </div>
 </div>
