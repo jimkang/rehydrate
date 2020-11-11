@@ -5,12 +5,18 @@ html {
 body {
   font-family: Ubuntu, roboto, noto, segoe ui, futura, arial, -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue, helvetica, sans-serif;
   font-size: 30px;
-  background-color: #fff;
   color: #252530;
-  margin: 0;
+  margin: 30px 0 0 0;
   max-width: 50em;
   margin-left: auto;
   margin-right: auto;
+
+  background-color: #fff;
+  background: url('/media/rehydrate-bg.png') 0 0 no-repeat,
+    linear-gradient(180deg, rgba(131,109,175,1) 0%, rgba(255,255,255,1) 50%) no-repeat;
+  background-blend-mode: lighten;
+  background-size: contain;
+  background-repeat-x: repeat;
 }
 
 body > * {
@@ -79,7 +85,7 @@ ul {
   display: flex;
   flex-direction: column;
   border-radius: 0.25em;
-  border: hsla(210, 0%, 66%, 0.8) 4px solid;
+  border: #666 4px solid;
 }
 
 .pane img {
