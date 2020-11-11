@@ -1,37 +1,13 @@
 ---
-title: Rehydrate
-pageHeading: Rehydrate
+layout: layouts/main.njk
 ---
-{% set latestEpisodeStuff = stuff %}
-<html>
-  <head>
-    <title>Rehydrate - {{ stuff | getEpisodeTitle }}</title>
-    <link rel="stylesheet" href="/app.css" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta charset="utf-8" />
-    <meta property="og:site_name" content="Rehydrate" />
-    {% include 'latest-episode-unfurl.njk' %}
-  </head>
-  <body class="centered-col">
-    <a href="/">
-      <header>
-        <div id="main-header">
-        <a href="/">
-          <img src="/media/rehydrate-logo.png" alt="Rehydrate Logo" />
-        </a>
-        </div>
-      </header>
-    </a>
+{% include 'latest-episode-unfurl.njk' %}
 
-    <section class="middle">
-      <div class="listening-directions">
-        Point your podcast app at the <a href="/rss.xml">RSS feed</a> to listen!
-      </div>
-      <br>
-      {{ content | safe }}
-    </section>
+<section class="middle">
+  <div class="listening-directions">
+    Point your podcast app at the <a href="/rss.xml">RSS feed</a> to listen!
+  </div>
+  <br>
+  {{ content | safe }}
+</section>
 
-    {% include 'footer.njk' %}
-
-  </body>
-</html>
