@@ -214,6 +214,10 @@ header h1 {
   margin-bottom: 1rem;
 }
 
+.host-name .social-links a {
+    font-size: 0.6em;
+}
+
 .pane > dl > dt {
   font-weight: bold;
   text-align: center;

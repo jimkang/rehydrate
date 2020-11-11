@@ -1,6 +1,12 @@
   <li class="pane">
     <div class="host-name">
        <a href="/hosts/{{ src.name | slug }}">{{ src.name }}</a>
+      {%- if src.social -%}
+        <br />
+        <div class="social-links" target="_blank">
+          <a href="{{src.social.url}}">{{src.social.name}}</a>
+        </div>
+      {%- endif -%}
     </div>
     <dl>
       <dt>Background</dt>
