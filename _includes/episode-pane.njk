@@ -1,6 +1,6 @@
           <li class="pane">
             <div class="episode-title">
-              <a href="/episodes/{{ src.slug }}">{{ src.title }}</a>
+              <a href="/episodes/{{ src.slug }}">{{ src | getEpisodeTitle }}</a>
             </div>
             <img src="/media/{{ src.imageFilename }}" alt="Episode image" />
             <audio
