@@ -9,7 +9,9 @@ seasons:
           start: 1
         dateRecorded: "2020-10-25"
         number: 1
-        pages: ~
+        pages:
+          start: 9
+          end: 39
         title: "Silent Spring"
         url: /episodes/silent-spring/index.html
       -
@@ -19,7 +21,9 @@ seasons:
           start: 3
         dateRecorded: ~
         number: 2
-        pages: ~
+        pages:
+          start: 41
+          end: 65
         title: "Frontiers of Science"
         url: ~
       -
@@ -29,7 +33,9 @@ seasons:
           start: 5
         dateRecorded: ~
         number: 3
-        pages: ~
+        pages:
+          start: 67
+          end: 92
         title: "A Game of Pool"
         url: ~
       -
@@ -39,7 +45,9 @@ seasons:
           start: 7
         dateRecorded: ~
         number: 4
-        pages: ~
+        pages:
+          start: 93
+          end: 129
         title: "The Universe Flickers"
         url: ~
       -
@@ -49,6 +57,9 @@ seasons:
           start: 10
         dateRecorded: ~
         number: 5
+        pages:
+          start: 131
+          end: 151
         title: "Da Shi"
         url: ~
       -
@@ -58,7 +69,9 @@ seasons:
           start: 12
         dateRecorded: ~
         number: 6
-        pages: ~
+        pages:
+          start: 153
+          end: 179
         title: "Red Coast"
         url: ~
       -
@@ -68,7 +81,9 @@ seasons:
           start: 15
         dateRecorded: ~
         number: 7
-        pages: ~
+        pages:
+          start: 181
+          end: 224
         title: Syzygy
         url: ~
       -
@@ -78,7 +93,9 @@ seasons:
           start: 18
         dateRecorded: ~
         number: 8
-        pages: ~
+        pages:
+          start: 225
+          end: 245
         title: "The Pendulum Monument"
         url: ~
       -
@@ -88,7 +105,9 @@ seasons:
           start: 21
         dateRecorded: ~
         number: 9
-        pages: ~
+        pages:
+          start: 249
+          end: 282
         title: "Sunset for Humanity"
         url: ~
       -
@@ -98,7 +117,9 @@ seasons:
           start: 25
         dateRecorded: ~
         number: 10
-        pages: ~
+        pages:
+          start: 283
+          end: 302
         title: "No One Repents"
         url: ~
       -
@@ -108,7 +129,9 @@ seasons:
           start: 27
         dateRecorded: ~
         number: 11
-        pages: ~
+        pages:
+          start: 303
+          end: 346
         title: ETO
         url: ~
       -
@@ -118,7 +141,9 @@ seasons:
           start: 32
         dateRecorded: ~
         number: 12
-        pages: ~
+        pages:
+          start: 347
+          end: 390
         title: Bugs
         url: ~
     number: 1
@@ -134,8 +159,8 @@ seasons:
         dateRecorded: ~
         number: 1
         pages:
-          end: 45
-          start: 7
+          end: 9
+          start: 54
         title: TBD
         url: ~
       -
@@ -147,8 +172,8 @@ seasons:
         dateRecorded: ~
         number: 2
         pages:
-          end: 83
-          start: 45
+          end: 94
+          start: 54
         title: TBD
         url: ~
       -
@@ -160,8 +185,8 @@ seasons:
         dateRecorded: ~
         number: 3
         pages:
-          end: 124
-          start: 83
+          end: 137
+          start: 94
         title: TBD
         url: ~
       -
@@ -173,8 +198,8 @@ seasons:
         dateRecorded: ~
         number: 4
         pages:
-          end: 168
-          start: 124
+          end: 185
+          start: 137
         title: TBD
         url: ~
       -
@@ -186,8 +211,8 @@ seasons:
         dateRecorded: ~
         number: 5
         pages:
-          end: 215
-          start: 170
+          end: 237
+          start: 189
         title: TBD
         url: ~
       -
@@ -199,8 +224,8 @@ seasons:
         dateRecorded: ~
         number: 6
         pages:
-          end: 279
-          start: 216
+          end: 305
+          start: 239
         title: TBD
         url: ~
       -
@@ -212,8 +237,8 @@ seasons:
         dateRecorded: ~
         number: 7
         pages:
-          end: 324
-          start: 280
+          end: 354
+          start: 309
         title: TBD
         url: ~
       -
@@ -225,8 +250,8 @@ seasons:
         dateRecorded: ~
         number: 8
         pages:
-          end: 364
-          start: 324
+          end: 397
+          start: 354
         title: TBD
         url: ~
       -
@@ -238,8 +263,8 @@ seasons:
         dateRecorded: ~
         number: 9
         pages:
-          end: 405
-          start: 364
+          end: 439
+          start: 397
         title: TBD
         url: ~
       -
@@ -251,8 +276,8 @@ seasons:
         dateRecorded: ~
         number: 10
         pages:
-          end: 456
-          start: 405
+          end: 493
+          start: 439
         title: TBD
         url: ~
       -
@@ -264,8 +289,8 @@ seasons:
         dateRecorded: ~
         number: 11
         pages:
-          end: 473
-          start: 457
+          end: 512
+          start: 495
         title: TBD
         url: ~
     number: 2
