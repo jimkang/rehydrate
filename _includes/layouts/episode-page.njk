@@ -2,14 +2,14 @@
 title: Rehydrate
 pageHeading: Rehydrate
 ---
+{% set latestEpisodeStuff = stuff %}
 <html>
   <head>
-    <title>{{ title }}</title>
+    <title>Rehydrate - {{ stuff | getEpisodeTitle }}</title>
     <link rel="stylesheet" href="/app.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta charset="utf-8" />
     <meta property="og:site_name" content="Rehydrate" />
-    {% set latestEpisodeStuff = stuff %}
     {% include 'latest-episode-unfurl.njk' %}
   </head>
   <body class="centered-col">
