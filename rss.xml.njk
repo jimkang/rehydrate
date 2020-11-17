@@ -56,7 +56,7 @@ metadata:
       {%- set filePath -%}episodes/{{ filename }}{%- endset -%}
       {%- set imageURL -%}{{ metadata.url }}/media/{{ src.imageFilename }}{%- endset -%}
       <item>
-        <title><![CDATA[{{ src.title }}]]></title>
+        <title><![CDATA[{{ src | getEpisodeTitle }}]]></title>
         <description><![CDATA[
             {%- include 'findings.njk' -%}
             {%- include 'contact.njk' -%}
