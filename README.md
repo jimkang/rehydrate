@@ -27,4 +27,5 @@ After making changes and before committing:
 - Run `make build`.
 - Run a web server using `<project root>/rehydrate` as the root.
   - e.g. `cd rehydrate && python -m SimpleHTTPServer`
+  - alt. `docker run --rm -it -p 8000:80 --name some-nginx -v $(pwd)/rehydrate:/usr/share/nginx/html:ro nginx`
 - Make sure the site is OK locally.

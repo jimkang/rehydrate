@@ -1,0 +1,37 @@
+---
+title: Rehydrate
+pageHeading: Rehydrate
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>{{ title }}</title>
+    <link rel="stylesheet" href="/app.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" />
+    <meta property="og:url" content="https://rehydrate.space" />
+    <meta property="og:title" content="Rehydrate" />
+    <meta
+      property="og:description"
+      content="A podcast about the Three-Body Problem and the rest of the Remembrance of Earth's Past series."
+    />
+    <meta property="og:site_name" content="Rehydrate" />
+    {% set latestEpisodeStuff = collections.episodes[0].data.stuff %}
+    {% include 'latest-episode-unfurl.njk' %}
+  </head>
+
+  <body class="centered-col">
+    <header>
+      <div id="main-header">
+        <h1><a href="/">{{ pageHeading }}</a></h1>
+      </div>
+    </header>
+
+    <div id="content">
+      {{ content | safe }}
+    </div>
+
+    {% include 'footer.njk' %}
+
+  </body>
+</html>

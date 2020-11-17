@@ -137,12 +137,15 @@ header img {
   border-radius: 8px;
 }
 
+#main-header {
+  text-align: center;
+  width: 100%;
+}
+
 header h1 {
   font-size: 4rem;
   flex-grow: 1;
   margin: 0;
-  margin-left: 0.5em;
-  width: 50%;
 }
 
 .middle {
@@ -204,6 +207,10 @@ header h1 {
   text-align: center;
   font-size: 2rem;
   margin-bottom: 1rem;
+}
+
+.host-name .social-links a {
+    font-size: 0.6em;
 }
 
 .pane > dl > dt {

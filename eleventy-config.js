@@ -3,8 +3,8 @@ var fs = require('fs');
 var curry = require('lodash.curry');
 const yaml = require('yamljs');
 
-module.exports = function(eleventyConfig) {
-  eleventyConfig.addDataExtension('yaml', contents => yaml.parse(contents));
+module.exports = function (eleventyConfig) {
+  eleventyConfig.addDataExtension('yaml', (contents) => yaml.parse(contents));
 
   eleventyConfig.addPassthroughCopy('media/*');
   eleventyConfig.addPassthroughCopy('app.css');
@@ -21,6 +21,8 @@ module.exports = function(eleventyConfig) {
 
   eleventyConfig.addPlugin(pluginRss);
   eleventyConfig.addFilter('length', getFileLength);
+  eleventyConfig.addFilter('getReadingListEntry', getReadingListEntry);
+  eleventyConfig.addFilter('getEpisodeTitle', getEpisodeTitle);
 };
 
 function compareDatesDesc(a, b) {
@@ -43,6 +45,17 @@ function addFilteredCollection(glob, collection) {
     .filter(notIndex)
     .sort(compareDatesDesc);
   return filteredCollection;
+}
+
+function getEpisodeTitle(ep) {
+  return `Season ${ep.season}, Episode ${ep.number}: ${ep.title}`;
+}
+
+function getReadingListEntry(ep, readingList) {
+  let season = readingList.seasons.find((s) => s.number === ep.season);
+  let episode = season.episodes.find((e) => e.number === ep.number);
+
+  return { season, episode };
 }
 
 // TODO: Duration filter via music-metadata.
