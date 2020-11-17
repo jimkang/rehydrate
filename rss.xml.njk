@@ -2,6 +2,7 @@
 permalink: rss.xml
 metadata:
   title: Rehydrate
+  subtitle: A podcast about Liu Cixin's "Three-Body Problem" and the "Remembrance of Earth's Past" series.
   url: https://rehydrate.space
   author:
     name: Jim, Dan, Tim, and Amin
@@ -17,6 +18,7 @@ metadata:
 <?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:anchor="https://anchor.fm/xmlns">
   <channel>
     <title><![CDATA[{{ metadata.title }}]]></title>
+    <itunes:subtitle><![CDATA[{{ metadata.subtitle }}]]></itunes:subtitle>
     <description><![CDATA[{{ metadata.description }}]]></description>
 		<link>{{ metadata.url }}</link>
 		<image>
@@ -57,6 +59,7 @@ metadata:
       {%- set imageURL -%}{{ metadata.url }}/media/{{ src.imageFilename }}{%- endset -%}
       <item>
         <title><![CDATA[{{ src | getEpisodeTitle }}]]></title>
+        <itunes:subtitle><![CDATA[{{ src | getReadingListEntry(readingList) | getEpisodeSubtitle }}]]></itunes:subtitle>
         <description><![CDATA[
             {%- include 'findings.njk' -%}
             {%- include 'contact.njk' -%}
@@ -67,6 +70,7 @@ metadata:
         <pubDate>{{ src.date }}</pubDate>
         <enclosure type="audio/mpeg" url="{{ fileURL }}" length="{{ filePath | length }}"/>
         <itunes:summary>{{ src.summary }}</itunes:summary>
+        <itunes:author>{{ metadata.author.name }}</itunes:author>
         <itunes:explicit>No</itunes:explicit>
         <itunes:duration>{{ src.seconds }}</itunes:duration>
         <itunes:image href="{{ imageURL }}"/>
