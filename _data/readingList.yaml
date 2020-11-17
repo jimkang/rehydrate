@@ -25,7 +25,7 @@ seasons:
           start: 41
           end: 65
         title: "Frontiers of Science"
-        url: ~
+        url: /episodes/silent-spring/index.html
       -
         chapters:
           part: 2
