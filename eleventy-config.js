@@ -23,6 +23,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addFilter('length', getFileLength);
   eleventyConfig.addFilter('getReadingListEntry', getReadingListEntry);
   eleventyConfig.addFilter('getEpisodeTitle', getEpisodeTitle);
+  eleventyConfig.addFilter('getEpisodeSubtitle', getEpisodeSubtitle);
 };
 
 function compareDatesDesc(a, b) {
@@ -49,6 +50,10 @@ function addFilteredCollection(glob, collection) {
 
 function getEpisodeTitle(ep) {
   return `Season ${ep.season}, Episode ${ep.number}: ${ep.title}`;
+}
+
+function getEpisodeSubtitle(rl) {
+  return `${rl.season.title}, Chapters ${rl.episode.chapters.start}-${ rl.episode.chapters.end }`;
 }
 
 function getReadingListEntry(ep, readingList) {
