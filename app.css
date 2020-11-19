@@ -75,11 +75,42 @@ ul {
 
 .media-list .pane {
   margin-bottom: 1em;
-  padding: 1em;
   display: flex;
   flex-direction: column;
   border-radius: 0.25em;
   border: hsla(210, 0%, 66%, 0.8) 4px solid;
+}
+
+.media-list .pane .episode {
+  padding: 1em;
+}
+
+.media-list .pane .subpane {
+  background-color: #c8dae6;
+  border-top: hsla(210, 0%, 66%, 0.8) 4px solid;
+}
+
+.media-list .pane .subpane .episode {
+  padding-top: 0;
+}
+
+.media-list .pane .subpane .extra-episode {
+  float: left;
+  margin-bottom: 1em;
+}
+
+.media-list .pane .subpane img {
+  width: 30%;
+  float: left;
+  padding-right: 0.5em;
+}
+
+.media-list .pane .subpane .episode div {
+  display: inline;
+}
+
+.media-list .pane .subpane .episode div.desc {
+  font-size: 0.75em;
 }
 
 .pane img {

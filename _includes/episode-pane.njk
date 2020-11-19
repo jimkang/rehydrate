@@ -1,17 +1,43 @@
-          <li class="pane">
-            <div class="episode-title">
-              <a href="/episodes/{{ src.slug }}/index.html">{{ src | getEpisodeTitle }}</a>
-            </div>
-            <img src="/media/{{ src.imageFilename }}" alt="Episode image" />
-            <audio
-              class="episode-player"
-              controls=""
-              loop="true"
-              preload="metadata"
-              src="/episodes/rehydrate-s{{ src.season }}-ep{{ src.number }}-{{ src.slug }}.mp3"
-            ></audio>
-            {% include 'findings.njk' %}
-            <div class="time-stamp entry-meta">
-              <time datetime="{{ src.date }}">{{ src.date }}</time>
-            </div>
-          </li>
+<li class="pane">
+  <div class="episode">
+    <div class="episode-title">
+      <a href="/episodes/{{ src.slug }}/index.html">{{ src | getEpisodeTitle }}</a>
+    </div>
+    <img src="/media/{{ src.imageFilename }}" alt="Episode image"/>
+    <audio
+      class="episode-player"
+      controls=""
+      loop="true"
+      preload="metadata"
+      src="/episodes/rehydrate-s{{ src.season }}-ep{{ src.number }}-{{ src.slug }}.mp3"
+    ></audio>
+    {% include 'findings.njk' %}
+    <div class="time-stamp entry-meta">
+      <time datetime="{{ src.date }}">{{ src.date }}</time>
+    </div>
+  </div>
+
+  {%- if src.extras and src.extras.length != 0 -%}
+  <div class="subpane">
+    <div class="episode">
+      <h3>Extra Content</h3>
+      {%- for extra in src.extras -%}
+      <div class="extra-episode">
+        <div class="image>"><img src="/media/{{ extra.imageFilename }}"/></div>
+        <div class="title">{{ extra.title }}</div>
+        <br />
+        <div class="desc">{{ extra.desc }}</div>
+        <br />
+        <div class="media"><audio
+          class="episode-player"
+          controls=""
+          loop="true"
+          preload="metadata"
+          src="/episodes/{{ extra.episodeFilename }}"
+        ></audio></div>
+      </div>
+      {%- endfor -%}
+    </div>
+  </div>
+  {%- endif -%}
+</li>

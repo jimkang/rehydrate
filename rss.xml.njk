@@ -79,6 +79,33 @@ metadata:
         <itunes:episode>{{ src.number }}</itunes:episode>
         <itunes:episodeType>full</itunes:episodeType>
       </item>
-      {%- endfor -%}
+      {%- if src.extras and src.extras.length != 0 -%}
+        {%- for extra in src.extras -%}
+          {%- set title -%}{{ src | getEpisodeTitle }} : {{ extra.title }}{%- endset -%}
+          {%- set fileURL -%}{{ metadata.url }}/episodes/{{ extra.episodeFilename }}{%- endset -%}
+          {%- set filePath -%}episodes/{{ extra.episodeFilename }}{%- endset -%}
+          {%- set imageURL -%}{{ metadata.url }}/media/{{ extra.imageFilename }}{%- endset -%}
+          <item>
+            <title><![CDATA[{{ title }}]]></title>
+            <itunes:title><![CDATA[{{ title }}]]></itunes:title>
+            <itunes:subtitle><![CDATA[{{ src | getReadingListEntry(readingList) | getEpisodeSubtitle }}]]></itunes:subtitle>
+            <description><![CDATA[{{ extra.desc }}]]></description>
+            <link href="{{ pageURL }}"/>
+            <guid isPermaLink="false">{{ fileURL }}</guid>
+            <dc:creator><![CDATA[{{ metadata.author.name }}]]></dc:creator>
+            <pubDate>{{ src.date }}</pubDate>
+            <enclosure type="audio/mpeg" url="{{ fileURL }}" length="{{ filePath | length }}"/>
+            <itunes:summary>{{ extra.desc }}</itunes:summary>
+            <itunes:author>{{ metadata.author.name }}</itunes:author>
+            <itunes:explicit>No</itunes:explicit>
+            <itunes:duration>{{ src.seconds }}</itunes:duration>
+            <itunes:image href="{{ imageURL }}"/>
+            <itunes:season>{{ src.season }}</itunes:season>
+            <itunes:episode>{{ src.number }}</itunes:episode>
+            <itunes:episodeType>full</itunes:episodeType>
+          </item>
+        {%- endfor -%}
+      {%- endif -%}
+    {%- endfor -%}
 	</channel>
 </rss>
