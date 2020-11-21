@@ -26,6 +26,7 @@ After making changes and before committing:
 - If you've done a lot with yaml, send the yaml through yamllint.com, assuming there's no sensitive information in the yaml.
 - Run `make build`.
 - Run a web server using `<project root>/rehydrate` as the root.
-  - e.g. `cd rehydrate && python -m SimpleHTTPServer`
-  - alt. `docker run --rm -it -p 8000:80 --name some-nginx -v $(pwd)/rehydrate:/usr/share/nginx/html:ro nginx`
+  - `make serve` - Sets up an auto-reloading server
+  - `cd rehydrate && python -m SimpleHTTPServer`
+  - `docker run --rm -it -p 8000:80 --name some-nginx -v $(pwd)/rehydrate:/usr/share/nginx/html:ro nginx`
 - Make sure the site is OK locally.
