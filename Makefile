@@ -7,6 +7,12 @@ build:
     --config=eleventy-config.js \
     --output=rehydrate
 
+serve:
+	npx @11ty/eleventy \
+		--output=rehydrate \
+		--config=eleventy-config.js \
+		--serve
+
 pushall: sync
 	git push origin main
 

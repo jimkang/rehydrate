@@ -5,9 +5,12 @@
     <li>
       <h3>Episode Info</h3>
       <ul class="finding-links">
-        <li>Book: <u>{{ rl.season.title }}</u>
+        <li>Book: <i>{{ rl.season.title }}</i>
         <li>Chapters {{rl.episode.chapters.start}} - {{ rl.episode.chapters.end }}</li>
         <li>Pages {{ rl.episode.pages.start }} - {{ rl.episode.pages.end }}</li>
+        {% if src.transcript %}
+          <li><a class="transcript-link" href="{{ src.transcript }}">Transcript</a></li>
+        {%  endif %}
       </ul>
     </li>
     {% if src.topics %}
