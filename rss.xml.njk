@@ -98,11 +98,11 @@ metadata:
             <itunes:summary>{{ extra.desc }}</itunes:summary>
             <itunes:author>{{ metadata.author.name }}</itunes:author>
             <itunes:explicit>No</itunes:explicit>
-            <itunes:duration>{{ src.seconds }}</itunes:duration>
+            <itunes:duration>{{ extra.seconds }}</itunes:duration>
             <itunes:image href="{{ imageURL }}"/>
             <itunes:season>{{ src.season }}</itunes:season>
             <itunes:episode>{{ src.number }}</itunes:episode>
-            <itunes:episodeType>full</itunes:episodeType>
+            <itunes:episodeType>Bonus</itunes:episodeType>
           </item>
         {%- endfor -%}
       {%- endif -%}
