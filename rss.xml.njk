@@ -81,7 +81,7 @@ metadata:
       </item>
       {%- if src.extras and src.extras.length != 0 -%}
         {%- for extra in src.extras -%}
-          {%- set title -%}{{ extra.title }} : {{ src | getEpisodeTitle }}{%- endset -%}
+          {%- set title -%}{{ extra.title }}: {{ src | getEpisodeTitle }}{%- endset -%}
           {%- set fileURL -%}{{ metadata.url }}/episodes/{{ extra.episodeFilename }}{%- endset -%}
           {%- set filePath -%}episodes/{{ extra.episodeFilename }}{%- endset -%}
           {%- set imageURL -%}{{ metadata.url }}/media/{{ extra.imageFilename }}{%- endset -%}
