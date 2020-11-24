@@ -2,10 +2,13 @@ include config.mk
 
 HOMEDIR = $(shell pwd)
 
-build:
+build: images
 	npx @11ty/eleventy \
     --config=eleventy-config.js \
     --output=rehydrate
+
+images:
+	mogrify -resize 800x800\> -quality 75 -path media src-media/rehydrate-s*
 
 serve:
 	npx @11ty/eleventy \
