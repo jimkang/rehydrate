@@ -9,8 +9,7 @@ The source for the [Rehydrate podcast](https://rehydrate.space/). Uses eleventy 
 - Update the config files.
 - `npm install`
 - Create a config.mk that defines `USER` and `SERVER`.
-
-If you want to run the image building step, [install ImageMagick](https://imagemagick.org/script/download.php) and make sure `mogrify` is in your `$PATH`.
+- In order to run the image building step, you need to [install ImageMagick](https://imagemagick.org/script/download.php) and make sure `mogrify` is in your `$PATH`.
 
 ## Usage
 
