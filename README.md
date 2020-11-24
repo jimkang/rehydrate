@@ -9,6 +9,7 @@ The source for the [Rehydrate podcast](https://rehydrate.space/). Uses eleventy 
 - Update the config files.
 - `npm install`
 - Create a config.mk that defines `USER` and `SERVER`.
+- In order to run the image building step, you need to [install ImageMagick](https://imagemagick.org/script/download.php) and make sure `mogrify` is in your `$PATH`.
 
 ## Usage
 
@@ -27,6 +28,5 @@ After making changes and before committing:
 - Run `make build`.
 - Run a web server using `<project root>/rehydrate` as the root.
   - `make serve` - Sets up an auto-reloading server
-  - `cd rehydrate && python -m SimpleHTTPServer`
-  - `docker run --rm -it -p 8000:80 --name some-nginx -v $(pwd)/rehydrate:/usr/share/nginx/html:ro nginx`
+- If you want to rebuild the images, run `make images`.
 - Make sure the site is OK locally.
