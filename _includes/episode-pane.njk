@@ -14,4 +14,22 @@
             <div class="time-stamp entry-meta">
               <time datetime="{{ src.date }}">{{ src.date }}</time>
             </div>
+
+            {%- if src.extras and src.extras.length != 0 -%}
+              <h3>Bonus Content</h3>
+              {%- for extra in src.extras -%}
+                  <img class="bonus" src="/media/{{ extra.imageFilename }}"/>
+                  <audio
+                    class="bonus episode-player"
+                    controls=""
+                    loop="true"
+                    preload="metadata"
+                    src="/episodes/{{ extra.episodeFilename }}"
+                  ></audio>
+                  <br />
+                  {{ extra.title }}
+                  <br />
+                  {{ extra.desc }}
+              {%- endfor -%}
+            {%- endif -%}
           </li>

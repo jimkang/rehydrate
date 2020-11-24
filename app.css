@@ -91,6 +91,10 @@ ul {
   border-top-right-radius: 4px;
 }
 
+.pane img.bonus, audio.bonus {
+  width: 50%
+}
+
 .media-list .pane h4:first-child {
   margin-top: 0;
 }
