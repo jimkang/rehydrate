@@ -3,8 +3,8 @@ var fs = require('fs');
 var curry = require('lodash.curry');
 const yaml = require('yamljs');
 
-module.exports = function (eleventyConfig) {
-  eleventyConfig.addDataExtension('yaml', (contents) => yaml.parse(contents));
+module.exports = function(eleventyConfig) {
+  eleventyConfig.addDataExtension('yaml', contents => yaml.parse(contents));
 
   eleventyConfig.addPassthroughCopy('media/*');
   eleventyConfig.addPassthroughCopy('app.css');
@@ -12,11 +12,11 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addCollection(
     'episodes',
-    curry(addFilteredCollection)(['episodes/*.njk'])
+    curry(addFilteredCollection)(['episodes/*.njk'], compareDatesDesc)
   );
   eleventyConfig.addCollection(
     'hosts',
-    curry(addFilteredCollection)(['hosts/*.njk'])
+    curry(addFilteredCollection)(['hosts/*.njk'], null)
   );
 
   eleventyConfig.addPlugin(pluginRss);
@@ -27,11 +27,10 @@ module.exports = function (eleventyConfig) {
 };
 
 function compareDatesDesc(a, b) {
-  return b.date - a.date;
+  return b.data.stuff.date - a.data.stuff.date;
 }
 
 function notIndex(thing) {
-  //console.log('thing', thing);
   return !thing.inputPath.includes('index.njk');
 }
 
@@ -40,11 +39,12 @@ function getFileLength(filePath) {
   return stats.size;
 }
 
-function addFilteredCollection(glob, collection) {
-  var filteredCollection = collection
-    .getFilteredByGlob(glob)
-    .filter(notIndex)
-    .sort(compareDatesDesc);
+function addFilteredCollection(glob, sortFn, collection) {
+  var filteredCollection = collection.getFilteredByGlob(glob).filter(notIndex);
+
+  if (sortFn) {
+    filteredCollection.sort(sortFn);
+  }
   return filteredCollection;
 }
 
@@ -53,12 +53,12 @@ function getEpisodeTitle(ep) {
 }
 
 function getEpisodeSubtitle(rl) {
-  return `${rl.season.title}, Chapters ${rl.episode.chapters.start}-${ rl.episode.chapters.end }`;
+  return `${rl.season.title}, Chapters ${rl.episode.chapters.start}-${rl.episode.chapters.end}`;
 }
 
 function getReadingListEntry(ep, readingList) {
-  let season = readingList.seasons.find((s) => s.number === ep.season);
-  let episode = season.episodes.find((e) => e.number === ep.number);
+  let season = readingList.seasons.find(s => s.number === ep.season);
+  let episode = season.episodes.find(e => e.number === ep.number);
 
   return { season, episode };
 }
