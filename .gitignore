@@ -5,3 +5,4 @@ config.mk
 config.js
 src-audio
 rehydrate/*
+media/rehydrate-s*
