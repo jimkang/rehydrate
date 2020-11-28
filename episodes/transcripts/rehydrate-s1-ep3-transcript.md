@@ -1,6 +1,6 @@
 ---
 layout: "layouts/main.njk"
-subHeading: >
+pageHeading: >
     Transcript - Season 1, Episode 3: A Game of Pool
 ---
 **Jim**: Hello, and welcome to Rehydrate, a podcast about *The Three-Body Problem* and its sequels. This is a podcast in which we have four hosts with four different levels of familiarity with the series, and that creates very interesting, clashing perspectives.

@@ -35,12 +35,11 @@ a:visited {
 
 footer {
   padding: 1em;
-  font-size: 0.8em;
   margin-bottom: 2rem;
 }
 
-footer .bigger-link {
-  font-size: 1.0em;
+footer div {
+  margin-bottom: 0.7em;
 }
 
 footer .built-with {
