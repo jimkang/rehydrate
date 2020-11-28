@@ -39,6 +39,14 @@ footer {
   margin-bottom: 2rem;
 }
 
+footer .bigger-link {
+  font-size: 1.0em;
+}
+
+footer .built-with {
+  font-size: 0.7em;
+}
+
 ul {
   list-style-type: none;
   margin-left: 0;
