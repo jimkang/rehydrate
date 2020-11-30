@@ -1,6 +1,6 @@
 ---
 layout: "layouts/main.njk"
-subHeading: >
+pageHeading: >
     Transcript - Season 1, Episode 2: Frontiers of Science
 ---
 **Jim**: Hello, welcome to the Rehydrate podcast. This is a podcast about *The Three-Body Problem*. And the rest of the *Remembrance of Our Past* series. The unique proposition of this show is that we have four hosts, and each of the hosts has a different level of experience with the series. For example, I'm Jim, and I've only read the first book, but I have not read the rest of the series.

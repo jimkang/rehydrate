@@ -35,8 +35,15 @@ a:visited {
 
 footer {
   padding: 1em;
-  font-size: 0.8em;
   margin-bottom: 2rem;
+}
+
+footer div {
+  margin-bottom: 0.7em;
+}
+
+footer .built-with {
+  font-size: 0.7em;
 }
 
 ul {

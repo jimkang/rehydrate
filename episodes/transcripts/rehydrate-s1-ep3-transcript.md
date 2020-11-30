@@ -1,6 +1,6 @@
 ---
 layout: "layouts/main.njk"
-subHeading: >
+pageHeading: >
     Transcript - Season 1, Episode 3: A Game of Pool
 ---
 **Jim**: Hello, and welcome to Rehydrate, a podcast about *The Three-Body Problem* and its sequels. This is a podcast in which we have four hosts with four different levels of familiarity with the series, and that creates very interesting, clashing perspectives.
@@ -177,7 +177,7 @@ I asked my Chinese resource about how it works, and she wasn't sure either. But 
 
 **Tim**: Well, not stabbed to the point where it would really hurt, but you can approximate the sharp-thing a bit more. So yeah, if you could turn that controller into something that was like clinging to your body and that level of haptic feedback. Yeah, I could see that it'd be something ...
 
-**Jim**: Doesn't it make oyu feel itchy?
+**Jim**: Doesn't it make you feel itchy?
 
 **Tim**: Well, I don't know about the itchy or cold part yet. I don't know how that would work. But as far as the haptic stuff is a much wider, more precise toolkit for simulating different stimulations.
 

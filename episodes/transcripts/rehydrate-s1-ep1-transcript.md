@@ -1,6 +1,6 @@
 ---
 layout: "layouts/main.njk"
-subHeading: >
+pageHeading: >
     Transcript - Season 1, Episode 1: Silent Spring
 ---
 
