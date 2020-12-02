@@ -37,7 +37,7 @@ seasons:
           start: 67
           end: 92
         title: "A Game of Pool"
-        url: ~
+        url: /episodes/a-game-of-pool/index.html
       -
         chapters:
           part: 2
