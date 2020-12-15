@@ -12,7 +12,7 @@
             ></audio>
             {% include 'findings.njk' %}
             <div class="time-stamp entry-meta">
-              <time datetime="{{ src.date }}">{{ src.date }}</time>
+              <time date"{{ src.date }}">{{ src.date.toDateString() }}</time>
             </div>
 
             {%- if src.extras and src.extras.length != 0 -%}
