@@ -1,10 +1,10 @@
 ---
 layout: layouts/main.njk
-title: Rehydrate - Pronounciations List
-pageHeading: Pronounciations List
+title: Rehydrate - Pronunciations List
+pageHeading: Pronunciations List
 ---
-<div id="pronounciation-list">
-  {%- for section in pronounciations.pronounciations -%}
+<div id="pronunciations-list">
+  {%- for section in pronunciations.pronunciations -%}
   <h3>{{ section.title }} </h3>
   <ul>
   {%- for name in section.names -%}
@@ -15,7 +15,7 @@ pageHeading: Pronounciations List
             class="bonus episode-player"
             controls=""
             preload="metadata"
-            src="/episodes/pronounciation/{{ name.audio }}"
+            src="/episodes/pronunciations/{{ name.audio }}"
           ></audio>
         </li>
     </ul>
