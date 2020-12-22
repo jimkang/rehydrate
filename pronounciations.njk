@@ -1,0 +1,25 @@
+---
+layout: layouts/main.njk
+title: Rehydrate - Pronounciations List
+pageHeading: Pronounciations List
+---
+<div id="pronounciation-list">
+  {%- for section in pronounciations.pronounciations -%}
+  <h3>{{ section.title }} </h3>
+  <ul>
+  {%- for name in section.names -%}
+    <li>{{ name.name }} ({{ name.chinese }})</li>
+    <ul>
+        <li>
+          <audio
+            class="bonus episode-player"
+            controls=""
+            preload="metadata"
+            src="/episodes/pronounciation/{{ name.audio }}"
+          ></audio>
+        </li>
+    </ul>
+  {%- endfor -%}
+  </ul>
+  {%- endfor -%}
+</div>

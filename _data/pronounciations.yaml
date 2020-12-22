@@ -1,0 +1,121 @@
+---
+pronounciations:
+  - title: General
+    names:
+      - name: Remembrance of Earth's Past
+        chinese: 地球往事
+        audio: roep.mp3
+      - name: Liu Cixin
+        chinese: 刘慈欣
+        audio: liu-cixin.mp3
+
+  - title: The Three-Body Problem
+    names:
+      - name: The Three-Body Problem
+        chinese: 三体
+        audio: three-body.mp3
+      - name: Ye Zhetai
+        chinese: 叶哲泰
+        audio: ye-zhetai.mp3
+      - name: Shao Lin
+        chinese: 绍琳
+        audio: shao-lin.mp3
+      - name: Ye Wenjie
+        chinese: 叶文洁
+        audio: ye-wenjie.mp3
+      - name: Ye Wenxue
+        chinese: 叶文雪
+        audio: ye-wenxue.mp3
+      - name: Lei Zhicheng
+        chinese: 雷志成
+        audio: lei-zhicheng.mp3
+      - name: Yang Weining
+        chinese: 杨卫宁
+        audio: yang-weining.mp3
+      - name: Wang Miao
+        chinese: 汪淼
+        audio: wang-miao.mp3
+      - name: Yang Dong
+        chinese: 杨冬
+        audio: yang-dong.mp3
+      - name: Ding Yi
+        chinese: 丁仪
+        audio: ding-yi.mp3
+      - name: Shi Qiang
+        chinese: 史强
+        audio: shi-qiang.mp3
+      - name: "Da Shi"
+        chinese: 大史
+        audio: da-shi.mp3
+      - name: Chang Weisi
+        chinese: 常伟思
+        audio: chang-weisi.mp3
+      - name: Shen Yufei
+        chinese: 申玉菲
+        audio: shen-yufei.mp3
+      - name: Wei Cheng
+        chinese: 魏成
+        audio: wei-cheng.mp3
+      - name: Pan Han
+        chinese: 潘寒
+        audio: pan-han.mp3
+      - name: Sha Ruishan
+        chinese: 沙瑞山
+        audio: sha-ruishan.mp3
+      - name: Mozi
+        chinese: 墨子
+        audio: mozi.mp3
+      - name: Trisolarian
+        chinese: 三体人
+        audio: trisolarian.mp3
+
+  - title: The Dark Forest
+    names:
+      - name: The Dark Forest
+        chinese: 黑暗森林
+        audio: dark-forest.mp3
+      - name: Zhang Beihai
+        chinese: 章北海
+        audio: zhang-beihai.mp3
+      - name: Zhang Yuanchao
+        chinese: 张援朝
+        audio: zhang-yuanchao.mp3
+      - name: Wu Yue
+        chinese: 吴岳
+        audio: wu-yue.mp3
+      - name: Zhuang Yan
+        chinese: 庄颜
+        audio: zhuang-yan.mp3
+      - name: Dongfang Yanxu
+        chinese: 东方延绪
+        audio: dongfang-yanxu.mp3
+      - name: Luo Ji
+        chinese: 罗辑
+        audio: luo-ji.mp3
+
+  - title: Death's End
+    names:
+      - name: Death's End
+        chinese: 死神永生
+        audio: deaths-end.mp3
+      - name: Cheng Xin
+        chinese: 程心
+        audio: cheng-xin.mp3
+      - name: Yun Tianming
+        chinese: 云天明
+        audio: yun-tianming.mp3
+      - name: Ai AA
+        chinese: 艾AA
+        audio: ai-aa.mp3
+      - name: 白 Ice
+        chinese: 白 Ice
+        audio: bai-ice.mp3
+      - name: Sophon
+        chinese: 智子
+        audio: sophon.mp3
+      - name: Guan Yifan
+        chinese: 关一帆
+        audio: guan-yifan.mp3
+      - name: Cao Bin
+        chinese: 曹彬
+        audio: cao-bin.mp3
