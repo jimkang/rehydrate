@@ -10,7 +10,7 @@ build: images
 images:
 	mogrify -resize 800x800\> -quality 75 -path media src-media/rehydrate-s*
 
-serve:
+serve: images
 	npx @11ty/eleventy \
 		--output=rehydrate \
 		--config=eleventy-config.js \
