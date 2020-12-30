@@ -16,8 +16,10 @@
             </div>
 
             {%- if src.extras and src.extras.length != 0 -%}
+              <div class="bonus-content">
               <h3>Bonus Content</h3>
               {%- for extra in src.extras -%}
+                <div class="bonus-episode">
                   <img class="bonus" src="/media/{{ extra.imageFilename }}"/>
                   <audio
                     class="bonus episode-player"
@@ -26,10 +28,13 @@
                     preload="metadata"
                     src="/episodes/{{ extra.episodeFilename }}"
                   ></audio>
-                  <br />
-                  {{ extra.title }}
-                  <br />
-                  {{ extra.desc }}
+                  <p>
+                    <span class="title">{{ extra.title }}</span>
+                    <br />
+                    {{ extra.desc }}
+                  </p>
+                </div>
               {%- endfor -%}
+              </div>
             {%- endif -%}
           </li>

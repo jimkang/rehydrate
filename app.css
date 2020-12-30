@@ -99,7 +99,22 @@ ul {
 }
 
 .pane img.bonus, audio.bonus {
+  margin-bottom: 0px;
   width: 50%
+}
+
+.pane .bonus-episode p {
+  margin-top: 10px;
+  margin-bottom: 50px;
+}
+
+.pane .bonus-episode:last-of-type p {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.pane .bonus-episode span.title {
+  text-decoration: underline;
 }
 
 .media-list .pane h4:first-child {
