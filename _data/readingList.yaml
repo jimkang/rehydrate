@@ -2,8 +2,7 @@
 seasons:
   -
     episodes:
-      -
-        chapters:
+      - chapters:
           start: 1
           end: 2
           part: I
@@ -14,8 +13,7 @@ seasons:
           end: 39
         title: "Silent Spring"
         url: /episodes/silent-spring/index.html
-      -
-        chapters:
+      - chapters:
           part: II
           start: 3
           end: 4
@@ -26,8 +24,7 @@ seasons:
           end: 65
         title: "Frontiers of Science"
         url: /episodes/frontiers-of-science/index.html
-      -
-        chapters:
+      - chapters:
           part: II
           start: 5
           end: 6
@@ -38,8 +35,7 @@ seasons:
           end: 92
         title: "A Game of Pool"
         url: /episodes/a-game-of-pool/index.html
-      -
-        chapters:
+      - chapters:
           part: II
           start: 7
           end: 9
@@ -50,8 +46,7 @@ seasons:
           end: 129
         title: "The Universe Flickers"
         url: /episodes/the-universe-flickers/index.html
-      -
-        chapters:
+      - chapters:
           part: II
           start: 10
           end: 11
@@ -62,87 +57,36 @@ seasons:
           end: 151
         title: "Da Shi"
         url: /episodes/da-shi/index.html
-      -
-        chapters:
+      - chapters:
           part: II
           start: 12
-          end: 14
+          end: 20
         dateRecorded: ~
         number: 6
         pages:
           start: 153
-          end: 179
+          end: 245
         title: "Red Coast"
         url: ~
-      -
-        chapters:
-          part: II
-          start: 15
-          end: 17
+      - chapters:
+          part: III
+          start: 21
+          end: 26
         dateRecorded: ~
         number: 7
         pages:
-          start: 181
-          end: 224
-        title: Syzygy
+          start: 249
+          end: 302
+        title: "Sunset for Humanity"
         url: ~
-      -
-        chapters:
-          part: II
-          start: 18
-          end: 20
+      - chapters:
+          part: III
+          start: 27
+          end: 35
         dateRecorded: ~
         number: 8
         pages:
-          start: 225
-          end: 245
-        title: "The Pendulum Monument"
-        url: ~
-      -
-        chapters:
-          part: III
-          start: 21
-          end: 24
-        dateRecorded: ~
-        number: 9
-        pages:
-          start: 249
-          end: 282
-        title: "Sunset for Humanity"
-        url: ~
-      -
-        chapters:
-          part: III
-          start: 25
-          end: 26
-        dateRecorded: ~
-        number: 10
-        pages:
-          start: 283
-          end: 302
-        title: "No One Repents"
-        url: ~
-      -
-        chapters:
-          part: III
-          start: 27
-          end: 31
-        dateRecorded: ~
-        number: 11
-        pages:
           start: 303
-          end: 346
-        title: ETO
-        url: ~
-      -
-        chapters:
-          part: III
-          start: 32
-          end: 35
-        dateRecorded: ~
-        number: 12
-        pages:
-          start: 347
           end: 390
         title: Bugs
         url: ~
@@ -150,8 +94,7 @@ seasons:
     title: "The Three Body Problem"
   -
     episodes:
-      -
-        chapters:
+      - chapters:
           part: I
           start: Prologue
           end: 1.1
@@ -163,8 +106,7 @@ seasons:
           end: 54
         title: TBD
         url: ~
-      -
-        chapters:
+      - chapters:
           part: I
           start: 1.2
           end: 1.2
@@ -176,8 +118,7 @@ seasons:
           end: 94
         title: TBD
         url: ~
-      -
-        chapters:
+      - chapters:
           part: I
           start: 1.3
           end: 1.3
@@ -189,8 +130,7 @@ seasons:
           end: 137
         title: TBD
         url: ~
-      -
-        chapters:
+      - chapters:
           part: I
           start: 1.4
           end: 1.4
@@ -202,8 +142,7 @@ seasons:
           end: 185
         title: TBD
         url: ~
-      -
-        chapters:
+      - chapters:
           part: II
           start: 1
           end: 1
@@ -215,8 +154,7 @@ seasons:
           end: 237
         title: TBD
         url: ~
-      -
-        chapters:
+      - chapters:
           part: II
           start: 2
           end: 3
@@ -228,8 +166,7 @@ seasons:
           end: 305
         title: TBD
         url: ~
-      -
-        chapters:
+      - chapters:
           part: III
           start: 1.1
           end: 1.1
@@ -241,8 +178,7 @@ seasons:
           end: 354
         title: TBD
         url: ~
-      -
-        chapters:
+      - chapters:
           part: III
           start: 1.2
           end: 1.2
@@ -254,8 +190,7 @@ seasons:
           end: 397
         title: TBD
         url: ~
-      -
-        chapters:
+      - chapters:
           part: III
           start: 1.3
           end: 1.3
@@ -267,8 +202,7 @@ seasons:
           end: 439
         title: TBD
         url: ~
-      -
-        chapters:
+      - chapters:
           part: III
           start: 1.4
           end: 1.4
@@ -280,8 +214,7 @@ seasons:
           end: 493
         title: TBD
         url: ~
-      -
-        chapters:
+      - chapters:
           part: III
           start: 2
           end: 3
@@ -297,8 +230,7 @@ seasons:
     title: "The Dark Forest"
   -
     episodes:
-      -
-        chapters:
+      - chapters:
           part: I
           start: 1
           end: 5
@@ -310,8 +242,7 @@ seasons:
           end: 58
         title: TBD
         url: ~
-      -
-        chapters:
+      - chapters:
           part: I
           start: 7
           end: 10
@@ -323,8 +254,7 @@ seasons:
           end: 99
         title: TBD
         url: ~
-      -
-        chapters:
+      - chapters:
           part: II
           start: 1
           end: 15
@@ -336,8 +266,7 @@ seasons:
           end: 173
         title: TBD
         url: ~
-      -
-        chapters:
+      - chapters:
           part: II
           start: 16
           end: 26
@@ -349,8 +278,7 @@ seasons:
           end: 259
         title: TBD
         url: ~
-      -
-        chapters:
+      - chapters:
           part: III
           start: 1
           end: 9
@@ -362,8 +290,7 @@ seasons:
           end: 312
         title: TBD
         url: ~
-      -
-        chapters:
+      - chapters:
           part: III
           start: 10
           end: 13
@@ -375,8 +302,7 @@ seasons:
           end: 351
         title: TBD
         url: ~
-      -
-        chapters:
+      - chapters:
           part: III
           start: 14
           end: 25
@@ -388,8 +314,7 @@ seasons:
           end: 418
         title: TBD
         url: ~
-      -
-        chapters:
+      - chapters:
           part: IV
           start: 1
           end: 3
@@ -401,8 +326,7 @@ seasons:
           end: 463
         title: TBD
         url: ~
-      -
-        chapters:
+      - chapters:
           part: V
           start: 1
           end: 5
@@ -414,8 +338,7 @@ seasons:
           end: 539
         title: TBD
         url: ~
-      -
-        chapters:
+      - chapters:
           part: VI
           start: 1
           end: 5
