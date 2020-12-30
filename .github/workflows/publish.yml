@@ -27,8 +27,6 @@ jobs:
       # Runs a single command using the runners shell
       - name: s3cmd for GitHub Actions
         uses: ThiagoAnunciacao/s3cmd-sync-action@v0.2.4
-        with:
-          args: ls podcasts/rehydrate
         env:
           AWS_ACCESS_KEY_ID: ${{secrets.s3_access_key}}
           AWS_SECRET_ACCESS_KEY: ${{secrets.s3_secret_key}}
