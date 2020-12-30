@@ -26,10 +26,11 @@ jobs:
       # Runs a single command using the runners shell
       - name: s3cmd for GitHub Actions
         uses: jusbrasil/github-action-s3cmd@1.0.0
-        args: ["ls", "podcasts/rehydrate"]
-        secrets:
-          - s3_access_key
-          - s3_secret_key
+        with:
+          args: ls podcasts/rehydrate
+        env:
+          ACCESS_KEY: ${{secrets.s3_access_key}}
+          SECRET_KEY: ${{secrets.s3_secret_key}}
 
       # Runs a set of commands using the runners shell
       #- name: Run a multi-line script
