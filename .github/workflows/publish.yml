@@ -25,7 +25,7 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: s3cmd for GitHub Actions
-        uses: ThiagoAnunciacao/s3cmd-sync-action@0.2.4
+        uses: ThiagoAnunciacao/s3cmd-sync-action@v0.2.4
         with:
           args: ls podcasts/rehydrate
         env:
