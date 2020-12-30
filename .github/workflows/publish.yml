@@ -2,6 +2,10 @@
 
 name: publish
 
+strategy:
+  matrix:
+    node-version: [12.x]
+
 # Controls when the action will run. 
 on:
   # Triggers the workflow on push or pull request events but only for the main branch
@@ -23,7 +27,10 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
-
+      - name: Build site
+        run: |
+            npm install
+            npx @11ty/eleventy --config=eleventy-config.js --output=rehydrate
       # Runs a single command using the runners shell
       - name: s3cmd for GitHub Actions
         uses: ThiagoAnunciacao/s3cmd-sync-action@v0.2.4
@@ -33,6 +40,7 @@ jobs:
           AWS_S3_BUCKET: ${{secrets.s3_bucket}}
           S3CMD_EXTRA_OPTS: --host=${{secrets.s3_host}} --host-bucket={{s3.host_bucket}} --acl-public
           S3CMD_SOURCE_DIR: rehydrate
+          S3CMD_DELETE_REMOVED: false
       # Runs a set of commands using the runners shell
       #- name: Run a multi-line script
       #  run: |
