@@ -67,7 +67,7 @@ seasons:
           start: 153
           end: 245
         title: "Red Coast"
-        url: ~
+        url: /episodes/red-coast/index.html
       - chapters:
           part: III
           start: 21
