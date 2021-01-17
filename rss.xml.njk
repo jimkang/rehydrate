@@ -89,7 +89,12 @@ metadata:
             <title><![CDATA[{{ title }}]]></title>
             <itunes:title><![CDATA[{{ title }}]]></itunes:title>
             <itunes:subtitle><![CDATA[{{ src | getReadingListEntry(readingList) | getEpisodeSubtitle }}]]></itunes:subtitle>
-            <description><![CDATA[{{ extra.desc }}]]></description>
+            <description><![CDATA[
+              {{ extra.desc }}
+              <br />
+              {%- include 'contact.njk' -%}
+              ]]>
+            </description>
             <link href="{{ pageURL }}"/>
             <guid isPermaLink="false">{{ fileURL }}</guid>
             <dc:creator><![CDATA[{{ metadata.author.name }}]]></dc:creator>
