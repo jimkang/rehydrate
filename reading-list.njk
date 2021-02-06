@@ -16,7 +16,12 @@ pageHeading: Reading List
         {% endif %}
     </li>
     <ul>
-        <li>Part {{episode.chapters.part}} - Chapters {{episode.chapters.start}} - {{episode.chapters.end}}</li>
+        <li>
+          {%- if episode.chapters.part != null -%}
+            Part {{episode.chapters.part}} -&nbsp;
+          {%- endif -%} 
+          Chapters {{episode.chapters.start}} - {{episode.chapters.end}}
+        </li>
         {%- if episode.pages.start != null -%}
         <li>Pages {{episode.pages.start}} - {{episode.pages.end}}</li>
         {%- endif -%}

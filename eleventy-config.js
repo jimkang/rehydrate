@@ -53,7 +53,11 @@ function getEpisodeTitle(ep) {
 }
 
 function getEpisodeSubtitle(rl) {
-  return `${rl.season.title}, Chapters ${rl.episode.chapters.start}-${rl.episode.chapters.end}`;
+  if (rl.episode && rl.episode.chapters) {
+    return `${rl.season.title}, Chapters ${rl.episode.chapters.start}-${rl.episode.chapters.end}`;
+  } else {
+    return `${rl.season.title}`
+  }
 }
 
 function getReadingListEntry(ep, readingList) {

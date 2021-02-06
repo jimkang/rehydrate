@@ -90,7 +90,7 @@ metadata:
             <itunes:title><![CDATA[{{ title }}]]></itunes:title>
             <itunes:subtitle><![CDATA[{{ src | getReadingListEntry(readingList) | getEpisodeSubtitle }}]]></itunes:subtitle>
             <description><![CDATA[
-              {{ extra.desc }}
+              {{ extra.desc|safe }}
               <br />
               {%- include 'contact.njk' -%}
               ]]>
