@@ -101,42 +101,42 @@ seasons:
         start: 1
         end: 7
       number: 1
-      title: TBD
+      title: The Tunnelers
       url: ~
 
     - chapters:
         start: 8
         end: 10
       number: 2
-      title: TBD
+      title: The Job
       url: ~
 
     - chapters:
         start: 11
         end: 13
       number: 3
-      title: TBD
+      title: Cricket
       url: ~
 
     - chapters:
         start: 14
         end: 15
       number: 4
-      title: TBD
+      title: Kedrium
       url: ~
 
     - chapters:
         start: 16
         end: 19
       number: 5
-      title: TBD
+      title: Seven Hours
       url: ~
 
     - chapters:
         start: 20
         end: 23
       number: 6
-      title: TBD
+      title: All Said and Done
       url: ~
 
 

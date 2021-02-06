@@ -8,7 +8,7 @@ build: images
     --output=rehydrate
 
 images:
-	mogrify -resize 800x800\> -quality 75 -path media src-media/rehydrate-s*
+	mogrify -resize 800x800\> -quality 75 -path media src-media/rehydrate-*
 
 serve: images
 	npx @11ty/eleventy \
