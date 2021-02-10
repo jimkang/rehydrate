@@ -92,6 +92,8 @@ metadata:
             <description><![CDATA[
               {{ extra.desc|safe }}
               <br />
+              {% if extra.links %}<ul>{% for link in extra.links %}<li><a href="{{link.url}}">{{ link.name }}</a></li>{% endfor %}</ul>{% endif  %}
+              <br />
               {%- include 'contact.njk' -%}
               ]]>
             </description>

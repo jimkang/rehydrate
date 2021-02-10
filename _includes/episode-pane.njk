@@ -32,6 +32,13 @@
                     <span class="title">{{ extra.title }}</span>
                     <br />
                     {{ extra.desc|safe }}
+                    {% if extra.links %}
+                      <ul class="finding-links">
+                      {% for link in extra.links %}
+                        <li><a href="{{link.url}}">{{ link.name }}</a></li>
+                      {% endfor %}
+                      </ul>
+                    {% endif %}
                   </p>
                 </div>
               {%- endfor -%}
