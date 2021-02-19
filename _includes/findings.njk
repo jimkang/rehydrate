@@ -8,10 +8,14 @@
       <ul class="finding-links">
         <li>Book: <i>{{ rl.season.title }}</i></li>
         <li>
+          {% if rl.episode.chapters.part %}
           Part <i>{{ rl.episode.chapters.part }}</i>,
-          Chapters {{rl.episode.chapters.start}} - {{ rl.episode.chapters.end }}
+          {% endif %}
+          Chapters: {{rl.episode.chapters.start}} - {{ rl.episode.chapters.end }}
         </li>
-        <li>Pages {{ rl.episode.pages.start }} - {{ rl.episode.pages.end }}</li>
+        {% if rl.episode.pages.start %}
+        <li>Pages: {{ rl.episode.pages.start }} - {{ rl.episode.pages.end }}</li>
+        {% endif %}
         {% if src.transcript %}
           <li><a class="transcript-link" href="{{ src.transcript }}">Transcript</a></li>
         {%  endif %}

@@ -98,43 +98,43 @@ seasons:
     number: 2
     episodes:
     - chapters:
-        start: 1
-        end: 7
+        start: Transit
+        end: Blind Punch
       number: 1
       title: The Tunnelers
-      url: ~
+      url: /episodes/the-tunnelers/index.html
 
     - chapters:
-        start: 8
-        end: 10
+        start: The Job
+        end: The Wane
       number: 2
       title: The Job
       url: ~
 
     - chapters:
-        start: 11
-        end: 13
+        start: Intro to Harmagian Colonial History
+        end: The Last War
       number: 3
       title: Cricket
       url: ~
 
     - chapters:
-        start: 14
-        end: 15
+        start: Kedrium
+        end: Hatch, Feather, House
       number: 4
       title: Kedrium
       url: ~
 
     - chapters:
-        start: 16
-        end: 19
+        start: October 25
+        end: Seven Hours
       number: 5
       title: Seven Hours
       url: ~
 
     - chapters:
-        start: 20
-        end: 23
+        start: Hard Reset
+        end: All Said and Done
       number: 6
       title: All Said and Done
       url: ~
