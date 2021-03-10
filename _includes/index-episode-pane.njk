@@ -1,0 +1,25 @@
+<li class="pane index-pane">
+<div class="index-media">
+    <!-- Media object -->
+    <div class="index-media-image">
+        <img src="/media/{{ src.imageFilename }}" class="index-image" alt="Episode image" />
+    </div>
+
+    <!-- Main content -->
+    <div class="index-media-content">
+          <div class="episode-title">
+            <a href="/episodes/{{ src.slug }}/index.html">{{ src | getEpisodeTitle }}</a>
+          </div>
+          <audio
+            class="episode-player"
+            controls=""
+            loop="false"
+            preload="metadata"
+            src="/episodes/rehydrate-s{{ src.season }}-ep{{ src.number }}-{{ src.slug }}.mp3"
+          ></audio>
+          <div class="time-stamp entry-meta">
+            <time datetime="{{ src.date }}">{{ src.date.toDateString() }}</time>
+          </div>
+    </div>
+</div>
+</li>
