@@ -87,6 +87,11 @@ ul {
   flex-direction: column;
   border-radius: 0.25em;
   border: hsla(210, 0%, 66%, 0.8) 4px solid;
+  width: 100%;
+}
+
+.media-list .pane.index-pane {
+
 }
 
 .pane img {
@@ -101,6 +106,28 @@ ul {
 .pane img.bonus, audio.bonus {
   margin-bottom: 0px;
   width: 50%
+}
+
+.pane img.index-image {
+  width: 100%;
+}
+
+.pane.index-pane .index-media {
+  /* Align sub-items to top */
+  align-items: start;
+  display: flex;
+}
+
+.pane.index-pane .index-media .index-media-image {
+  margin-right: 16px;
+
+  /* Set the width for the media object */
+  width: 200px;
+}
+
+.pane.index-pane .index-media .index-media-content {
+  /* Take the remaining width */
+  flex: 1;
 }
 
 .pane .bonus-episode p {

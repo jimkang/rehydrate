@@ -5,31 +5,26 @@ title: Rehydrate
 
 <section class="middle">
   <div class="podcast-summary">
-    <p>A podcast where we read books together at a TV series-like pace.</p>
-    <p>Books include <i>The Three-Body Problem</i> and <i>The Long Way to a Small, Angry Planet</i></p>
+    <p>A podcast where we discuss books, music, and other media</p>
   </div>
 
   <section id="how-to-listen">
     <div class="listening-directions">
-      Point your podcast app at the <a href="rss.xml">RSS feed</a> to listen!
+        <a href="rss.xml">RSS</a>,
+        <a href="https://podcasts.apple.com/us/podcast/rehydrate/id1540884633">Apple Podcasts</a>, 
+        <a href="https://pca.st/5w38zj1a">Pocket Casts</a>
     </div>
-    <br>
-    {% include 'platform-links.njk' %}
   </section>
 
-  <h2>Episodes</h2>
+  <h2>Episodes (<a href="/reading-list">Reading List</a>)</h2>
   <section class="media">
     <ul class="media-list centered-col">
       {%- for episode in collections.episodes -%}
         {% set src = episode.data.stuff %}
-        {% include 'episode-pane.njk' %}
+        {% include 'index-episode-pane.njk' %}
       {%- endfor -%}
     </ul>
   </section>
-
-  <h2>Reading List</h2>
-  You can read along with the show or at your own pace. Our <a href="/reading-list">Podcast Reading List</a> lays out
-  how the episodes will be broken down
 
   <h3>Three-Body Problem / Remembrance of Earth's Past Pronunciation List</h3>
   <a href="/pronunciations">List of character names</a> from the Remembrance of Earth's Past series and their pronunciations
