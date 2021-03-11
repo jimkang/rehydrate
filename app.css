@@ -123,8 +123,8 @@ ul {
 
 .pane.index-pane .index-media .index-media-content {
   /* Take the remaining width */
-  flex: flex-grow;
-  /* flex: 1; */
+  /* flex: flex-grow; */
+  flex: 1;
 }
 
 .pane.index-pane .bonus-section ul {
