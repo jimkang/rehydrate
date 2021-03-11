@@ -17,9 +17,23 @@
             preload="metadata"
             src="/episodes/rehydrate-s{{ src.season }}-ep{{ src.number }}-{{ src.slug }}.mp3"
           ></audio>
-          <div class="time-stamp entry-meta">
-            <time datetime="{{ src.date }}">{{ src.date.toDateString() }}</time>
-          </div>
     </div>
 </div>
+
+<!-- Bonus Content -->
+{%- if src.extras and src.extras.length != 0 -%}
+<div class="bonus-section">
+  <h4>Bonus Content</h4>
+  <ul>
+  {%- for extra in src.extras -%}
+      <li>
+      <a href="/episodes/{{ src.slug }}/index.html#{{ extra.episodeFilename }}" class="bonus-link">
+      <img class="bonus" src="/media/{{ extra.imageFilename }}"/>
+      </a>
+      </li>
+  {%- endfor -%}
+  </ul>
+</div>
+{%- endif -%}
+
 </li>

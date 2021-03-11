@@ -123,7 +123,29 @@ ul {
 
 .pane.index-pane .index-media .index-media-content {
   /* Take the remaining width */
-  flex: 1;
+  flex: flex-grow;
+  /* flex: 1; */
+}
+
+.pane.index-pane .bonus-section ul {
+  display: flex;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.pane.index-pane .bonus-section li {
+  margin-bottom: 0;
+}
+
+.pane.index-pane a.bonus-link {
+  display: inline;
+  text-decoration: none;
+}
+
+.pane.index-pane img.bonus{
+  border-radius: 0;
+  margin-right: 10px;
+  width: 85px;
 }
 
 .pane .bonus-episode p {
@@ -232,6 +254,12 @@ header h1 {
   margin-bottom: 1em;
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
+}
+
+.index-media .episode-player { 
+  width: 100%; 
+  border-top-left-radius: 4px; 
+  border-top-right-radius: 4px; 
 }
 
 .episode-title {
