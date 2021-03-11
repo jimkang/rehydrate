@@ -238,6 +238,20 @@ header h1 {
   border: hsla(210, 80%, 66%, 0.8) 4px solid;
 }
 
+.listening-directions ul {
+  list-style: none;
+  margin: 10px 0 0 0;
+  padding: 0;
+}
+
+.listening-directions li {
+  display: inline;
+}
+
+.listening-directions span.dot {
+  padding: 0 5px;
+}
+
 .platform-directions {
   font-size: 0.8em;
 }
