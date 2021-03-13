@@ -127,8 +127,8 @@ ul {
 
 .pane.index-pane .index-media .index-media-content {
   /* Take the remaining width */
-  /* flex: flex-grow; */
-  flex: 1;
+  flex-grow: 1;
+  flex-basis: 0%;
 }
 
 .pane.index-pane .index-media .index-media-content .episode-metadata {
