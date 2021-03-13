@@ -1,0 +1,50 @@
+<li class="pane index-pane">
+<div class="index-media">
+    <!-- Media object -->
+    <div class="index-media-image">
+        <img src="/media/{{ src.imageFilename }}" class="index-image" alt="Episode image" />
+    </div>
+
+    <!-- Main content -->
+    <div class="index-media-content">
+      <div class="episode-title">
+        <a href="/episodes/{{ src.slug }}/index.html">{{ src | getEpisodeTitle }}</a>
+      </div>
+      <div class="episode-metadata">
+        {% set rl = src | getReadingListEntry(readingList) %}
+
+        <i>{{ rl.season.title }}</i>
+        {% if rl.episode.chapters.start %}
+        <br />
+        {{rl.episode.chapters.start}} - {{ rl.episode.chapters.end }}
+        {% endif %}
+
+      </div>
+    </div>
+</div>
+
+<audio
+  class="episode-player index-episode-player"
+  controls=""
+  loop="false"
+  preload="metadata"
+  src="/episodes/rehydrate-s{{ src.season }}-ep{{ src.number }}-{{ src.slug }}.mp3"
+></audio>
+
+<!-- Bonus Content -->
+{%- if src.extras and src.extras.length != 0 -%}
+<div class="bonus-section">
+  <h4>Bonus Content</h4>
+  <ul>
+  {%- for extra in src.extras -%}
+      <li>
+      <a href="/episodes/{{ src.slug }}/index.html#{{ extra.episodeFilename }}" class="bonus-link">
+      <img class="bonus" src="/media/{{ extra.imageFilename }}"/>
+      </a>
+      </li>
+  {%- endfor -%}
+  </ul>
+</div>
+{%- endif -%}
+
+</li>

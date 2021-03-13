@@ -87,6 +87,7 @@ ul {
   flex-direction: column;
   border-radius: 0.25em;
   border: hsla(210, 0%, 66%, 0.8) 4px solid;
+  width: 100%;
 }
 
 .pane img {
@@ -101,6 +102,62 @@ ul {
 .pane img.bonus, audio.bonus {
   margin-bottom: 0px;
   width: 50%
+}
+
+.pane img.index-image {
+  width: 100%;
+}
+
+.pane.index-pane {
+  padding: 0.75em;
+}
+
+.pane.index-pane .index-media {
+  /* Align sub-items to top */
+  align-items: start;
+  display: flex;
+}
+
+.pane.index-pane .index-media .index-media-image {
+  margin-right: 16px;
+
+  /* Set the width for the media object */
+  width: 200px;
+}
+
+.pane.index-pane .index-media .index-media-content {
+  /* Take the remaining width */
+  flex-grow: 1;
+  flex-basis: 0%;
+}
+
+.pane.index-pane .index-media .index-media-content .episode-metadata {
+  font-size: 0.6em;
+}
+
+.pane.index-pane .bonus-section {
+  margin-top: 1rem;
+}
+
+.pane.index-pane .bonus-section ul {
+  display: flex;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.pane.index-pane .bonus-section li {
+  margin-bottom: 0;
+}
+
+.pane.index-pane a.bonus-link {
+  display: inline;
+  text-decoration: none;
+}
+
+.pane.index-pane img.bonus{
+  border-radius: 0;
+  margin-right: 10px;
+  width: 85px;
 }
 
 .pane .bonus-episode p {
@@ -187,10 +244,25 @@ header h1 {
 
 .listening-directions {
   margin-top: 1em;
-  padding: 1em;
+  padding: 0.5em;
   border-radius: 0.25em;
   /* border: hsla(152.2, 77.4%, 38.2%, 0.8) 3px solid; */
   border: hsla(210, 80%, 66%, 0.8) 4px solid;
+}
+
+.listening-directions ul {
+  list-style: none;
+  margin: 10px 0 0 0;
+  padding: 0;
+}
+
+.listening-directions li {
+  display: inline;
+  font-size: 0.8em;
+}
+
+.listening-directions span.dot {
+  padding: 0 2px;
 }
 
 .platform-directions {
@@ -209,6 +281,13 @@ header h1 {
   margin-bottom: 1em;
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
+}
+
+.episode-player.index-episode-player { 
+  width: 100%;
+  margin: 10px 0 0 0; 
+  border-top-left-radius: 4px; 
+  border-top-right-radius: 4px; 
 }
 
 .episode-title {
