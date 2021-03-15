@@ -140,263 +140,76 @@ seasons:
       url: ~
 
 
-  # -
-  #   episodes:
-  #     - chapters:
-  #         part: I
-  #         start: Prologue
-  #         end: 1.1
-  #         endLine: "By the time its hoofbeats had dissipated, the small sun had become a shooting star, and a cloak of darkness descended upon the world"
-  #       dateRecorded: ~
-  #       number: 1
-  #       pages:
-  #         start: 9
-  #         end: 54
-  #       title: TBD
-  #       url: ~
-  #     - chapters:
-  #         part: I
-  #         start: 1.2
-  #         end: 1.2
-  #         endLine: "Imagining it was the light of a fireplace, and drifted off to sleep."
-  #       dateRecorded: ~
-  #       number: 2
-  #       pages:
-  #         start: 54
-  #         end: 94
-  #       title: TBD
-  #       url: ~
-  #     - chapters:
-  #         part: I
-  #         start: 1.3
-  #         end: 1.3
-  #         endLine: "No matter how frightening they might be, weapons are a good thing…"
-  #       dateRecorded: ~
-  #       number: 3
-  #       pages:
-  #         start: 94
-  #         end: 137
-  #       title: TBD
-  #       url: ~
-  #     - chapters:
-  #         part: I
-  #         start: 1.4
-  #         end: 1.4
-  #         endLine: ~
-  #       dateRecorded: ~
-  #       number: 4
-  #       pages:
-  #         start: 137
-  #         end: 185
-  #       title: TBD
-  #       url: ~
-  #     - chapters:
-  #         part: II
-  #         start: 1
-  #         end: 1
-  #         endLine: ~
-  #       dateRecorded: ~
-  #       number: 5
-  #       pages:
-  #         start: 189
-  #         end: 237
-  #       title: TBD
-  #       url: ~
-  #     - chapters:
-  #         part: II
-  #         start: 2
-  #         end: 3
-  #         endLine: ~
-  #       dateRecorded: ~
-  #       number: 6
-  #       pages:
-  #         start: 239
-  #         end: 305
-  #       title: TBD
-  #       url: ~
-  #     - chapters:
-  #         part: III
-  #         start: 1.1
-  #         end: 1.1
-  #         endLine: "Lots. But you can still live quite well on the surface."
-  #       dateRecorded: ~
-  #       number: 7
-  #       pages:
-  #         start: 309
-  #         end: 354
-  #       title: TBD
-  #       url: ~
-  #     - chapters:
-  #         part: III
-  #         start: 1.2
-  #         end: 1.2
-  #         endLine: "the sun was shining through the window and the revelries were still going on outside."
-  #       dateRecorded: ~
-  #       number: 8
-  #       pages:
-  #         start: 354
-  #         end: 397
-  #       title: TBD
-  #       url: ~
-  #     - chapters:
-  #         part: III
-  #         start: 1.3
-  #         end: 1.3
-  #         endLine: "No, Dad. You really can’t rest. It’s not over. It’s started up again."
-  #       dateRecorded: ~
-  #       number: 9
-  #       pages:
-  #         start: 397
-  #         end: 439
-  #       title: TBD
-  #       url: ~
-  #     - chapters:
-  #         part: III
-  #         start: 1.4
-  #         end: 1.4
-  #         endLine: ~
-  #       dateRecorded: ~
-  #       number: 10
-  #       pages:
-  #         start: 439
-  #         end: 493
-  #       title: TBD
-  #       url: ~
-  #     - chapters:
-  #         part: III
-  #         start: 2
-  #         end: 3
-  #         endLine: ~
-  #       dateRecorded: ~
-  #       number: 11
-  #       pages:
-  #         start: 495
-  #         end: 512
-  #       title: TBD
-  #       url: ~
-  #   number: 2
-  #   title: "The Dark Forest"
-  # -
-  #   episodes:
-  #     - chapters:
-  #         part: I
-  #         start: 1
-  #         end: 5
-  #         endLine: ~
-  #       dateRecorded: ~
-  #       number: 1
-  #       pages:
-  #         start: 15
-  #         end: 58
-  #       title: TBD
-  #       url: ~
-  #     - chapters:
-  #         part: I
-  #         start: 7
-  #         end: 10
-  #         endLine: ~
-  #       dateRecorded: ~
-  #       number: 2
-  #       pages:
-  #         start: 59
-  #         end: 99
-  #       title: TBD
-  #       url: ~
-  #     - chapters:
-  #         part: II
-  #         start: 1
-  #         end: 15
-  #         endLine: ~
-  #       dateRecorded: ~
-  #       number: 3
-  #       pages:
-  #         start: 103
-  #         end: 173
-  #       title: TBD
-  #       url: ~
-  #     - chapters:
-  #         part: II
-  #         start: 16
-  #         end: 26
-  #         endLine: ~
-  #       dateRecorded: ~
-  #       number: 4
-  #       pages:
-  #         start: 175
-  #         end: 259
-  #       title: TBD
-  #       url: ~
-  #     - chapters:
-  #         part: III
-  #         start: 1
-  #         end: 9
-  #         endLine: ~
-  #       dateRecorded: ~
-  #       number: 5
-  #       pages:
-  #         start: 263
-  #         end: 312
-  #       title: TBD
-  #       url: ~
-  #     - chapters:
-  #         part: III
-  #         start: 10
-  #         end: 13
-  #         endLine: ~
-  #       dateRecorded: ~
-  #       number: 6
-  #       pages:
-  #         start: 313
-  #         end: 351
-  #       title: TBD
-  #       url: ~
-  #     - chapters:
-  #         part: III
-  #         start: 14
-  #         end: 25
-  #         endLine: ~
-  #       dateRecorded: ~
-  #       number: 7
-  #       pages:
-  #         start: 352
-  #         end: 418
-  #       title: TBD
-  #       url: ~
-  #     - chapters:
-  #         part: IV
-  #         start: 1
-  #         end: 3
-  #         endLine: ~
-  #       dateRecorded: ~
-  #       number: 8
-  #       pages:
-  #         start: 421
-  #         end: 463
-  #       title: TBD
-  #       url: ~
-  #     - chapters:
-  #         part: V
-  #         start: 1
-  #         end: 5
-  #         endLine: ~
-  #       dateRecorded: ~
-  #       number: 9
-  #       pages:
-  #         start: 467
-  #         end: 539
-  #       title: TBD
-  #       url: ~
-  #     - chapters:
-  #         part: VI
-  #         start: 1
-  #         end: 5
-  #         endLine: ~
-  #       dateRecorded: ~
-  #       number: 10
-  #       pages:
-  #         start: 543
-  #         end: 604
-  #       title: TBD
-  #       url: ~
-  #   number: 3
-  #   title: "Death's End"
+  - title: "The Dark Forest"
+    author: "Liu Cixin"
+    number: 3
+    episodes:
+    - chapters:
+        part: I
+        start: Prologue
+        end: 1.1
+        endLine: "The Fourth Wallfacer..."
+      number: 1
+      pages:
+        start: 9
+        end: 105
+      title: The Wallfacers
+      url: ~
+    
+    - chapters:
+        part: I
+        start: 1.2
+        end: 1.2
+      number: 2
+      pages:
+        start: 105
+        end: 185
+      title: Cosmic Brush
+      url: ~
+    
+    - chapters:
+        part: II
+        start: 1
+        end: 1
+      number: 3
+      pages:
+        start: 189
+        end: 305
+      title: The Spell
+      url: ~
+    
+    - chapters:
+        part: III
+        start: 1.1
+        end: 1.1
+        endLine: "...is headed in the right direction."
+      number: 4
+      pages:
+        start: 309
+        end: 391
+      title: Natural Selection
+      url: ~
+    
+    - chapters:
+        part: III
+        start: 1.2
+        end: 1.2
+        endLine: "...they quietly disappeared into the eternal night"
+      number: 5
+      pages:
+        start: 391
+        end: 460
+      title: Droplet
+      url: ~
+    
+    - chapters:
+        part: III
+        start: 1.3
+        end: 1.3
+        endLine: ~
+      number: 6
+      pages:
+        start: 460
+        end: 512
+      title: The Snow Project
+      url: ~
