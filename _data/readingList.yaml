@@ -130,7 +130,7 @@ seasons:
         end: Seven Hours
       number: 5
       title: Seven Hours
-      url: ~
+      url: /episodes/seven-hours/index.html
 
     - chapters:
         start: Hard Reset
