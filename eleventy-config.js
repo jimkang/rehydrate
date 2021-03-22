@@ -2,6 +2,7 @@ var pluginRss = require('@11ty/eleventy-plugin-rss');
 var fs = require('fs');
 var curry = require('lodash.curry');
 const yaml = require('yamljs');
+const getAtPath = require('get-at-path');
 
 module.exports = function(eleventyConfig) {
   eleventyConfig.addDataExtension('yaml', contents => yaml.parse(contents));
@@ -21,7 +22,7 @@ module.exports = function(eleventyConfig) {
 
   eleventyConfig.addPlugin(pluginRss);
   eleventyConfig.addFilter('length', getFileLength);
-  eleventyConfig.addFilter('getEpisodeEntry', getEpisodeEntry);
+  eleventyConfig.addFilter('getEpisodeForReadingListEntry', getEpisodeForReadingListEntry);
   eleventyConfig.addFilter('getReadingListEntry', getReadingListEntry);
   eleventyConfig.addFilter('getEpisodeTitle', getEpisodeTitle);
   eleventyConfig.addFilter('getEpisodeSubtitle', getEpisodeSubtitle);
@@ -81,11 +82,10 @@ function getReadingListEntry(ep, readingList) {
   return { season, episode };
 }
 
-function getEpisodeEntry(rl, rlSeason, episodeList) {
+function getEpisodeForReadingListEntry(readingListEntry, readingListSeason, episodeList) {
   return episodeList.find(e => {
-    return e && e.data && e.data.stuff
-      && e.data.stuff.season === rlSeason.number 
-      && e.data.stuff.number ===  rl.number
+    return getAtPath(e, ['data', 'stuff', 'season']) === readingListSeason.number
+      && getAtPath(e, ['data', 'stuff', 'number']) === readingListEntry.number
   })
 }
 

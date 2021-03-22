@@ -8,7 +8,7 @@ pageHeading: Reading List
   <h3>Season {{ season.number }} - <u>{{ season.title }}</u> by {{ season.author }}</h3>
   <ul>
   {%- for episode in season.episodes -%}
-    {% set ep = episode | getEpisodeEntry(season, collections.episodes) %}
+    {% set ep = episode | getEpisodeForReadingListEntry(season, collections.episodes) %}
 
     <li>{{ episode.number }} - 
         {%- if ep  %}
