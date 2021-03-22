@@ -4,9 +4,15 @@ name: publish
 
 # Controls when the action will run. 
 on:
+  # Apparently github only runs on the default branch, 'main' in this case
+  schedule:
+    # * is a special character in YAML so you have to quote this string
+    # publish once a day at 12pm in whatever timezone
+    - cron:  '0 12 * * *'
+
   # Triggers the workflow on push or pull request events but only for the main branch
-  push:
-    branches: [ main ]
+  # push:
+  #   branches: [ main ]
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:

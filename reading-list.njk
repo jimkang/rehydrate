@@ -8,11 +8,13 @@ pageHeading: Reading List
   <h3>Season {{ season.number }} - <u>{{ season.title }}</u> by {{ season.author }}</h3>
   <ul>
   {%- for episode in season.episodes -%}
+    {% set releasedEpisode = episode | getEpisodeForReadingListEntry(season, collections.episodes) %}
+
     <li>{{ episode.number }} - 
-        {% if episode.url == null %}
-            {{episode.title}}
-        {% else %}
+        {%- if releasedEpisode  %}
             <a href="{{ episode.url}}">{{episode.title}}</a>
+        {% else %}
+            {{episode.title}}
         {% endif %}
     </li>
     <ul>

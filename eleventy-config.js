@@ -2,6 +2,7 @@ var pluginRss = require('@11ty/eleventy-plugin-rss');
 var fs = require('fs');
 var curry = require('lodash.curry');
 const yaml = require('yamljs');
+const getAtPath = require('get-at-path');
 
 module.exports = function(eleventyConfig) {
   eleventyConfig.addDataExtension('yaml', contents => yaml.parse(contents));
@@ -10,10 +11,10 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy('app.css');
   eleventyConfig.addPassthroughCopy('episodes/**/*.mp3');
 
-  eleventyConfig.addCollection(
-    'episodes',
+  eleventyConfig.addCollection('episodes',
     curry(addFilteredCollection)(['episodes/*.njk'], compareDatesDesc)
   );
+
   eleventyConfig.addCollection(
     'hosts',
     curry(addFilteredCollection)(['hosts/*.njk'], null)
@@ -21,6 +22,7 @@ module.exports = function(eleventyConfig) {
 
   eleventyConfig.addPlugin(pluginRss);
   eleventyConfig.addFilter('length', getFileLength);
+  eleventyConfig.addFilter('getEpisodeForReadingListEntry', getEpisodeForReadingListEntry);
   eleventyConfig.addFilter('getReadingListEntry', getReadingListEntry);
   eleventyConfig.addFilter('getEpisodeTitle', getEpisodeTitle);
   eleventyConfig.addFilter('getEpisodeSubtitle', getEpisodeSubtitle);
@@ -34,13 +36,26 @@ function notIndex(thing) {
   return !thing.inputPath.includes('index.njk');
 }
 
+function currentEpisodes(episode) {
+  let episode_date = getAtPath(episode, ['data', 'stuff', 'date'])
+
+  // If the episode defines a date and it's after current hide it
+  if (episode_date && episode_date > new Date()) {
+    return false;
+  }
+
+  return true;
+}
+
 function getFileLength(filePath) {
   var stats = fs.statSync(filePath);
   return stats.size;
 }
 
 function addFilteredCollection(glob, sortFn, collection) {
-  var filteredCollection = collection.getFilteredByGlob(glob).filter(notIndex);
+  var filteredCollection = collection.getFilteredByGlob(glob)
+  .filter(notIndex)
+  .filter(currentEpisodes);
 
   if (sortFn) {
     filteredCollection.sort(sortFn);
@@ -65,6 +80,13 @@ function getReadingListEntry(ep, readingList) {
   let episode = season.episodes.find(e => e.number === ep.number);
 
   return { season, episode };
+}
+
+function getEpisodeForReadingListEntry(readingListEntry, readingListSeason, episodeList) {
+  return episodeList.find(e => {
+    return getAtPath(e, ['data', 'stuff', 'season']) === readingListSeason.number
+      && getAtPath(e, ['data', 'stuff', 'number']) === readingListEntry.number
+  })
 }
 
 // TODO: Duration filter via music-metadata.
