@@ -37,7 +37,7 @@ function notIndex(thing) {
 }
 
 function currentEpisodes(episode) {
-  let episode_date = episode && episode.data && episode.data.stuff && episode.data.stuff.date
+  let episode_date = getAtPath(episode, ['data', 'stuff', 'date'])
 
   // If the episode defines a date and it's after current hide it
   if (episode_date && episode_date > new Date()) {
