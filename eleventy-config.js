@@ -69,6 +69,9 @@ function addFilteredCollection(glob, sortFn, collection) {
 }
 
 function getEpisodeTitle(ep) {
+  if (ep.literalTitle) {
+    return ep.literalTitle;
+  }
   return `Season ${ep.season}, Episode ${ep.number}: ${ep.title}`;
 }
 
