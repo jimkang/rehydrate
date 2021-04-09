@@ -10,6 +10,12 @@
               preload="metadata"
               src="/episodes/rehydrate-s{{ src.season }}-ep{{ src.number }}-{{ src.slug }}.mp3"
             ></audio>
+            {%- if src.summary -%}
+              <div class="summary">
+                {{ src.summary }}
+              </div>
+            {%- endif -%}
+
             {% include 'findings.njk' %}
             <div class="time-stamp entry-meta">
               <time datetime="{{ src.date }}">{{ src.date.toDateString() }}</time>

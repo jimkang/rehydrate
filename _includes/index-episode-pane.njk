@@ -19,6 +19,14 @@
         {{rl.episode.chapters.start}} - {{ rl.episode.chapters.end }}
         {% endif %}
 
+        {%- if src.summary -%}
+          <div class="summary">
+            {{ src.summary }}
+          </div>
+        {%- endif -%}
+        {%- if src.detailsLinkText -%}
+          <a class="details-link" href="/episodes/{{ src.slug }}/index.html">[{{ src.detailsLinkText }}]</a>
+        {%- endif -%}
       </div>
     </div>
 </div>
