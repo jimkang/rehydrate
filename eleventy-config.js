@@ -4,14 +4,15 @@ var curry = require('lodash.curry');
 const yaml = require('yamljs');
 const getAtPath = require('get-at-path');
 
-module.exports = function(eleventyConfig) {
-  eleventyConfig.addDataExtension('yaml', contents => yaml.parse(contents));
+module.exports = function (eleventyConfig) {
+  eleventyConfig.addDataExtension('yaml', (contents) => yaml.parse(contents));
 
   eleventyConfig.addPassthroughCopy('media/*');
   eleventyConfig.addPassthroughCopy('app.css');
   eleventyConfig.addPassthroughCopy('episodes/**/*.mp3');
 
-  eleventyConfig.addCollection('episodes',
+  eleventyConfig.addCollection(
+    'episodes',
     curry(addFilteredCollection)(['episodes/*.njk'], compareDatesDesc)
   );
 
@@ -22,7 +23,10 @@ module.exports = function(eleventyConfig) {
 
   eleventyConfig.addPlugin(pluginRss);
   eleventyConfig.addFilter('length', getFileLength);
-  eleventyConfig.addFilter('getEpisodeForReadingListEntry', getEpisodeForReadingListEntry);
+  eleventyConfig.addFilter(
+    'getEpisodeForReadingListEntry',
+    getEpisodeForReadingListEntry
+  );
   eleventyConfig.addFilter('getReadingListEntry', getReadingListEntry);
   eleventyConfig.addFilter('getEpisodeTitle', getEpisodeTitle);
   eleventyConfig.addFilter('getEpisodeSubtitle', getEpisodeSubtitle);
@@ -37,7 +41,7 @@ function notIndex(thing) {
 }
 
 function currentEpisodes(episode) {
-  let episode_date = getAtPath(episode, ['data', 'stuff', 'date'])
+  let episode_date = getAtPath(episode, ['data', 'stuff', 'date']);
 
   // If the episode defines a date and it's after current hide it
   if (episode_date && episode_date > new Date()) {
@@ -53,9 +57,10 @@ function getFileLength(filePath) {
 }
 
 function addFilteredCollection(glob, sortFn, collection) {
-  var filteredCollection = collection.getFilteredByGlob(glob)
-  .filter(notIndex)
-  .filter(currentEpisodes);
+  var filteredCollection = collection
+    .getFilteredByGlob(glob)
+    .filter(notIndex)
+    .filter(currentEpisodes);
 
   if (sortFn) {
     filteredCollection.sort(sortFn);
@@ -71,22 +76,30 @@ function getEpisodeSubtitle(rl) {
   if (rl.episode && rl.episode.chapters) {
     return `${rl.season.title}, Chapters ${rl.episode.chapters.start}-${rl.episode.chapters.end}`;
   } else {
-    return `${rl.season.title}`
+    return getAtPath(rl, ['season', 'title']) || '';
   }
 }
 
 function getReadingListEntry(ep, readingList) {
-  let season = readingList.seasons.find(s => s.number === ep.season);
-  let episode = season.episodes.find(e => e.number === ep.number);
+  let season = readingList.seasons.find((s) => s.number === ep.season);
+  if (season) {
+    var episode = season.episodes.find((e) => e.number === ep.number);
+  }
 
   return { season, episode };
 }
 
-function getEpisodeForReadingListEntry(readingListEntry, readingListSeason, episodeList) {
-  return episodeList.find(e => {
-    return getAtPath(e, ['data', 'stuff', 'season']) === readingListSeason.number
-      && getAtPath(e, ['data', 'stuff', 'number']) === readingListEntry.number
-  })
+function getEpisodeForReadingListEntry(
+  readingListEntry,
+  readingListSeason,
+  episodeList
+) {
+  return episodeList.find((e) => {
+    return (
+      getAtPath(e, ['data', 'stuff', 'season']) === readingListSeason.number &&
+      getAtPath(e, ['data', 'stuff', 'number']) === readingListEntry.number
+    );
+  });
 }
 
 // TODO: Duration filter via music-metadata.
