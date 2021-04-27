@@ -15,11 +15,12 @@ metadata:
     url: https://rehydrate.space/rss.xml
     id: https://rehydrate.space/
 ---
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:anchor="https://anchor.fm/xmlns">
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:anchor="https://anchor.fm/xmlns" xmlns:googleplay="http://www.google.com/schemas/play-podcasts/1.0">
   <channel>
     <title><![CDATA[{{ metadata.title }}]]></title>
     <itunes:subtitle><![CDATA[{{ metadata.subtitle }}]]></itunes:subtitle>
     <description><![CDATA[{{ metadata.description }}]]></description>
+    <googleplay:block>yes</googleplay:block>
 		<link>{{ metadata.url }}</link>
 		<image>
 			<url>{{ metadata.imageURL }}</url>
