@@ -16,6 +16,7 @@
         <i>{{ rl.season.title }}</i>
         {% if rl.episode.chapters.start %}
         <br />
+        {% if rl.episode.chapters.part %}Part {{rl.episode.chapters.part}}, {% endif %}
         {{rl.episode.chapters.start}} - {{ rl.episode.chapters.end }}
         {% endif %}
 
