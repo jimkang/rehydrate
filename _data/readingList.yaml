@@ -213,3 +213,84 @@ seasons:
         end: 512
       title: The Snow Project
       url: ~
+
+  # - title: "Death's End"
+  #   author: "Liu Cixin"
+  #   number: 5
+  #   episodes:
+  #   - chapters:
+  #       part: I
+  #       start: 1
+  #       end: 11
+  #     number: 1
+  #     pages:
+  #       start: 15
+  #       end: 99
+  #     title: The Staircase Program
+  #     url: ~
+    
+  #   - chapters:
+  #       part: II
+  #       start: 1
+  #       end: 15
+  #     number: 2
+  #     pages:
+  #       start: 103
+  #       end: 174
+  #     title: The Swordholders
+  #     url: ~
+    
+  #   - chapters:
+  #       part: II
+  #       start: 16
+  #       end: 26
+  #     number: 3
+  #     pages:
+  #       start: 175
+  #       end: 259
+  #     title: Australia
+  #     url: ~
+    
+  #   - chapters:
+  #       part: III
+  #       start: 1
+  #       end: 15
+  #     number: 4
+  #     pages:
+  #       start: 263
+  #       end: 362
+  #     title: The Storyless Kingdom
+  #     url: ~
+    
+  #   - chapters:
+  #       # part: "III & IV"
+  #       start: Part III, Chapter 16
+  #       end: Part IV, Chapter 3
+  #     number: 5
+  #     pages:
+  #       start: 363
+  #       end: 463
+  #     title: "Fate's Choice"
+  #     url: ~
+    
+  #   - chapters:
+  #       part: V
+  #       start: 1
+  #       end: 5
+  #     number: 6
+  #     pages:
+  #       start: 467
+  #       end: 539
+  #     title: Singer
+  #     url: ~
+
+  #   - chapters:
+  #       part: VI
+  #       start: 1
+  #       end: 5
+  #     number: 7
+  #     pages:
+  #       start: 543
+  #       end: 602
+  #     title: Our Star
+  #     url: ~
