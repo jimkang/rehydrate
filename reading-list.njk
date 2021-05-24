@@ -30,6 +30,9 @@ pageHeading: Reading List
         {%- if episode.chapters.endLine != null -%}
         <li>End line: <q>{{ episode.chapters.endLine }}</li>
         {%- endif -%}
+        {%- if releasedEpisode.data.stuff.summary -%}
+        <a href="{{ releasedEpisode.data.stuff.summary }}">Summary</a>
+        {%- endif -%}
     </ul>
   {%- endfor -%}
   </ul>

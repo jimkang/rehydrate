@@ -19,6 +19,9 @@
         {% if src.transcript %}
           <li><a class="transcript-link" href="{{ src.transcript }}">Transcript</a></li>
         {%  endif %}
+        {% if src.summary %}
+          <li><a class="summary-link" href="{{ src.summary }}">Summary</a></li>
+        {%  endif %}
       </ul>
     </li>
     {%- endif -%}
