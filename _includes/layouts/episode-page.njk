@@ -4,9 +4,8 @@ layout: layouts/main.njk
 {% include 'latest-episode-unfurl.njk' %}
 
 <section class="middle">
-  <div class="listening-directions">
-    Point your podcast app at the <a href="/rss.xml">RSS feed</a> to listen!
-  </div>
+  {% include 'how-to-listen.njk' %}
+  
   <br>
   {{ content | safe }}
 </section>
