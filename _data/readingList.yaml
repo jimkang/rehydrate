@@ -250,7 +250,7 @@ seasons:
         start: 175
         end: 259
       title: Australia
-      url: ~
+      url: /episodes/australia/index.html
     
     - chapters:
         part: III
