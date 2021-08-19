@@ -296,3 +296,107 @@ seasons:
         end: 602
       title: Our Star
       url: ~
+      
+  - title: "Foundation Trilogy"
+    author: Issac Asimov
+    number: 6
+
+    episodes:
+    - number: 1
+      title: The Psychohistorians and Encyclopedists
+      chapters:
+        part: "Foundation: I - II"
+        start: 1
+        end: 11
+#      pages:
+#        start: 15
+#        end: 99
+      url: ~
+
+    - number: 2
+      title: The Mayors and Traders
+      chapters:
+        part: "Foundation: III - IV"
+        start: 1
+        end: 11
+      #      pages:
+      #        start: 15
+      #        end: 99
+      url: ~
+
+    - number: 3
+      title: The Merchant Princes
+      chapters:
+        part: "Foundation: V"
+        start: 1
+        end: 11
+      #      pages:
+      #        start: 15
+      #        end: 99
+      url: ~
+
+    - number: 4
+      title: The General
+      chapters:
+        part: "Foundation and Empire: I"
+        start: 1
+        end: 11
+      #      pages:
+      #        start: 15
+      #        end: 99
+      url: ~
+
+    - number: 5
+      title: The Mule
+      chapters:
+        part: "Foundation and Empire: II"
+        start: 11
+        end: 18
+      #      pages:
+      #        start: 15
+      #        end: 99
+      url: ~
+
+    - number: 6
+      title: Start of the Search
+      chapters:
+        part: "Foundation and Empire: II"
+        start: 19
+        end: 26
+      #      pages:
+      #        start: 15
+      #        end: 99
+      url: ~
+
+    - number: 7
+      title: The Search by the Mule
+      chapters:
+        part: "Second Foundation: I"
+        start: 1
+        end: 6
+      #      pages:
+      #        start: 15
+      #        end: 99
+      url: ~
+
+    - number: 8
+      title: The Search by the Foundation
+      chapters:
+        part: "Second Foundation: II"
+        start: 7
+        end: 14
+      #      pages:
+      #        start: 15
+      #        end: 99
+      url: ~
+
+    - number: 9
+      title: Arcadia
+      chapters:
+        part: "Second Foundation: II"
+        start: 15
+        end: 22
+      #      pages:
+      #        start: 15
+      #        end: 99
+      url: ~
