@@ -63,6 +63,7 @@ metadata:
         <itunes:title><![CDATA[{{ src | getEpisodeTitle }}]]></itunes:title>
         <itunes:subtitle><![CDATA[{{ src | getReadingListEntry(readingList) | getEpisodeSubtitle }}]]></itunes:subtitle>
         <description><![CDATA[
+            <a href="{{ pageURL }}">Epsiode Page</a>
             {%- include 'findings.njk' -%}
             {%- include 'contact.njk' -%}
 ]]></description>
