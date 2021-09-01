@@ -68,11 +68,17 @@ function getEpisodeTitle(ep) {
 }
 
 function getEpisodeSubtitle(rl) {
-  if (rl.episode && rl.episode.chapters) {
-    return `${rl.season.title}, Chapters ${rl.episode.chapters.start}-${rl.episode.chapters.end}`;
-  } else {
-    return `${rl.season.title}`
+  titleParts = [rl.season.title]
+
+  if (rl.episode && rl.episode.chapters && rl.episode.chapters.part) {
+    titleParts.push(`Part ${rl.episode.chapters.part}`)
   }
+
+  if (rl.episode && rl.episode.chapters) {
+    titleParts.push(`Chapters ${rl.episode.chapters.start}-${rl.episode.chapters.end}`);
+  }
+
+  return titleParts.join(", ")
 }
 
 function getReadingListEntry(ep, readingList) {

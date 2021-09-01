@@ -59,11 +59,11 @@ metadata:
       {%- set filePath -%}episodes/{{ filename }}{%- endset -%}
       {%- set imageURL -%}{{ metadata.url }}/media/{{ src.imageFilename }}{%- endset -%}
       <item>
-        <title><![CDATA[{{ src | getEpisodeTitle }}]]></title>
-        <itunes:title><![CDATA[{{ src | getEpisodeTitle }}]]></itunes:title>
-        <itunes:subtitle><![CDATA[{{ src | getReadingListEntry(readingList) | getEpisodeSubtitle }}]]></itunes:subtitle>
+        <title><![CDATA[{{ src | getEpisodeTitle | safe }}]]></title>
+        <itunes:title><![CDATA[{{ src | getEpisodeTitle | safe }}]]></itunes:title>
+        <itunes:subtitle><![CDATA[{{ src | getReadingListEntry(readingList) | getEpisodeSubtitle | safe }}]]></itunes:subtitle>
         <description><![CDATA[
-            <a href="{{ pageURL }}">Epsiode Page</a>
+            <a href="{{ pageURL }}">Episode Page</a>
             {%- include 'findings.njk' -%}
             {%- include 'contact.njk' -%}
 ]]></description>
@@ -90,10 +90,10 @@ metadata:
           <item>
             <title><![CDATA[{{ title|safe }}]]></title>
             <itunes:title><![CDATA[{{ title|safe }}]]></itunes:title>
-            <itunes:subtitle><![CDATA[{{ src | getReadingListEntry(readingList) | getEpisodeSubtitle }}]]></itunes:subtitle>
+            <itunes:subtitle><![CDATA[{{ src | getReadingListEntry(readingList) | getEpisodeSubtitle | safe }}]]></itunes:subtitle>
             <description><![CDATA[
               {{ extra.desc|safe }}
-              <a href="{{ pageURL }}">Epsiode Page</a>
+              <a href="{{ pageURL }}">Episode Page</a>
               <br />
               {% if extra.links %}<ul>{% for link in extra.links %}<li><a href="{{link.url}}">{{ link.name }}</a></li>{% endfor %}</ul>{% endif  %}
               <br />
