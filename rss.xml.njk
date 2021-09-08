@@ -2,12 +2,12 @@
 permalink: rss.xml
 metadata:
   title: Rehydrate
-  subtitle: A podcast where we read books together at a TV series-like pace. Books include "The Three-Body Problem" and "The Long Way to a Small, Angry Planet"
+  subtitle: A podcast where we read books together at a TV series-like pace. Books include "The Three-Body Problem" by Liu Cixin, "The Long Way to a Small, Angry Planet" by Becky Chambers, and "Foundation" by Issac Asimov
   url: https://rehydrate.space
   author:
     name: Jim, Dan, Tim, and Amin
     email: rehydrate@fastmail.com
-  description: A podcast where we read books together at a TV series-like pace. Books include "The Three-Body Problem" and "The Long Way to a Small, Angry Planet"
+  description: A podcast where we read books together at a TV series-like pace. Books include "The Three-Body Problem" by Liu Cixin, "The Long Way to a Small, Angry Planet" by Becky Chambers, and "Foundation" by Issac Asimov
   imageURL: https://rehydrate.space/media/rehydrate-logo.jpg
   feed:
     filename: rss.xml
@@ -66,7 +66,7 @@ metadata:
             <a href="{{ pageURL }}">Episode Page</a>
             {%- include 'findings.njk' -%}
             {%- include 'contact.njk' -%}
-]]></description>
+        ]]></description>
         <link href="{{ pageURL }}"/>
         <guid isPermaLink="false">{{ fileURL }}</guid>
         <dc:creator><![CDATA[{{ metadata.author.name }}]]></dc:creator>
@@ -92,13 +92,11 @@ metadata:
             <itunes:title><![CDATA[{{ title|safe }}]]></itunes:title>
             <itunes:subtitle><![CDATA[{{ src | getReadingListEntry(readingList) | getEpisodeSubtitle | safe }}]]></itunes:subtitle>
             <description><![CDATA[
-              {{ extra.desc|safe }}
               <a href="{{ pageURL }}">Episode Page</a>
               <br />
-              {% if extra.links %}<ul>{% for link in extra.links %}<li><a href="{{link.url}}">{{ link.name }}</a></li>{% endfor %}</ul>{% endif  %}
-              <br />
+              {%- include 'bonus-findings.njk' -%}
               {%- include 'contact.njk' -%}
-              ]]>
+            ]]>
             </description>
             <link href="{{ pageURL }}"/>
             <guid isPermaLink="false">{{ fileURL }}</guid>
