@@ -4,7 +4,7 @@
     {%- if rl.episode.chapters != null -%}
       <h4>Episode Info</h4>
       <ul class="finding-links">
-        <li>Book: <i>{{ rl.season.title }}</i></li>
+        <li><i>{{ rl.season.title }}</i> - {{ rl.season.author }}</li>
         <li>
           {% if rl.episode.chapters.part %}
           Part <i>{{ rl.episode.chapters.part }}</i>,
