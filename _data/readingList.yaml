@@ -311,7 +311,7 @@ seasons:
 #      pages:
 #        start: 15
 #        end: 99
-      url: ~
+      url: episodes/the-psychohistorians-and-encyclopedists/index.html
 
     - number: 2
       title: The Mayors and Traders
