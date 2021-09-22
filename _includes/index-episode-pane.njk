@@ -8,7 +8,8 @@
     <!-- Main content -->
     <div class="index-media-content">
       <div class="episode-title">
-        <a href="/episodes/{{ src.slug }}/index.html">{{ src | getEpisodeTitle }}</a>
+        <a href="/episodes/{{ src.slug }}/index.html">{{ src.title }}</a>
+        <div class="season-title">Season {{src.season}}, Episode {{src.number}}</div>
       </div>
       <div class="episode-metadata">
         {% set rl = src | getReadingListEntry(readingList) %}

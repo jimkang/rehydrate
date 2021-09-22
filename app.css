@@ -131,6 +131,14 @@ ul {
   flex-basis: 0%;
 }
 
+.pane .episode-title {
+  text-align: center;
+}
+
+.pane .episode-title .season-title {
+  font-size: 0.6em;
+}
+
 .pane.index-pane .index-media .index-media-content .episode-metadata {
   font-size: 0.6em;
 }
@@ -246,8 +254,8 @@ header h1 {
   margin-top: 1em;
   padding: 0.5em;
   border-radius: 0.25em;
-  /* border: hsla(152.2, 77.4%, 38.2%, 0.8) 3px solid; */
   border: hsla(210, 80%, 66%, 0.8) 4px solid;
+  background: hsla(210, 80%, 66%, 0.1);
 }
 
 .listening-directions ul {
@@ -283,11 +291,11 @@ header h1 {
   border-bottom-right-radius: 4px;
 }
 
-.episode-player.index-episode-player { 
+.episode-player.index-episode-player {
   width: 100%;
-  margin: 10px 0 0 0; 
-  border-top-left-radius: 4px; 
-  border-top-right-radius: 4px; 
+  margin: 10px 0 0 0;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
 }
 
 .episode-title {

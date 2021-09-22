@@ -1,6 +1,7 @@
           <li class="pane">
             <div class="episode-title">
-              <a href="/episodes/{{ src.slug }}/index.html">{{ src | getEpisodeTitle }}</a>
+              <a href="/episodes/{{ src.slug }}/index.html">{{ src.title }}</a>
+              <div class="season-title">Season {{src.season}}, Episode {{src.number}}</div>
             </div>
             <img src="/media/{{ src.imageFilename }}" alt="Episode image" />
             <audio
