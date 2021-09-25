@@ -26,6 +26,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addFilter('getReadingListEntry', getReadingListEntry);
   eleventyConfig.addFilter('getEpisodeTitle', getEpisodeTitle);
   eleventyConfig.addFilter('getEpisodeSubtitle', getEpisodeSubtitle);
+  eleventyConfig.addFilter('getLastBuildDate', getLastBuildDate);
 };
 
 function compareDatesDesc(a, b) {
@@ -93,6 +94,21 @@ function getEpisodeForReadingListEntry(readingListEntry, readingListSeason, epis
     return getAtPath(e, ['data', 'stuff', 'season']) === readingListSeason.number
       && getAtPath(e, ['data', 'stuff', 'number']) === readingListEntry.number
   })
+}
+
+function getLastBuildDate(episodes) {
+  let lastPubDate = null
+
+  episodes.forEach(episode => {
+    ep = episode.data.stuff
+    if (lastPubDate == null) {
+      lastPubDate = ep.date
+    } else if (lastPubDate < ep.date) {
+      lastPubDate = ep.date
+    }
+  });
+
+  return lastPubDate || new Date()
 }
 
 // TODO: Duration filter via music-metadata.
