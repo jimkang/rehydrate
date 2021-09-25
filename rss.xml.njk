@@ -28,7 +28,7 @@ metadata:
       <link>{{ metadata.url }}</link>
 		</image>
 		<generator>Smidgeo Podcasts</generator>
-    <lastBuildDate>{{ collections.episodes | rssLastUpdatedDate }}</lastBuildDate>
+    <lastBuildDate>{{ collections.episodes | getNewestCollectionItemDate | dateToRfc3339 }}</lastBuildDate>
 		<atom:link href="{{ metadata.feed.url}}" rel="self" type="application/rss+xml"/>
 		<author><![CDATA[{{ metadata.author.name }}]]></author>
 		<copyright><![CDATA[{{ metadata.author.name }}]]></copyright>
