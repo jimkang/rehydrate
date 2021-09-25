@@ -27,6 +27,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addFilter('getEpisodeTitle', getEpisodeTitle);
   eleventyConfig.addFilter('getEpisodeSubtitle', getEpisodeSubtitle);
   eleventyConfig.addFilter('getLastBuildDate', getLastBuildDate);
+  eleventyConfig.addFilter('rfc822Date', rfc822Date);
 };
 
 function compareDatesDesc(a, b) {
@@ -109,6 +110,10 @@ function getLastBuildDate(episodes) {
   });
 
   return lastPubDate || new Date()
+}
+
+function rfc822Date(date) {
+  return date.toUTCString()
 }
 
 // TODO: Duration filter via music-metadata.
