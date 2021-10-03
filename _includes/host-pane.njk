@@ -3,9 +3,11 @@
        <a href="/hosts/{{ src.name | slug }}">{{ src.name }}</a>
       {%- if src.social -%}
         <br />
-        <div class="social-links" target="_blank">
-          <a href="{{src.social.url}}">{{src.social.name}}</a>
-        </div>
+        {% for link in src.social %}
+          <div class="social-links" target="_blank">
+            <a href="{{link.url}}">{{link.name}}</a>
+          </div>
+        {% endfor  %}
       {%- endif -%}
     </div>
     <dl>
