@@ -1,11 +1,10 @@
 ---
-layout: "layouts/main.njk"
+layout: "layouts/summary-page.njk"
 pageHeading: >
     Summary - Season 1, Episode 2: Frontiers of Science
+season: 1
+episode: 2
 ---
-
-## Episode 2
-### Summary
 
 Ye Wenjie wakes up to find that she is being transported on a helicopter. She meets Yang Weining, a former graduate student of Ye’s father, with whom they would disagree about theoretical vs. applied physics and which makes a bigger impact.
 

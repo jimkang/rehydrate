@@ -336,6 +336,10 @@ header h1 {
   text-align: center;
 }
 
+.summary {
+  white-space: pre-wrap;
+}
+
 dt {
   font-size: 1.5rem;
 }

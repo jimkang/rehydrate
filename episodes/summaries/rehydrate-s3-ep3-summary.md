@@ -1,11 +1,11 @@
 ---
-layout: "layouts/main.njk"
+layout: "layouts/summary-page.njk"
 pageHeading: >
     Summary - Season 3, Episode 3: The Spell
+season: 3
+episode: 3
 ---
 
-## Episode 3
-### Summary
 #### Crisis Era: Year 8
 ##### Tyler
 Wallfacer Frederick Tyler is visited by his Wallbreaker, who was able to figure out his entire secret plan. His plan (in the English translation, more on this later) consists of recruiting ETO members to help double-cross and destroy the Earth’s space force. He would then make a peace offering to the Trisolarans of large quantities of water from Europa and Ceres to help them rehydrate. Furthermore, his plan was that as the ETO ships approached the Trisolaran fleet, we would detonate the bombs at close range.

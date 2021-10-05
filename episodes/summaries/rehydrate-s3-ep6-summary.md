@@ -1,11 +1,11 @@
 ---
-layout: "layouts/main.njk"
+layout: "layouts/summary-page.njk"
 pageHeading: >
     Summary - Season 3, Episode 6: The Snow Project
+season: 3
+episode: 6
 ---
 
-## Episode 6
-### Summary
 Immediately following the Battle of Darkness, Luo Ji proclaims that he knew it all along and that he holds the key to human victory. While Beijing descends into chaos, he travels a great distance away from the city, and waits for the droplet to kill him in the middle of the desert.
 
 Luo Ji’s demise is not meant to be as the droplet suddenly changes course and starts an electromagnetic wave towards the sun, effectively blocking humanity from using it to send any more messages into deep space the way that Ye Wenjie had done centuries ago and how Luo Ji had sent his spell.

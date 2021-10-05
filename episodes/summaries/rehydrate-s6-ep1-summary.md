@@ -1,10 +1,11 @@
 ---
-layout: "layouts/main.njk"
+layout: "layouts/summary-page.njk"
 pageHeading: >
     Summary - Season 6, Episode 1: The Psychohistorians and Encyclopedists
+season: 6
+episode: 1
 ---
-## Episode 1
-### Summary
+
 Gaal Dornick makes his first ever trip to Trantor, a planet at the center of the empire that has been turned into an enormous city with no self-sustaining agriculture. He is there to meet with Hari Seldon to work on his mysterious project. The project is made even more mysterious when Seldon’s reputation as a “raven” that portends doom is revealed ahead of meeting the man himself.
 
 Seldon appears in Dornick’s hotel room and confirms that he does foresee doom, but not on intuition, but based on a complex mathematical formula that he’s developed that can predict events into the far future that he calls psychohistory.

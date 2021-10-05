@@ -1,11 +1,11 @@
 ---
-layout: "layouts/main.njk"
+layout: "layouts/summary-page.njk"
 pageHeading: >
     Summary - Season 5, Episode 3: Australia
+season: 5
+episode: 3
 ---
 
-## Episode 3
-### Summary
 Cheng Xin's time as Swordholder comes to a quick end as 6 Trisolaran probes speed their way to Earth. She has only 10 minutes to consider whether or not to activate the deterrence system. She realizes that she cannot erase the 3.5 billion year history of the Earth and throws away the button. Shortly after, the probes reach Earth and destroy all of the gravitational wave antennas on Earth, disable the dark forest deterrence, but leave Cheng Xin unharmed. 
 
 When Cheng Xin and AA go to examine the impact site, she is met by Sophon who tells her that Trisolaris predicted this outcome for years, Gravity has also been destroyed, and finally says “Get ready to go to Australia, you pitiful bugs.”

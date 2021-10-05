@@ -1,11 +1,10 @@
 ---
-layout: "layouts/main.njk"
+layout: "layouts/summary-page.njk"
 pageHeading: >
     Summary - Season 1, Episode 4: The Universe Flickers
+season: 1
+episode: 4
 ---
-
-## Episode 4
-### Summary
 
 Wang Miao is introduced to the Three Body V-Suit game. A simulation of a seemingly desolate planet that’s inhabited with historical Chinese figures who talk of Stable and Chaotic eras. These eras are made up of periods of intense cold and heat depending on the apparent random appearance of the sun.
 

@@ -1,11 +1,11 @@
 ---
-layout: "layouts/main.njk"
+layout: "layouts/summary-page.njk"
 pageHeading: >
     Summary - Season 5, Episode 5: Fate's Choice
+season: 5
+episode: 5
 ---
 
-## Episode 5
-### Summary
 While the IDC all but gives up hope in deciphering further meaning from the fairy tales, Cheng Xin and AA make a breakthrough after seeing an origami boat driven by a small piece of soap: curvature propulsion, the means of accelerating a ship to lightspeed by “folding” space and pulling it ahead.
 
 Newly inspired, the IDC gets back to work and the next chance discovery is the meaning of He'ershingenmosiken. It is thought to be a combination of places in Norway, the mountain Helseggen and island Mosken. They travel there and investigate a maelstrom that was written about centuries ago by Edgar Allen Poe. They theorize the almost inescapable nature of the maelstrom once you’ve crossed the threshold is meant to represent a black hole. This is coupled with the idea that the constant speed needed for the umbrella to work is supposed to represent the speed of light to come up with the idea for the Black Domain Project.

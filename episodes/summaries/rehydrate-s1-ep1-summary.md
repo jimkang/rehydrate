@@ -1,11 +1,11 @@
 ---
-layout: "layouts/main.njk"
+layout: "layouts/summary-page.njk"
 pageHeading: >
     Summary - Season 1, Episode 1: Silent Spring
+season: 1
+episode: 1
 ---
 
-## Episode 1
-### Summary
 In chapter 1, we’re introduced to Ye Wenjie who witnesses her father, Ye Zhhetai, getting murdered by a mob persecuting him for being a “reactionary” during the early stages of China’s cultural revolution in 1967. 
 
 They tried to make him say that the theory of relativity was an American capitalist idea, but he would not, even despite his wife, Shao Lin, also a physics professor, trying to force him to do so in front of the gathered mob

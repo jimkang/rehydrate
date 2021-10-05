@@ -28,6 +28,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addFilter('getEpisodeSubtitle', getEpisodeSubtitle);
   eleventyConfig.addFilter('getLastBuildDate', getLastBuildDate);
   eleventyConfig.addFilter('rfc822Date', rfc822Date);
+  eleventyConfig.addFilter('findEpisode', findEpisode);
 };
 
 function compareDatesDesc(a, b) {
@@ -81,6 +82,13 @@ function getEpisodeSubtitle(rl) {
   }
 
   return titleParts.join(", ")
+}
+
+function findEpisode(episodeList, seasonNumber, episodeNumber) {
+  return episodeList.find(e => {
+    return getAtPath(e, ['data', 'stuff', 'season']) === seasonNumber
+      && getAtPath(e, ['data', 'stuff', 'number']) === episodeNumber
+  })
 }
 
 function getReadingListEntry(ep, readingList) {

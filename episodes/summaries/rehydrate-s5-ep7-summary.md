@@ -1,10 +1,11 @@
 ---
-layout: "layouts/main.njk"
+layout: "layouts/summary-page.njk"
 pageHeading: >
     Summary - Season 5, Episode 7: Our Star
+season: 5
+episode: 7
 ---
-## Episode 7
-### Summary
+
 AA tries to comfort Cheng Xin about her role in the destruction of the solar system as they make their 287 light-year journey to DX3906 that takes roughly 52 hours in their frame of reference.
 
 Upon landing on the more habitable planet in the system, which they call Planet Blue, they are greeted by the civilian cosmologist who was aboard Gravity hundreds of years ago, Guan Yifan. He is not sure what happened to the Trisolaran fleets or Yun Tianming, but he received the broadcast from Halo and was there to meet them and take them back to one of the worlds that the galactic humans had founded.

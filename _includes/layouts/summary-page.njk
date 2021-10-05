@@ -1,0 +1,15 @@
+---
+layout: layouts/main.njk
+---
+
+<section class="middle">
+  {% set episode = collections.episodes | findEpisode(season, episode) %}
+  {% set src = episode.data.stuff %}
+  {% set hideBonus = true %}
+  <div class="media-list">
+    {% include 'index-episode-pane.njk' %}
+  </div>
+
+  {{ content | safe }}
+</section>
+

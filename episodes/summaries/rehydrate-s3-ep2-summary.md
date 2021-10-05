@@ -1,11 +1,11 @@
 ---
-layout: "layouts/main.njk"
+layout: "layouts/summary-page.njk"
 pageHeading: >
     Summary - Season 3, Episode 2: Cosmic Brush
+season: 3
+episode: 2
 ---
 
-## Episode 2
-### Summary
 Zhang Beihai continues his work within the Space Force to ensure that the military is ready and believes in victory against the incoming Trisolaran invasion. When planning for the future of the fleet, Zhang is the only one that volunteers for the “high tech” area of research that includes life support, and fusion drives that go 5% the speed of light.
 
 We’re introduced to the other Wallfacers and the start of their plans. 

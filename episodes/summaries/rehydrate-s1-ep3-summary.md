@@ -1,11 +1,10 @@
 ---
-layout: "layouts/main.njk"
+layout: "layouts/summary-page.njk"
 pageHeading: >
     Summary - Season 1, Episode 3: A Game of Pool
+season: 1
+episode: 3
 ---
-
-## Episode 3
-### Summary
 
 After the meeting in Beijing, Wang Miao goes to visit a disheveled Ding Yi at his apartment. Ding Yi tells Wang that he should not get involved with the police or military and that the Frontiers of Science had nothing to do with the death of the scientists.
 

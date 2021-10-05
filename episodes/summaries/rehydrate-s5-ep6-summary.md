@@ -1,11 +1,11 @@
 ---
-layout: "layouts/main.njk"
+layout: "layouts/summary-page.njk"
 pageHeading: >
     Summary - Season 5, Episode 6: Singer
+season: 5
+episode: 6
 ---
 
-## Episode 6
-### Summary
 Somewhere in the Orion Arm of the Milky Way Galaxy, an alien worker, nicknamed Singer, is tasked with determining the sincerity of coordinates and cleansing them. Singer notices a series of interesting communications between two worlds, one of which has already been cleansed, and Singer theorizes that it’s because of nearby “slow fog.” Singer takes an interest in the world that originally sent the message, even giving them a nickname of the “star pluckers.” There isn’t much time for investigation as cleansing is just a routine task. Singer is about to use a “mass dot” to cleanse when it’s noticed the system has “blind corners” and instead decides to use a two-vector foil instead as Singer flicks it and continues on singing.
 
 Cheng Xin and AA awake from hibernation only 60 years later and are greeted by Cao Bin over a video call. Since they had asked to be awoken in the event of a dark forest strike, they ask when the photoid is expected to hit the sun.. but Cao Bin tells them the means of the attack is instead a “slip of paper”

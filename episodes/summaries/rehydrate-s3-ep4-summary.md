@@ -1,11 +1,11 @@
 ---
-layout: "layouts/main.njk"
+layout: "layouts/summary-page.njk"
 pageHeading: >
     Summary - Season 3, Episode 4: Natural Selection
+season: 3
+episode: 4
 ---
 
-## Episode 4
-### Summary
 #### Luo Ji
 Luo Ji wakes from hibernation to find himself 170 years into the future cured of his illness. Humanity has significantly progressed from the time that he’s been asleep. They’ve moved largely into underground cities, every aspect of the environment seems to be personalized and connected together, and have a large fleet of spaceships that can travel up to 15% the speed of light.
 

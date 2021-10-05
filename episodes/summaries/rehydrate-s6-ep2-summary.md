@@ -1,10 +1,11 @@
 ---
-layout: "layouts/main.njk"
+layout: "layouts/summary-page.njk"
 pageHeading: >
     Summary - Season 6, Episode 2: The Mayors and Traders
+season: 6
+episode: 2
 ---
-## Episode 2
-### Summary
+
 In 80 FE (30 years after Seldon’s last appearance) the space around Terminus has fractured into four kingdoms, and Sef Sermak and the newly formed Action Party demand that Hardin’s only course of action is to resign because of his perceived inaction.
 
 Hardin recounts the events that have got them to this point, including Anacreon establishing bases on Terminus, but Hardin was able to engineer a political play, working with the other three kingdoms, to get Anacreon to abandon Terminus.

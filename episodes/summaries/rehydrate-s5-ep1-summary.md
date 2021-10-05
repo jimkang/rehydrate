@@ -1,11 +1,11 @@
 ---
-layout: "layouts/main.njk"
+layout: "layouts/summary-page.njk"
 pageHeading: >
     Summary - Season 5, Episode 1: The Staircase Program
+season: 5
+episode: 1
 ---
 
-## Episode 1
-### Summary
 In the besieged Constantinople, emperor Constantine XI meets with a prostitute named Helena who promises to kill his enemy the sultan who is attacking the city. Skeptical, he gives her a test to return with the head of a prisoner, which she seemingly magically achieves but only returns with his brain. Unfortunately for the emperor, she is unable to kill the sultan since the higher dimensional fragment she used had left the Earth behind.
 
 We’re introduced to Yun Tianming, an aerospace graduate who has late-stage terminal lung cancer. He decides that rather than spend what little money he has left over, that he will utilize the newly passed euthanasia law to take his own life.

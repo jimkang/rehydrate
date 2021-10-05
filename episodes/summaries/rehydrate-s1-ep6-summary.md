@@ -1,11 +1,11 @@
 ---
-layout: "layouts/main.njk"
+layout: "layouts/summary-page.njk"
 pageHeading: >
     Summary - Season 1, Episode 6: Red Coast
+season: 1
+episode: 6
 ---
 
-## Episode 6
-### Summary
 
 Ye Wenjie tells her story of her time at Red Coast Base. She serves under a cover story working in the transmission and monitoring departments. Only after she gains the trust of Commissar Lei does she get told the true purpose of the base, the Search for Extraterrestrial Intelligence (SETI.) However, Ye laments that no contact was ever made or received, and that the base eventually ran out of funds and closed. Also during her time at the base she married Yang Weining, and together they had a daughter, Yang Dong. However an accident at the base killed both Yang and Lei.
 

@@ -1,11 +1,11 @@
 ---
-layout: "layouts/main.njk"
+layout: "layouts/summary-page.njk"
 pageHeading: >
     Summary - Season 1, Episode 7: Sunset for Humanity
+season: 1
+episode: 7
 ---
 
-## Episode 7
-### Summary
 Wang Miao attends another Three-Body meetup where Pan Han is denounced and killed for his killing of Shen Yufei by the commander of the Earth-Trisolaris Organization, Ye Wenjie.
 
 Ye tells Wang that at Red Coast Base. she secretly discovered a way to use the sun to amplify the broadcast signal many times over, and 8 years later received a reply from Trisolaris, but it is a warning:

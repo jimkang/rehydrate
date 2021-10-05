@@ -1,11 +1,11 @@
 ---
-layout: "layouts/main.njk"
+layout: "layouts/summary-page.njk"
 pageHeading: >
     Summary - Season 3, Episode 5: Droplet
+season: 3
+episode: 5
 ---
 
-## Episode 5
-### Summary
 Humanity prepares for the inevitable Trisolaran surrender by debating exactly how generous they should be when they do reach the Solar system. They eventually come to an agreement they call the “Strong Survival Plan” that would grant rights for the Trisolarans to settle on Mars after the probe, now called the droplet due to it looking like a droplet of mercury, comes into visual range, and humanity considers it to be a peace offering gift.
 
 Ding Yi, who has awoken from hibernation, leads a team to be the first humans to have physical contact with the droplet. They are just one ship in a combined fleet of over 2000, lined up in a rectangle formation that is sent to encounter the droplet as a show of both unity between humanity (but actually just so no fleet can claim they got there first) and a show of force to the Trisolarans.

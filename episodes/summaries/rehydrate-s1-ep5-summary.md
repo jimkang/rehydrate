@@ -1,11 +1,10 @@
 ---
-layout: "layouts/main.njk"
+layout: "layouts/summary-page.njk"
 pageHeading: >
     Summary - Season 1, Episode 5: Da Shi
+season: 1
+episode: 5
 ---
-
-## Episode 5
-### Summary
 
 After Wang Maio’s experience of seeing the universe flicker, Da Shi takes him out to a restaurant for drinks and some tripe. At the restaurant, Shi lets Wang know his ultimate rule: “Anything sufficiently weird must be fishy.”
 

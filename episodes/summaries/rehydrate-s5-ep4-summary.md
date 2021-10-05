@@ -1,11 +1,11 @@
 ---
-layout: "layouts/main.njk"
+layout: "layouts/summary-page.njk"
 pageHeading: >
     Summary - Season 5, Episode 4: The Storyless Kingdom
+season: 5
+episode: 4
 ---
 
-## Episode 4
-### Summary
 Humanity tries to get back to normal after the events of the Great Resettlement, Cheng Xin hibernates for 5 years to give time to restore her vision. During that time AA rapidly builds up their business.
 
 During the intervening years, humanity starts to question the validity of the Dark Forest theory itself, thinking that the Trisolarans might be suffering from “delusions of cosmic persecution.” This thinking is quickly reversed as Earth sees one of the stars of Trisolaris get hit with a photoid attack and destroys Trisolaris itself with only 1/1000 of the population able to survive.

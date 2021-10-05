@@ -1,11 +1,11 @@
 ---
-layout: "layouts/main.njk"
+layout: "layouts/summary-page.njk"
 pageHeading: >
     Summary - Season 5, Episode 2: The Swordholders
+season: 5
+episode: 2
 ---
 
-## Episode 2
-### Summary
 Bronze Age, one of the surviving ships from the Battle of Darkness, returns back to Earth after being told that they would be welcomed back as heroes. This warm welcome is not meant to be and as soon after they dock the entire crew is put on trial for crimes against humanity.
 
 During the trial, it’s revealed that over 94% of the crew voted to attack Quantum during the Battle of Darkness, and even more gruesomely, they filled their food storage with the remains of the crew that they killed. Nearly the entire crew is convicted, but one of the members manages to send a communication to the other surviving ship of the Battle of Darkness, Blue Space, to tell them not to come back. In response, Gravity, a new fleet ship equipped with a gravitational wave antenna, is sent to pursue Blue Space along with two Trisolaran droplets.

@@ -1,11 +1,11 @@
 ---
-layout: "layouts/main.njk"
+layout: "layouts/summary-page.njk"
 pageHeading: >
     Summary - Season 3, Episode 1: The Wallfacers
+season: 3
+episode: 1
 ---
 
-## Episode 1
-### Summary
 #### Ye Wenjie
 Sometime close to the time of the end of the Three-Body Problem, at the grave of her daughter, she meets up with an astronomy turned sociology professor, Luo Ji. She suggests that he take on the study of “Cosmic Sociology.” The study of the “supersociety” made up of all the civilizations in the universe.
 

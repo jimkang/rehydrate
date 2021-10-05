@@ -1,11 +1,11 @@
 ---
-layout: "layouts/main.njk"
+layout: "layouts/summary-page.njk"
 pageHeading: >
     Summary - Season 1, Episode 8: Bugs
+season: 1
+episode: 8
 ---
 
-## Episode 8
-### Summary
 Ye Wenjie tells us the backstory and danger of Mike Evans, a self-described “pan-species communist” billionaire that stars the ETO with Ye. In order to continue to receive messages from Trisolaris, he builds a second Red Coast Base on a oil tanker renamed Judgement Day
 
 With the collected messages from Trisolarais are onboard Judgement Day, and Da Shi comes up with a “demonic” plan to obtain them before they can be destroyed by the crew. He uses Wang Miao’s “flying blade” nanomaterial, stretched across the Panama Canal to slice the ship into slices.
