@@ -68,7 +68,24 @@ function addFilteredCollection(glob, sortFn, collection) {
 }
 
 function getEpisodeTitle(ep) {
-  return `Season ${ep.season}, Episode ${ep.number}: ${ep.title}`;
+  let number = []
+
+  if (ep.season) {
+    number.push(`Season ${ep.season}`)
+  }
+
+  if (ep.number) {
+    number.push(`Episode ${ep.number}`)
+  }
+
+  let title = []
+
+  if (number.length > 0) {
+    title.push(number.join(", "))
+  }
+  title.push(ep.title)
+
+  return title.join(": ");
 }
 
 function getEpisodeSubtitle(rl) {
