@@ -23,7 +23,14 @@
       </ul>
     {%- endif -%}
 
-    {% if src.topics %}
+  {% if src.summary %}
+    <h4>Summary</h4>
+    <ul class="finding-links">
+        <li>{{ src.summary }}</li>
+    </ul>
+  {% endif %}
+
+  {% if src.topics %}
       <h4>Topics</h4>
       <ul class="finding-links">
       {% for topic in src.topics %}

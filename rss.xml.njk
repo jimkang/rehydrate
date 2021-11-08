@@ -53,7 +53,7 @@ metadata:
 		<itunes:image href="{{ metadata.imageURL }}" />
     {%- for episode in collections.episodes -%}
       {%- set src = episode.data.stuff -%}
-      {%- set filename -%}rehydrate-s{{ src.season }}-ep{{ src.number }}-{{ src.slug }}.mp3{%- endset -%}
+      {%- set filename = episode.data.stuff | getEpisodeFilename -%}
       {%- set fileURL -%}{{ metadata.url }}/episodes/{{ filename }}{%- endset -%}
       {%- set pageURL -%}{{ metadata.url }}/episodes/{{ src.slug }}{%- endset -%}
       {%- set filePath -%}episodes/{{ filename }}{%- endset -%}

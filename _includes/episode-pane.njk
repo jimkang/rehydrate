@@ -1,7 +1,15 @@
           <li class="pane">
             <div class="episode-title">
               <a href="/episodes/{{ src.slug }}/index.html">{{ src.title }}</a>
-              <div class="season-title">Season {{src.season}}, Episode {{src.number}}</div>
+              <div class="season-title">
+                {% if src.season %}
+                  Season {{src.season}}
+                {% endif %}
+
+                {% if src.number %}
+                  , Episode {{src.number}}
+                {% endif %}
+              </div>
             </div>
             <img src="/media/{{ src.imageFilename }}" alt="Episode image" />
             <audio
@@ -9,7 +17,7 @@
               controls=""
               loop="false"
               preload="metadata"
-              src="/episodes/rehydrate-s{{ src.season }}-ep{{ src.number }}-{{ src.slug }}.mp3"
+              src="/episodes/{{ src | getEpisodeFilename }}"
             ></audio>
             {% include 'findings.njk' %}
             <div class="time-stamp entry-meta">
