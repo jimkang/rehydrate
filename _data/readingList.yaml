@@ -155,7 +155,7 @@ seasons:
         end: 105
       title: The Wallfacers
       url: /episodes/the-wallfacers/index.html
-    
+
     - chapters:
         part: I
         start: 1.2
@@ -166,7 +166,7 @@ seasons:
         end: 185
       title: Cosmic Brush
       url: /episodes/cosmic-brush/index.html
-    
+
     - chapters:
         part: II
         start: 1
@@ -177,7 +177,7 @@ seasons:
         end: 305
       title: The Spell
       url: /episodes/the-spell/index.html
-    
+
     - chapters:
         part: III
         start: 1.1
@@ -189,7 +189,7 @@ seasons:
         end: 391
       title: Natural Selection
       url: /episodes/natural-selection/index.html
-    
+
     - chapters:
         part: III
         start: 1.2
@@ -201,7 +201,7 @@ seasons:
         end: 460
       title: Droplet
       url: /episodes/droplet/index.html
-    
+
     - chapters:
         part: III
         start: 1.3
@@ -228,7 +228,7 @@ seasons:
         end: 99
       title: The Staircase Program
       url: /episodes/the-staircase-program/index.html
-    
+
     - chapters:
         part: II
         start: 1
@@ -240,7 +240,7 @@ seasons:
         end: 174
       title: The Swordholders
       url: /episodes/the-swordholders/index.html
-    
+
     - chapters:
         part: II
         start: 16
@@ -251,7 +251,7 @@ seasons:
         end: 259
       title: Australia
       url: /episodes/australia/index.html
-    
+
     - chapters:
         part: III
         start: 1
@@ -263,7 +263,7 @@ seasons:
         end: 362
       title: The Storyless Kingdom
       url: /episodes/the-storyless-kingdom/index.html
-    
+
     - chapters:
         # part: "III & IV"
         start: Part III, Chapter 16
@@ -274,7 +274,7 @@ seasons:
         end: 463
       title: "Fate's Choice"
       url: /episodes/fates-choice/index.html
-    
+
     - chapters:
         part: V
         start: 1
@@ -296,7 +296,7 @@ seasons:
         end: 602
       title: Our Star
       url: /episodes/our-star/index.html
-      
+
   - title: "Foundation Trilogy"
     author: Isaac Asimov
     number: 6
@@ -344,7 +344,7 @@ seasons:
       #      pages:
       #        start: 15
       #        end: 99
-      url: ~
+      url: /episodes/the-general/index.html
 
     - number: 5
       title: The Mule
@@ -355,7 +355,7 @@ seasons:
       #      pages:
       #        start: 15
       #        end: 99
-      url: ~
+      url: /episodes/the-mule/index.html
 
     - number: 6
       title: Start of the Search
