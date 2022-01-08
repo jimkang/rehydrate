@@ -30,6 +30,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addFilter('rfc822Date', rfc822Date);
   eleventyConfig.addFilter('findEpisode', findEpisode);
   eleventyConfig.addFilter('getEpisodeFilename', getEpisodeFilename);
+  eleventyConfig.addFilter('getEpisodeTweetSummary', getEpisodeTweetSummary);
 };
 
 function compareDatesDesc(a, b) {
@@ -146,6 +147,24 @@ function getEpisodeFilename(episode) {
   if (episode.slug) { parts.push(episode.slug) }
 
   return `${parts.join('-')}.mp3`
+}
+
+function getEpisodeTweetSummary(episode, rl) {
+  parts = [
+    `Rehydrate: Season ${episode.season}, Episode ${episode.number}`,
+    `${episode.title}`,
+    `${rl.season.title} by ${rl.season.author }`,
+    ""
+  ]
+
+  if (rl.episode.chapters.part) {
+    parts.push(`${rl.episode.chapters.part }`)
+  }
+
+  parts.push(`Chapters: ${rl.episode.chapters.start} - ${rl.episode.chapters.end }`)
+  parts.push("", "")
+
+  return parts.join("\n")
 }
 
 function rfc822Date(date) {
