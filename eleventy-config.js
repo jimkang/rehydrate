@@ -157,11 +157,13 @@ function getEpisodeTweetSummary(episode, rl) {
     ""
   ]
 
-  if (rl.episode.chapters.part) {
-    parts.push(`${rl.episode.chapters.part }`)
+  if (rl.episode && rl.episode.chapters) {
+    if (episode.chapters.part) {
+      parts.push(`${rl.episode.chapters.part }`)
+    }
+    parts.push(`Chapters: ${rl.episode.chapters.start} - ${rl.episode.chapters.end }`)
   }
 
-  parts.push(`Chapters: ${rl.episode.chapters.start} - ${rl.episode.chapters.end }`)
   parts.push("", "")
 
   return parts.join("\n")
