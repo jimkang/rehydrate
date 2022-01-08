@@ -366,7 +366,7 @@ seasons:
       #      pages:
       #        start: 15
       #        end: 99
-      url: ~
+      url: /episodes/start-of-the-search/index.html
 
     - number: 7
       title: The Search by the Mule
