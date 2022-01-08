@@ -169,7 +169,7 @@ function getEpisodeTweetSummary(episode, rl) {
 
   parts.push("", "")
 
-  return parts.join("\n")
+  return parts.join("%0a")
 }
 
 function rfc822Date(date) {

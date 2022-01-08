@@ -183,6 +183,11 @@ ul {
   text-decoration: underline;
 }
 
+.pane #tweet-link {
+  font-size: 0.6em;
+  text-align: right;
+}
+
 .media-list .pane h4:first-child {
   margin-top: 0;
 }
