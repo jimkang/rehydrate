@@ -380,7 +380,7 @@ seasons:
       url: ~
 
     - number: 8
-      title: The Search by the Foundation
+      title: Arcadia
       chapters:
         part: "Second Foundation: II"
         start: 7
@@ -391,7 +391,7 @@ seasons:
       url: ~
 
     - number: 9
-      title: Arcadia
+      title: The Search by the Foundation
       chapters:
         part: "Second Foundation: II"
         start: 15
