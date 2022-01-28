@@ -1,0 +1,32 @@
+<div id="reactions-list">
+  <span id="big-smile" class="reaction"><a href="/reactions/big-smile/">😀</a></span>
+  <span id="smile" class="reaction"><a href="/reactions/smile/">🙂</a></span>
+  <span id="neutral" class="reaction"><a href="reactions/neutral/">😑</a></span>
+  <span id="frown" class="reaction"><a href="reactions/frown/">🙁</a></span>
+  <span id="angry" class="reaction"><a href="reactions/angry/">😡</a></span>
+</div>
+
+<script type="application/javascript">
+  const reactions = document.querySelectorAll(".reaction a")
+
+  for (let i = 0; i < reactions.length; i++) {
+    reactions[i].addEventListener('click', e => {
+      e.preventDefault()
+
+      // Make a call to the url in the background
+      fetch(e.target.href)
+        .then(() => { console.log("Reaction Recorded", e.target.href) })
+        .then(() => {
+          // Disable the links
+          for (let i = 0; i < reactions.length; i++) {
+            reactions[i].removeAttribute("href")
+            if (reactions[i] === e.target) {
+              reactions[i].classList.add("clicked")
+            } else {
+              reactions[i].classList.add("notclicked")
+            }
+          }
+        })
+    })
+  }
+</script>
