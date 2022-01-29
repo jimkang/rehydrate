@@ -366,23 +366,23 @@ dd {
   text-align: center;
 }
 
-#reactions-list .reaction a {
+#reactions-list .reaction {
+  cursor: pointer;
   opacity: 40%;
 }
 
-#reactions-list .reaction a {
-  text-decoration: none;
-}
-
-#reactions-list .reaction a:hover {
+#reactions-list .reaction:hover {
+  cursor: pointer;
   opacity: 100%;
 }
 
-#reactions-list .reaction a.notclicked {
+#reactions-list .reaction.notclicked {
+  cursor: default;
   opacity: 40%;
 }
 
-#reactions-list .reaction a.clicked {
+#reactions-list .reaction.clicked {
+  cursor: default;
   opacity: 100%;
 }
 

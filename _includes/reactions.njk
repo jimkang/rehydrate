@@ -1,32 +1,36 @@
+{#
+  Make sure not to include this more than once into a page
+  it is right now tied to the main layout, so it will already
+  be included in every page that uses that
+#}
+
 <div id="reactions-list">
-  <span id="big-smile" class="reaction"><a href="/reactions/big-smile/">😀</a></span>
-  <span id="smile" class="reaction"><a href="/reactions/smile/">🙂</a></span>
-  <span id="neutral" class="reaction"><a href="reactions/neutral/">😑</a></span>
-  <span id="frown" class="reaction"><a href="reactions/frown/">🙁</a></span>
-  <span id="angry" class="reaction"><a href="reactions/angry/">😡</a></span>
+  <span id="big-smile" class="reaction" data-href="/reactions/big-smile/">😀</span>
+  <span id="smile" class="reaction" data-href="/reactions/smile/">🙂</span>
+  <span id="neutral" class="reaction" data-href="/reactions/neutral/">😑</span>
+  <span id="frown" class="reaction" data-href="/reactions/frown/">🙁</span>
+  <span id="angry" class="reaction" data-href="/reactions/angry/">😡</span>
 </div>
 
 <script type="application/javascript">
-  const reactions = document.querySelectorAll(".reaction a")
+  const reactions = document.querySelectorAll(".reaction")
 
-  for (let i = 0; i < reactions.length; i++) {
-    reactions[i].addEventListener('click', e => {
-      e.preventDefault()
+  let reactionListener = (e) => {
+    // If we already removed it, just return
+    if (!e.target.dataset.href) return;
 
-      // Make a call to the url in the background
-      fetch(e.target.href)
-        .then(() => { console.log("Reaction Recorded", e.target.href) })
-        .then(() => {
-          // Disable the links
-          for (let i = 0; i < reactions.length; i++) {
-            reactions[i].removeAttribute("href")
-            if (reactions[i] === e.target) {
-              reactions[i].classList.add("clicked")
-            } else {
-              reactions[i].classList.add("notclicked")
-            }
-          }
-        })
-    })
+    // Make a call to the url in the background
+    fetch(e.target.dataset.href)
+      .then(() => {
+        // Disable the links
+        for (const r of reactions) {
+          r.removeAttribute("data-href")
+          r === e.target ? r.classList.add("clicked") : r.classList.add("notclicked")
+        }
+      })
+  }
+
+  for (const reaction of reactions) {
+    reaction.addEventListener('click', reactionListener)
   }
 </script>
