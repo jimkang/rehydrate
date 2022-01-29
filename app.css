@@ -361,6 +361,31 @@ dd {
   display: block;
 }
 
+#reactions-list {
+  width: 100%;
+  text-align: center;
+}
+
+#reactions-list .reaction {
+  cursor: pointer;
+  opacity: 40%;
+}
+
+#reactions-list .reaction:hover {
+  cursor: pointer;
+  opacity: 100%;
+}
+
+#reactions-list .reaction.notclicked {
+  cursor: default;
+  opacity: 40%;
+}
+
+#reactions-list .reaction.clicked {
+  cursor: default;
+  opacity: 100%;
+}
+
 @media all and (max-width: 586px) {
   body {
     font-size: 12px;
