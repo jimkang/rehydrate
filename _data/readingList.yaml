@@ -388,7 +388,7 @@ seasons:
       #      pages:
       #        start: 15
       #        end: 99
-      url: ~
+      url: /episodes/arcadia/index.html
 
     - number: 9
       title: The Search by the Foundation
