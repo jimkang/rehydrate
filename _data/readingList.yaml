@@ -139,7 +139,6 @@ seasons:
       title: All Said and Done
       url: /episodes/all-said-and-done/index.html
 
-
   - title: "The Dark Forest"
     author: "Liu Cixin"
     number: 3
@@ -308,9 +307,6 @@ seasons:
         part: "Foundation: I - II"
         start: 1
         end: 11
-#      pages:
-#        start: 15
-#        end: 99
       url: /episodes/the-psychohistorians-and-encyclopedists/index.html
 
     - number: 2
@@ -400,3 +396,86 @@ seasons:
       #        start: 15
       #        end: 99
       url: /episodes/the-search-by-the-foundation/index.html
+
+  - title: "Dune"
+    author: Frank Herbert
+    number: 7
+
+    episodes:
+      - number: 1
+        title: TBD
+        chapters:
+          part: "Book 1: Dune"
+          start: 1
+          end: 6
+          endLine: "ALL AROUND"
+        url: ~
+
+      - number: 2
+        title: TBD
+        chapters:
+          part: "Book 1: Dune"
+          start: 7
+          end: 12
+          endLine: "THE DUKE"
+        url: ~
+
+      - number: 3
+        title: TBD
+        chapters:
+          part: "Book 1: Dune"
+          start: 13
+          end: 16
+          endLine: "JESSICA HEARD"
+        url: ~
+
+      - number: 4
+        title: TBD
+        chapters:
+          part: "Book 1: Dune"
+          start: 17
+          end: 23
+        url: ~
+
+      - number: 5
+        title: TBD
+        chapters:
+          part: "Book 1: Muad'dib"
+          start: 1
+          end: 6
+          endLine: "PAUL STOOD"
+        url: ~
+
+      - number: 6
+        title: TBD
+        chapters:
+          part: "Book 1: Muad'dib"
+          start: 7
+          end: 11
+          endLine: "IN THE"
+        url: ~
+
+      - number: 7
+        title: TBD
+        chapters:
+          part: "Book 1: Muad'dib"
+          start: 12
+          end: 16
+        url: ~
+
+      - number: 8
+        title: TBD
+        chapters:
+          part: "Book 1: The Prophet"
+          start: 1
+          end: 6
+          endLine: "THE CROWD"
+        url: ~
+
+      - number: 9
+        title: TBD
+        chapters:
+          part: "Book 1: The Prophet"
+          start: 7
+          end: 12
+        url: ~
