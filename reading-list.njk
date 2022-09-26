@@ -4,13 +4,13 @@ title: Rehydrate - Reading List
 pageHeading: Reading List
 ---
 <div id="reading-list">
-  {%- for season in readingList.seasons -%}
+  {%- for season in readingList.seasons | reverse -%}
   <h3>Season {{ season.number }} - <u>{{ season.title }}</u> by {{ season.author }}</h3>
   <ul>
   {%- for episode in season.episodes -%}
     {% set releasedEpisode = episode | getEpisodeForReadingListEntry(season, collections.episodes) %}
 
-    <li>{{ episode.number }} - 
+    <li>{{ episode.number }} -
         {%- if releasedEpisode  %}
             <a href="{{ episode.url}}">{{episode.title}}</a>
         {% else %}
@@ -21,7 +21,7 @@ pageHeading: Reading List
         <li>
           {%- if episode.chapters.part != null -%}
             Part {{episode.chapters.part}} -&nbsp;
-          {%- endif -%} 
+          {%- endif -%}
           Chapters {{episode.chapters.start}} - {{episode.chapters.end}}
         </li>
         {%- if episode.pages.start != null -%}
