@@ -403,16 +403,16 @@ seasons:
 
     episodes:
       - number: 1
-        title: TBD
+        title: Caladan
         chapters:
           part: "Book 1: Dune"
           start: 1
           end: 6
           endLine: "ALL AROUND"
-        url: ~
+        url: /episodes/caladan/index.html
 
       - number: 2
-        title: TBD
+        title: Desert Power
         chapters:
           part: "Book 1: Dune"
           start: 7
