@@ -408,7 +408,7 @@ seasons:
           part: "Book 1: Dune"
           start: 1
           end: 6
-          endLine: "ALL AROUND"
+          endLine: "ALL AROUND the Lady Jessica"
         url: /episodes/caladan/index.html
 
       - number: 2
@@ -417,7 +417,7 @@ seasons:
           part: "Book 1: Dune"
           start: 7
           end: 12
-          endLine: "THE DUKE"
+          endLine: "THE DUKE found Thufir Hawat alone in the corner room"
         url: ~
 
       - number: 3
@@ -426,7 +426,7 @@ seasons:
           part: "Book 1: Dune"
           start: 13
           end: 16
-          endLine: "JESSICA HEARD"
+          endLine: "JESSICA HEARD the disturbance in the great hall"
         url: ~
 
       - number: 4
@@ -440,19 +440,19 @@ seasons:
       - number: 5
         title: TBD
         chapters:
-          part: "Book 1: Muad'dib"
+          part: "Book 2: Muad'dib"
           start: 1
           end: 6
-          endLine: "PAUL STOOD"
+          endLine: "PAUL STOOD outside the stilltent in the late afternoon"
         url: ~
 
       - number: 6
         title: TBD
         chapters:
-          part: "Book 1: Muad'dib"
+          part: "Book 2: Muad'dib"
           start: 7
           end: 11
-          endLine: "IN THE"
+          endLine: "IN THE stillness of the cavern"
         url: ~
 
       - number: 7
@@ -466,16 +466,16 @@ seasons:
       - number: 8
         title: TBD
         chapters:
-          part: "Book 1: The Prophet"
+          part: "Book 3: The Prophet"
           start: 1
           end: 6
-          endLine: "THE CROWD"
+          endLine: "THE CROWD in the cavern assembly chamber"
         url: ~
 
       - number: 9
         title: TBD
         chapters:
-          part: "Book 1: The Prophet"
+          part: "Book 3: The Prophet"
           start: 7
           end: 12
         url: ~
