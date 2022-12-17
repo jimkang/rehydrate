@@ -418,10 +418,10 @@ seasons:
           start: 7
           end: 12
           endLine: "THE DUKE found Thufir Hawat alone in the corner room"
-        url: ~
+        url: /episodes/desert-power/index.html
 
       - number: 3
-        title: TBD
+        title: The Banquet
         chapters:
           part: "Book 1: Dune"
           start: 13
@@ -430,7 +430,7 @@ seasons:
         url: ~
 
       - number: 4
-        title: TBD
+        title: The Tooth
         chapters:
           part: "Book 1: Dune"
           start: 17
