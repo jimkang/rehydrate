@@ -1,0 +1,14 @@
+---
+layout: layouts/summary-page.njk
+pageHeading: 'Summary - Season 7, Episode 3: The Banquet'
+season: 7
+episode: 3
+
+---
+Hawat delivers two pieces of information to the Duke. First, he relays a Harkonnen note, confirming what Mapes revealed: there is a betrayer inside the House Atreides, someone close to the Duke. The mentat suspects the Lady Jessica. Second, he delivers a filmclip analysis of the Fremen religion, recalling that when they arrived on-planet, the Fremen shouted the term “Mahdi” at Paul. The term follows a messiah-tradition about the child of a Bene Gesserit. We flash to Paul watching the clip himself, but the Duke chooses to instead focus on Hawat’s other message. He confides in his son that he does not, and has never doubted Jessica, but will act as if he does. He hopes to trick his enemies into believing they have made him turn against her. He asks Paul to tell his mother if he is unable to. Paul hears the unspoken train of thought: that the Duke will be dead before he can reveal the truth himself. We learn that the spice melange, when ingested, acts as a natural immunity to common poisons.
+
+In the Great Hall, the Duke abolishes another water-heavy tradition of sloshing water on the floor, and rebukes a water-shipper to diversify his portfolio as ‘water will one day be common’. Jessica diplomatically smoothes the incident by stating their ambition to gentle the climate of Arrakis. This statement catches the attention of Kynes, the ecologist, who seems to speak to Jessica in code. While making rousing speeches to his officers, the Duke mystifyingly smashes his own water on the floor, impelling his company to follow. All follow suit, but Kynes cheerfully secrets away the water into a hidden flagon.
+
+Kynes is not the only one with hidden talents, Jessica calls upon her espionage training and detects linguistic idiolects in the Guild Banker that out him as a Harkonnen agent, throwing into jeopardy the neutrality of the Emperor’s Guild. Paul catches on to something amiss, and decides to verbally--and somewhat physically-- joust with the banker. Paul’s challenge to the banker emerges subtle alliances, with the banker and his companion on one side, and the ship smuggler, the watershipper, and the ecologist on the other. The banker sneers that the Fremen drink blood to survive in the desert. Kynes cooly responds that desert Fremen use all the water in a man’s body. At this point the Duke also catches on to what Jessica and Paul have respectively noted, that Kyne’s attitude changed when they spoke of terraforming Arrakis.
+
+Paul assumes his father’s seat at the table, and draws out the tensions in the room, as the banker and smuggler have locked horns about which of them have water control, and Kynes is concealing his own knowledge of water. Kynes intervenes before violence breaks out-- and no one is certain that it would have, least of all Paul himself, but nonetheless the dinner party draws to a close.
