@@ -435,7 +435,7 @@ seasons:
           part: "Book 1: Dune"
           start: 17
           end: 23
-        url: ~
+        url: /episodes/the-tooth/index.html
 
       - number: 5
         title: TBD
