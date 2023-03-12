@@ -438,13 +438,13 @@ seasons:
         url: /episodes/the-tooth/index.html
 
       - number: 5
-        title: TBD
+        title: Fear's Path
         chapters:
           part: "Book 2: Muad'dib"
           start: 1
           end: 6
           endLine: "PAUL STOOD outside the stilltent in the late afternoon"
-        url: ~
+        url: /episodes/fears-path/index.html
 
       - number: 6
         title: TBD
