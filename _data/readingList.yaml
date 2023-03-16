@@ -408,7 +408,7 @@ seasons:
           part: "Book 1: Dune"
           start: 1
           end: 6
-          endLine: "ALL AROUND the Lady Jessica"
+          endLine: "But even as he focused on this thought, his new awareness denied it."
         url: /episodes/caladan/index.html
 
       - number: 2
@@ -417,7 +417,7 @@ seasons:
           part: "Book 1: Dune"
           start: 7
           end: 12
-          endLine: "THE DUKE found Thufir Hawat alone in the corner room"
+          endLine: "“… for the father, nothing.”"
         url: /episodes/desert-power/index.html
 
       - number: 3
@@ -426,7 +426,7 @@ seasons:
           part: "Book 1: Dune"
           start: 13
           end: 16
-          endLine: "JESSICA HEARD the disturbance in the great hall"
+          endLine: "...has the right to boast."
         url: /episodes/the-banquet/index.html
 
       - number: 4
@@ -443,7 +443,7 @@ seasons:
           part: "Book 2: Muad'dib"
           start: 1
           end: 6
-          endLine: "PAUL STOOD outside the stilltent in the late afternoon"
+          endLine: "Now we are seventy-three."
         url: /episodes/fears-path/index.html
 
       - number: 6
@@ -452,7 +452,7 @@ seasons:
           part: "Book 2: Muad'dib"
           start: 7
           end: 11
-          endLine: "IN THE stillness of the cavern"
+          endLine: "It will not be, he told himself. Icannot let it be."
         url: ~
 
       - number: 7
@@ -469,7 +469,7 @@ seasons:
           part: "Book 3: The Prophet"
           start: 1
           end: 6
-          endLine: "THE CROWD in the cavern assembly chamber"
+          endLine: "...before I slay her."
         url: ~
 
       - number: 9
