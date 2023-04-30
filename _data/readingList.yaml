@@ -447,13 +447,13 @@ seasons:
         url: /episodes/fears-path/index.html
 
       - number: 6
-        title: TBD
+        title: Spannungsbogen
         chapters:
           part: "Book 2: Muad'dib"
           start: 7
           end: 11
           endLine: "It will not be, he told himself. Icannot let it be."
-        url: ~
+        url: /episodes/spannungsbogen/index.html
 
       - number: 7
         title: TBD
