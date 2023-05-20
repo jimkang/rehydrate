@@ -456,15 +456,15 @@ seasons:
         url: /episodes/spannungsbogen/index.html
 
       - number: 7
-        title: TBD
+        title: The Water of Life
         chapters:
           part: "Book 2: Muad'dib"
           start: 12
           end: 16
-        url: ~
+        url: /episodes/the-water-of-life/index.html
 
       - number: 8
-        title: TBD
+        title: The Prophet
         chapters:
           part: "Book 3: The Prophet"
           start: 1
@@ -473,7 +473,7 @@ seasons:
         url: ~
 
       - number: 9
-        title: TBD
+        title: Kanly
         chapters:
           part: "Book 3: The Prophet"
           start: 7
