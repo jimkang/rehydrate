@@ -20,10 +20,6 @@ module.exports = function(eleventyConfig) {
     curry(addFilteredCollection)(['hosts/*.njk'], null)
   );
 
-  eleventyConfig.addCollection('reactions',
-    curry(addFilteredCollection)(['reactions/*.njk'], compareDatesDesc)
-  );
-
   eleventyConfig.addPlugin(pluginRss);
   eleventyConfig.addFilter('length', getFileLength);
   eleventyConfig.addFilter('getEpisodeForReadingListEntry', getEpisodeForReadingListEntry);

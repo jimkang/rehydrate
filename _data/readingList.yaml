@@ -470,7 +470,7 @@ seasons:
           start: 1
           end: 6
           endLine: "...before I slay her."
-        url: ~
+        url: /epsiodes/the-prophet/index.html
 
       - number: 9
         title: Kanly
@@ -478,4 +478,4 @@ seasons:
           part: "Book 3: The Prophet"
           start: 7
           end: 12
-        url: ~
+        url: /episodes/kanly/index.html
