@@ -22,7 +22,11 @@ pageHeading: Reading List
           {%- if episode.chapters.part != null -%}
             Part {{episode.chapters.part}} -&nbsp;
           {%- endif -%}
-          Chapters {{episode.chapters.start}} - {{episode.chapters.end}}
+          {%- if episode.chapters.start == episode.chapters.end %}
+              Chapter {{episode.chapters.start}}
+          {%- else -%}
+              Chapters {{episode.chapters.start}} - {{episode.chapters.end}}
+          {%- endif -%}
         </li>
         {%- if episode.pages.start != null -%}
         <li>Pages {{episode.pages.start}} - {{episode.pages.end}}</li>
