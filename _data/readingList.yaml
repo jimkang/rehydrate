@@ -490,39 +490,39 @@ seasons:
         chapters:
           start: 1
           end: 1
-        url: ~
+        url: /episodes/the-man-who-cried-god/index.html
 
       - number: 2
         title: The War Lovers
         chapters:
           start: 2
           end: 2
-        url: ~
+        url: /episodes/the-war-lovers/index.html
 
       - number: 3
         title: Hyperion Cantos
         chapters:
           start: 3
           end: 3
-        url: ~
+        url: /episodes/hyperion-cantos/index.html
 
       - number: 4
         title: The River Lethe's Taste is Bitter
         chapters:
           start: 4
           end: 4
-        url: ~
+        url: /episodes/the-river-lethes-taste-is-bitter/index.html
 
       - number: 5
         title: The Long Good-Bye
         chapters:
           start: 5
           end: 5
-        url: ~
+        url: /episodes/the-long-good-bye/index.html
 
       - number: 6
         title: Remembering Siri
         chapters:
           start: 6
           end: 6
-        url: ~
+        url: /episodes/remembering-siri/index.html
