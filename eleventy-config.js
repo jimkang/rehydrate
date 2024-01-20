@@ -4,6 +4,8 @@ var curry = require('lodash.curry');
 const yaml = require('yamljs');
 const getAtPath = require('get-at-path');
 
+const hostsExcludeExternal = ['jim']
+
 module.exports = function(eleventyConfig) {
   eleventyConfig.addDataExtension('yaml', contents => yaml.parse(contents));
 
@@ -12,12 +14,23 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy('episodes/**/*.mp3');
 
   eleventyConfig.addCollection('episodes',
-    curry(addFilteredCollection)(['episodes/*.njk'], compareDatesDesc)
+    curry(addFilteredCollection)(['episodes/*.njk'], compareDatesDesc, null)
+  );
+
+  eleventyConfig.addCollection('external_episodes',
+    curry(addFilteredCollection)(['episodes/*.njk'], compareDatesDesc, (episode) => {
+      // Filter out the episode if any of the hosts are in the exclusion list
+      // console.log(episode.data.stuff.hosts)
+      if (!episode.data.stuff.hosts) {
+        console.log(episode.data.stuff.title)
+      }
+      return episode.data.stuff && !hostsExcludeExternal.some(excludedHost => episode.data.stuff.hosts.includes(excludedHost))
+    })
   );
 
   eleventyConfig.addCollection(
     'hosts',
-    curry(addFilteredCollection)(['hosts/*.njk'], null)
+    curry(addFilteredCollection)(['hosts/*.njk'], null, null)
   );
 
   eleventyConfig.addPlugin(pluginRss);
@@ -57,14 +70,20 @@ function getFileLength(filePath) {
   return stats.size;
 }
 
-function addFilteredCollection(glob, sortFn, collection) {
+function addFilteredCollection(glob, sortFn, filterFn, collection) {
   var filteredCollection = collection.getFilteredByGlob(glob)
-  .filter(notIndex)
-  .filter(currentEpisodes);
+    .filter(notIndex)
+    .filter(currentEpisodes);
+
+  if (filterFn) {
+    console.log(filterFn)
+    filteredCollection = filteredCollection.filter(filterFn)
+  }
 
   if (sortFn) {
     filteredCollection.sort(sortFn);
   }
+
   return filteredCollection;
 }
 
