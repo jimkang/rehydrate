@@ -4,7 +4,7 @@ var curry = require('lodash.curry');
 const yaml = require('yamljs');
 const getAtPath = require('get-at-path');
 
-const hostsExcludeExternal = ['jim']
+const hostsExcludeExternal = ['jim', 'amin']
 
 module.exports = function(eleventyConfig) {
   eleventyConfig.addDataExtension('yaml', contents => yaml.parse(contents));
