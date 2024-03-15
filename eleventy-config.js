@@ -162,7 +162,7 @@ function getEpisodeFilename(episode) {
   parts = ["rehydrate"]
 
   if (episode.season) { parts.push(`s${episode.season}`) }
-  if (episode.number) { parts.push(`ep${episode.number}`) }
+  if (episode.number == 0 || episode.number) { parts.push(`ep${episode.number}`) }
   if (episode.slug) { parts.push(episode.slug) }
 
   return `${parts.join('-')}.mp3`
