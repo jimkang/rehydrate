@@ -6,14 +6,14 @@
       <ul class="finding-links">
         <li><i>{{ rl.season.title }}</i> - {{ rl.season.author }}</li>
         <li>
-          {%- if episode.chapters -%}
+          {%- if rl.episode.chapters -%}
             {% if rl.episode.chapters.part %}
             Part <i>{{ rl.episode.chapters.part }}</i>,
             {% endif %}
             Chapters: {{rl.episode.chapters.start}} - {{ rl.episode.chapters.end }}
           {%- endif -%}
 
-          {%- if episode.episodes -%}
+          {%- if rl.episode.episodes -%}
             Episodes: {{rl.episode.episodes.start}} - {{ rl.episode.episodes.end }}
           {%- endif -%}
         </li>
