@@ -138,8 +138,8 @@ function getReadingListEntry(ep, readingList) {
 
 function getEpisodeForReadingListEntry(readingListEntry, readingListSeason, episodeList) {
   return episodeList.find(e => {
-    return getAtPath(e, ['data', 'stuff', 'season']) === readingListSeason.number
-      && getAtPath(e, ['data', 'stuff', 'number']) === readingListEntry.number
+    return (getAtPath(e, ['data', 'stuff', 'season']) || 0) === readingListSeason.number
+      && (getAtPath(e, ['data', 'stuff', 'number']) || 0) === readingListEntry.number
   })
 }
 
