@@ -1,33 +1,31 @@
 {% set rl = src | getReadingListEntry(readingList) %}
 
 <div>
-    {%- if rl.episode.chapters != null -%}
-      <h4>Episode Info</h4>
-      <ul class="finding-links">
-        <li><i>{{ rl.season.title }}</i> - {{ rl.season.author }}</li>
-        <li>
-          {%- if rl.episode.chapters -%}
-            {% if rl.episode.chapters.part %}
-            Part <i>{{ rl.episode.chapters.part }}</i>,
-            {% endif %}
-            Chapters: {{rl.episode.chapters.start}} - {{ rl.episode.chapters.end }}
-          {%- endif -%}
+    <h4>Episode Info</h4>
+    <ul class="finding-links">
+      <li><i>{{ rl.season.title }}</i> - {{ rl.season.author }}</li>
+      <li>
+        {%- if rl.episode.chapters -%}
+          {% if rl.episode.chapters.part %}
+          Part <i>{{ rl.episode.chapters.part }}</i>,
+          {% endif %}
+          Chapters: {{rl.episode.chapters.start}} - {{ rl.episode.chapters.end }}
+        {%- endif -%}
 
-          {%- if rl.episode.episodes -%}
-            Episodes: {{rl.episode.episodes.start}} - {{ rl.episode.episodes.end }}
-          {%- endif -%}
-        </li>
-        {% if rl.episode.pages.start %}
-        <li>Pages: {{ rl.episode.pages.start }} - {{ rl.episode.pages.end }}</li>
-        {% endif %}
-        {% if src.transcript %}
-          <li><a class="transcript-link" href="{{ src.transcript }}">Transcript</a></li>
-        {%  endif %}
-        {% if src.episodeSummary %}
-          <li><a class="summary-link" href="{{ src.episodeSummary }}">Summary</a></li>
-        {%  endif %}
-      </ul>
-    {%- endif -%}
+        {%- if rl.episode.episodes -%}
+          Episodes: {{rl.episode.episodes.start}} - {{ rl.episode.episodes.end }}
+        {%- endif -%}
+      </li>
+      {% if rl.episode.pages.start %}
+      <li>Pages: {{ rl.episode.pages.start }} - {{ rl.episode.pages.end }}</li>
+      {% endif %}
+      {% if src.transcript %}
+        <li><a class="transcript-link" href="{{ src.transcript }}">Transcript</a></li>
+      {%  endif %}
+      {% if src.episodeSummary %}
+        <li><a class="summary-link" href="{{ src.episodeSummary }}">Summary</a></li>
+      {%  endif %}
+    </ul>
 
   {% if src.summary %}
     <h4>Summary</h4>
