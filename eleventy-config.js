@@ -119,6 +119,10 @@ function getEpisodeSubtitle(rl) {
     titleParts.push(`Chapters ${rl.episode.chapters.start}-${rl.episode.chapters.end}`);
   }
 
+  if (rl.episode && rl.episode.episodes) {
+    titleParts.push(`Episodes ${rl.episode.episodes.start}-${rl.episode.episodes.end}`);
+  }
+
   return titleParts.join(", ")
 }
 
@@ -183,6 +187,10 @@ function getEpisodeTweetSummary(episode, rl) {
 
     if (rl.episode.chapters.start && rl.episode.chapters.end) {
       parts.push(`Chapters: ${rl.episode.chapters.start} - ${rl.episode.chapters.end}`)
+    }
+
+    if (rl.episode.episodes.start && rl.episode.episodes.end) {
+      parts.push(`Chapters: ${rl.episode.episodes.start} - ${rl.episode.episodes.end}`)
     }
   }
 

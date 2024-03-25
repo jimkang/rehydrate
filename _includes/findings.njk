@@ -6,10 +6,16 @@
       <ul class="finding-links">
         <li><i>{{ rl.season.title }}</i> - {{ rl.season.author }}</li>
         <li>
-          {% if rl.episode.chapters.part %}
-          Part <i>{{ rl.episode.chapters.part }}</i>,
-          {% endif %}
-          Chapters: {{rl.episode.chapters.start}} - {{ rl.episode.chapters.end }}
+          {%- if episode.chapters -%}
+            {% if rl.episode.chapters.part %}
+            Part <i>{{ rl.episode.chapters.part }}</i>,
+            {% endif %}
+            Chapters: {{rl.episode.chapters.start}} - {{ rl.episode.chapters.end }}
+          {%- endif -%}
+
+          {%- if episode.episodes -%}
+            Episodes: {{rl.episode.episodes.start}} - {{ rl.episode.episodes.end }}
+          {%- endif -%}
         </li>
         {% if rl.episode.pages.start %}
         <li>Pages: {{ rl.episode.pages.start }} - {{ rl.episode.pages.end }}</li>

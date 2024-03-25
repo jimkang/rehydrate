@@ -19,14 +19,25 @@ pageHeading: Reading List
     </li>
     <ul>
         <li>
-          {%- if episode.chapters.part != null -%}
-            Part {{episode.chapters.part}} -&nbsp;
+          {%- if episode.chapters -%}
+            {%- if episode.chapters.part != null -%}
+              Part {{episode.chapters.part}} -&nbsp;
+            {%- endif -%}
+            {%- if episode.chapters.start == episode.chapters.end %}
+                Chapter {{episode.chapters.start}}
+            {%- else -%}
+                Chapters {{episode.chapters.start}} - {{episode.chapters.end}}
+            {%- endif -%}
           {%- endif -%}
-          {%- if episode.chapters.start == episode.chapters.end %}
-              Chapter {{episode.chapters.start}}
-          {%- else -%}
-              Chapters {{episode.chapters.start}} - {{episode.chapters.end}}
+
+          {%- if episode.episodes -%}
+            {%- if episode.episodes.start == episode.episodes.end %}
+              Episode {{episode.episodes.start}}
+            {%- else -%}
+              Episodes {{episode.episodes.start}} - {{episode.episodes.end}}
+            {%- endif -%}
           {%- endif -%}
+
         </li>
         {%- if episode.pages.start != null -%}
         <li>Pages {{episode.pages.start}} - {{episode.pages.end}}</li>

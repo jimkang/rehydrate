@@ -535,7 +535,22 @@ seasons:
     episodes:
       - number: 0
         title: Preview
-        chapters:
-          start: 0
-          end: 0
         url: /episodes/preview/index.html
+      - number: 1
+        title: Destroyer of Worlds
+        episodes:
+          start: 1
+          end: 3
+        url: ~
+      - number: 2
+        title: Judgement Day
+        episodes:
+          start: 4
+          end: 5
+        url: ~
+      - number: 2
+        title: The Stars Our Destination
+        episodes:
+          start: 6
+          end: 8
+        url: ~
