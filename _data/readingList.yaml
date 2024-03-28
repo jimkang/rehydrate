@@ -541,7 +541,7 @@ seasons:
         episodes:
           start: 1
           end: 3
-        url: ~
+        url: /episodes/destroyer-of-worlds/index.html
       - number: 2
         title: Judgement Day
         episodes:
