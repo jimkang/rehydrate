@@ -23,7 +23,7 @@
     "eslint": "^6.8.0"
   },
   "dependencies": {
-    "@11ty/eleventy": "^0.12.1",
+    "@11ty/eleventy": "^2.0.1",
     "@11ty/eleventy-plugin-rss": "^1.1.1",
     "get-at-path": "^1.0.1",
     "lodash.curry": "^4.1.1",

@@ -7,6 +7,8 @@ const getAtPath = require('get-at-path');
 const hostsExcludeExternal = ['jim']
 
 module.exports = function(eleventyConfig) {
+  eleventyConfig.setServerPassthroughCopyBehavior("passthrough");
+
   eleventyConfig.addDataExtension('yaml', contents => yaml.parse(contents));
 
   eleventyConfig.addPassthroughCopy('media/*');
@@ -44,10 +46,53 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addFilter('findEpisode', findEpisode);
   eleventyConfig.addFilter('getEpisodeFilename', getEpisodeFilename);
   eleventyConfig.addFilter('getEpisodeTweetSummary', getEpisodeTweetSummary);
+  eleventyConfig.addFilter('getEpisodeLink', getEpisodeLink);
 };
 
+function getEpisodeLink(episode, readingListEntry, useSummary) {
+  if (episode) {
+    let stuff = episode.data.stuff
+
+    let seasonParts = [];
+    if (stuff.season) { seasonParts.push(`Season ${stuff.season}`) }
+    if (stuff.number) { seasonParts.push(`Ep. ${stuff.number}`) }
+
+    let url = episode.page.url;
+    if (useSummary && stuff.episodeSummary) {
+      console.log(stuff.episodeSummary)
+      url = stuff.episodeSummary
+    }
+
+    let episodeLinkParts = [
+      `<a href="${url}">
+            <img src="/media/${stuff.imageFilename}" class="prev-next-image" alt="Episode image" />
+      </a>`,
+      `<a href="${episode.page.url}">
+            <span class="prev-next-title">${stuff.title}</span>
+      </a>`,
+      `<span class="prev-next-season">${seasonParts.join(", ")}</span>`,
+    ]
+
+    if (stuff.episodeSummary) {
+      episodeLinkParts.push(`<a href="${stuff.episodeSummary}">
+            <span class="prev-next-summary">Summary</span>
+      </a>`)
+    }
+
+    return episodeLinkParts.join("<br />")
+  } else {
+    return null;
+  }
+}
+
 function compareDatesDesc(a, b) {
-  return b.data.stuff.date - a.data.stuff.date;
+  if (b.data.stuff.date !== a.data.stuff.date) {
+    return b.data.stuff.date - a.data.stuff.date;
+  } else if (b.data.stuff.season !== a.data.stuff.season) {
+    return b.data.stuff.season - a.data.stuff.season
+  } else {
+    return b.data.stuff.number - a.data.stuff.number
+  }
 }
 
 function notIndex(thing) {

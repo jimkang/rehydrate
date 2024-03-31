@@ -1,0 +1,11 @@
+{% set previousPost = collections.episodes | getPreviousCollectionItem(episode) %}
+{% set nextPost = collections.episodes | getNextCollectionItem(episode) %}
+
+<div id="prev-next" class="pane">
+  <div id="next">
+    {{ nextPost | getEpisodeLink(rl, useSummary) | safe }}
+  </div>
+  <div id="previous">
+    {{ previousPost | getEpisodeLink(rl, useSummary) | safe }}
+  </div>
+</div>

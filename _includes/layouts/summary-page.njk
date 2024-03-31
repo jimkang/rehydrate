@@ -6,7 +6,9 @@ layout: layouts/main.njk
   {% set episode = collections.episodes | findEpisode(season, episode) %}
   {% set src = episode.data.stuff %}
   {% set hideBonus = true %}
+  {% set useSummary = true %}
   <div class="media-list">
+    {% include 'prev-next.njk' %}
     {% include 'index-episode-pane.njk' %}
   </div>
 

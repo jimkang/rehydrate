@@ -1,5 +1,3 @@
-{% set rl = src | getReadingListEntry(readingList) %}
-
 <div>
     <h4>Episode Info</h4>
     <ul class="finding-links">
@@ -19,9 +17,6 @@
       {% if rl.episode.pages.start %}
       <li>Pages: {{ rl.episode.pages.start }} - {{ rl.episode.pages.end }}</li>
       {% endif %}
-      {% if src.transcript %}
-        <li><a class="transcript-link" href="{{ src.transcript }}">Transcript</a></li>
-      {%  endif %}
       {% if src.episodeSummary %}
         <li><a class="summary-link" href="{{ src.episodeSummary }}">Summary</a></li>
       {%  endif %}

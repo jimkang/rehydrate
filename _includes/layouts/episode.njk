@@ -5,6 +5,7 @@ permalink: episodes/{{ stuff.slug }}/index.html
 {% set src = stuff %}
       <section class="media">
         <ul class="media-list centered-col">
+          {% include 'prev-next.njk' %}
           {% include 'episode-pane.njk' %}
         </ul>
       </section>

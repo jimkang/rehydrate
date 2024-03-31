@@ -361,29 +361,39 @@ dd {
   display: block;
 }
 
-#reactions-list {
-  width: 100%;
-  text-align: center;
+#prev-next {
+  /*border: 1px solid black;*/
+  /*font-size: 0.5em;*/
+  /*width: 100%;*/
+  display: flex;
+  flex-flow: row nowrap;
+  margin-bottom: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
-#reactions-list .reaction {
-  cursor: pointer;
-  opacity: 40%;
+#prev-next .prev-next-season {
+  font-size: 0.5em;
+}
+#prev-next .prev-next-title {
+  font-size: 0.6em;
+}
+#prev-next .prev-next-summary {
+  font-size: 0.5em;
 }
 
-#reactions-list .reaction:hover {
-  cursor: pointer;
-  opacity: 100%;
+#prev-next img {
+  width: 80px;
 }
 
-#reactions-list .reaction.notclicked {
-  cursor: default;
-  opacity: 40%;
+#prev-next #previous {
+  text-align: right;
+  width: 50%;
 }
 
-#reactions-list .reaction.clicked {
-  cursor: default;
-  opacity: 100%;
+#prev-next #next {
+  text-align: left;
+  width: 50%;
 }
 
 @media all and (max-width: 586px) {
