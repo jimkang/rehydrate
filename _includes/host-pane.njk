@@ -11,8 +11,10 @@
       {%- endif -%}
     </div>
     <dl>
+      {% if src.background %}
       <dt>Background</dt>
       <dd>{{ src.background }}</dd>
+      {% endif %}
       {%- if src.podcastRecs and src.podcastRecs.length > 0 %}
         <dt>Podcast recommendations</dt>
         <dd>
