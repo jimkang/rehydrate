@@ -1,0 +1,383 @@
+$layout-breakpoint-small: 586px;
+$page_background_color: #fff;
+$page_text_color: #252530;
+$page_visited_link_color: #282525;
+$page_low_emphasis_text_color: #aaa;
+$pane_border_color: hsla(210, 0%, 66%, 0.8);
+$page_global_font: Ubuntu, roboto, noto, segoe ui, futura, arial, -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue, helvetica, sans-serif;
+
+
+html {
+	height: 100%;
+}
+body {
+	font-family: $page_global_font;
+	font-size: 30px;
+	background-color: $page_background_color;
+	color: $page_text_color;
+	max-width: 50em;
+	margin: 0 auto;
+
+	> * {
+		width: 40rem;
+		max-width: 100%;
+	}
+}
+a {
+	&:link {
+		color: $page_text_color;
+	}
+
+	&:visited {
+		color: $page_visited_link_color;
+	}
+}
+footer {
+	padding: 1em;
+	margin-bottom: 2rem;
+	text-align: center;
+
+	div {
+		margin-bottom: 0.7em;
+	}
+
+	.built-with {
+		color: $page_low_emphasis_text_color;
+		font-size: 0.7em;
+
+		a {
+			color: $page_low_emphasis_text_color;
+		}
+	}
+}
+ul {
+	list-style-type: none;
+	margin-left: 0;
+}
+header {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	margin-bottom: 1em;
+
+	h1 {
+		font-size: 4rem;
+		flex-grow: 1;
+		margin: 0;
+	}
+
+	img {
+		max-width: 100vw;
+		max-height: 97.2vw;
+		width: 360px;
+		height: 350px;
+		border-radius: 8px;
+	}
+}
+dt {
+	font-size: 1.5rem;
+}
+dd {
+	margin-top: 0.5rem;
+	margin-bottom: 1.5rem;
+	margin-left: 0;
+}
+audio.bonus {
+	margin-bottom: 0;
+	width: 50%;
+}
+
+
+#main-header {
+	text-align: center;
+	width: 100%;
+}
+#episodes-heading {
+	@media (max-width: $layout-breakpoint-small) {
+		font-size: 6vw;
+	}
+}
+#pagination a[aria-current] {
+	background-color: #ddd;
+	text-decoration: none;
+}
+#prev-next {
+	display: flex;
+	flex-flow: row nowrap;
+	margin-bottom: 20px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+
+	.prev-next-season {
+		font-size: 0.5em;
+	}
+
+	.prev-next-title {
+		font-size: 0.6em;
+	}
+
+	.prev-next-summary {
+		font-size: 0.5em;
+	}
+
+	.prev-next-section {
+		display: flex;
+		align-items: flex-end;
+		gap: 10px;
+
+		.prev-next-meta-image {
+
+		}
+
+		.prev-next-meta-title {
+
+		}
+	}
+
+	img {
+		width: 80px;
+	}
+
+	#previous {
+		flex-direction: row-reverse;
+		text-align: right;
+	}
+
+	#middle {
+		flex-grow: 1;
+	}
+
+	#next {
+		flex-direction: row;
+		text-align: left;
+	}
+}
+
+
+.centered-col {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.time-stamp {
+	margin-top: 1em;
+	font-size: 0.6em;
+	text-align: right;
+}
+.entry-meta {
+	color: hsl(41, 10%, 20%);
+}
+.episode-player {
+	margin-bottom: 1em;
+	border-bottom-left-radius: 4px;
+	border-bottom-right-radius: 4px;
+
+	&.index-episode-player {
+		width: 100%;
+		margin: 10px 0 0 0;
+		border-top-left-radius: 4px;
+		border-top-right-radius: 4px;
+	}
+}
+.episode-title {
+	font-size: 1.2em;
+	margin-bottom: 1em;
+}
+.finding-links {
+	font-size: 0.8em;
+	margin-top: 0.5em;
+}
+.host-name {
+	text-align: center;
+	font-size: 2rem;
+	margin-bottom: 1rem;
+
+	.social-links a {
+		font-size: 0.6em;
+	}
+}
+.listening-directions {
+	padding: 0.5em;
+	border-radius: 0.25em;
+	border: hsla(210, 80%, 66%, 0.8) 4px solid;
+	background: hsla(210, 80%, 66%, 0.1);
+
+	p {
+		margin: 0.25em;
+	}
+
+	ul {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
+
+	li {
+		display: inline;
+		font-size: 0.8em;
+	}
+
+	span.dot {
+		padding: 0 2px;
+	}
+}
+.media-list {
+	padding: 0;
+	margin: 0;
+
+	.pane {
+		margin-bottom: 1em;
+		padding: 1em;
+		display: flex;
+		flex-direction: column;
+		border-radius: 0.25em;
+		border: $pane_border_color 4px solid;
+		width: 100%;
+	}
+
+	.pane h4:first-child {
+		margin-top: 0;
+	}
+
+	li {
+		margin-bottom: 1em;
+	}
+
+	h3 {
+		font-weight: 200;
+	}
+
+	h4 {
+		font-weight: 200;
+		margin-bottom: 0.5em;
+	}
+}
+.middle {
+	margin-left: 1em;
+	margin-right: 1em;
+	max-width: 30em;
+}
+.pane {
+	> dl > dt {
+		font-weight: bold;
+		text-align: center;
+	}
+
+	img {
+		width: 100%;
+		height: auto;
+		image-orientation: from-image;
+		object-fit: contain;
+		border-top-left-radius: 4px;
+		border-top-right-radius: 4px;
+
+		&.bonus {
+			margin-bottom: 0;
+			width: 50%;
+		}
+	}
+
+	.episode-title {
+		text-align: center;
+
+		.season-title {
+			font-size: 0.6em;
+		}
+	}
+
+	&.index-pane {
+		padding: 0.75em;
+
+		.index-media {
+			align-items: start;
+			display: flex;
+
+			.index-media-image {
+				flex-basis: 200px;
+				flex-shrink: 0;
+				margin-right: 16px;
+
+				@media (max-width: $layout-breakpoint-small) {
+					flex-basis: 140px;
+				}
+
+				.index-image {
+					width: 100%;
+				}
+			}
+
+			.index-media-content {
+				flex-grow: 1;
+			}
+		}
+
+		.index-media .index-media-content .episode-metadata {
+			font-size: 0.6em;
+			text-align: center;
+		}
+
+		.bonus-section {
+			margin-top: 1rem;
+
+			ul {
+				display: flex;
+				margin-left: 0;
+				padding-left: 0;
+			}
+
+			li {
+				margin-bottom: 0;
+			}
+		}
+
+		a.bonus-link {
+			display: inline;
+			text-decoration: none;
+		}
+
+		img.bonus {
+			border-radius: 0;
+			margin-right: 10px;
+			width: 85px;
+		}
+	}
+
+	.bonus-episode {
+		p {
+			margin-top: 10px;
+			margin-bottom: 50px;
+		}
+
+		&:last-of-type p {
+			margin-top: 10px;
+			margin-bottom: 10px;
+		}
+
+		span.title {
+			text-decoration: underline;
+		}
+	}
+
+	#tweet-link {
+		font-size: 0.6em;
+		text-align: right;
+	}
+}
+.podcast-summary {
+}
+.summary {
+	white-space: pre-wrap;
+}
+
+
+@media (max-width: $layout-breakpoint-small) {
+	body {
+		font-size: 22px;
+	}
+
+	header h1 {
+		font-size: 3em;
+		margin-left: 0;
+		text-align: center;
+	}
+}

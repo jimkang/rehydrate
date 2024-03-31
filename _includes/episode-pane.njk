@@ -1,64 +1,62 @@
 {% set rl = src | getReadingListEntry(readingList) %}
 
-<li class="pane">
-  <div class="episode-title">
-    <a href="/episodes/{{ src.slug }}/index.html">{{ src.title }}</a>
-    <div class="season-title">
-      {% if src.season %}
-        Season {{src.season}}
-      {% endif %}
+<li class="pane index-pane">
+	<div class="episode-title">
+		<a href="/episodes/{{ src.slug }}/index.html">{{ src.title }}</a>
+		<div class="season-title">
+			{% if src.season %}
+				Season {{ src.season }}
+			{% endif %}
 
-      {% if src.number %}
-        , Episode {{src.number}}
-      {% endif %}
+			{% if src.number %}
+				, Episode {{ src.number }}
+			{% endif %}
 
-      <br />
+			<br/>
 
-      <i>{{ rl.season.title }}</i> - {{ rl.season.author }}
+			<i>{{ rl.season.title }}</i> - {{ rl.season.author }}
 
-    </div>
-  </div>
-  <img src="/media/{{ src.imageFilename }}" alt="Episode image" />
-  <audio
-    class="episode-player"
-    controls=""
-    preload="metadata"
-    src="/episodes/{{ src | getEpisodeFilename }}"
-  ></audio>
-  {% include 'findings.njk' %}
-  <div class="time-stamp entry-meta">
-    <time datetime="{{ src.date }}">{{ src.date.toDateString() }}</time>
-  </div>
+		</div>
+	</div>
+	<img src="/media/{{ src.imageFilename }}" alt="Episode image"/>
+	<audio
+		class="episode-player"
+		controls=""
+		preload="metadata"
+		src="/episodes/{{ src | getEpisodeFilename }}"
+	></audio>
+	{% include 'findings.njk' %}
+	<div class="time-stamp entry-meta">
+		<time datetime="{{ src.date }}">{{ src.date.toDateString() }}</time>
+	</div>
 
-  {%- if src.extras and src.extras.length != 0 -%}
-    <div class="bonus-content">
-    <h3>Bonus Content</h3>
-    {%- for extra in src.extras -%}
-      <a id="{{ extra.episodeFilename }}"></a>
-      <div class="bonus-episode">
-        <img class="bonus" src="/media/{{ extra.imageFilename }}"/>
-        <audio
-          class="bonus episode-player"
-          controls=""
-          loop="false"
-          preload="metadata"
-          src="/episodes/{{ extra.episodeFilename }}"
-        ></audio>
-        {% include 'bonus-findings.njk' %}
-      </div>
-    {%- endfor -%}
-    </div>
-  {%- endif -%}
+	{%- if src.extras and src.extras.length != 0 -%}
+		<div class="bonus-content">
+			<h3>Bonus Content</h3>
+			{%- for extra in src.extras -%}
+				<a id="{{ extra.episodeFilename }}"></a>
+				<div class="bonus-episode">
+					<img class="bonus" src="/media/{{ extra.imageFilename }}"/>
+					<audio
+						class="bonus episode-player"
+						controls=""
+						loop="false"
+						preload="metadata"
+						src="/episodes/{{ extra.episodeFilename }}"
+					></audio>
+					{% include 'bonus-findings.njk' %}
+				</div>
+			{%- endfor -%}
+		</div>
+	{%- endif -%}
 
-
-  <br>
-  {% set rl = src | getReadingListEntry(readingList) %}
-  <a
-    id="tweet-link"
-    href="https://twitter.com/intent/tweet?url=https://rehydrate.space/episodes/{{ src.slug }}/index.html&text={{ src | getEpisodeTweetSummary(rl) }}"
-    title="Share on Twitter"
-    target="_blank">
-    Share on Twitter
-  </a>
+	<br>
+	<a
+		id="tweet-link"
+		href="https://twitter.com/intent/tweet?url=https://rehydrate.space/episodes/{{ src.slug }}/index.html&text={{ src | getEpisodeTweetSummary(rl) }}"
+		title="Share on Twitter"
+		target="_blank">
+		Share on Twitter
+	</a>
 </li>
 

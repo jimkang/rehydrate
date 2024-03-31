@@ -1,32 +1,33 @@
 {
-  "name": "rehydrate",
-  "version": "1.0.0",
-  "description": "The source for the Rehydrate podcast.",
-  "private": true,
-  "main": "index.html",
-  "scripts": {},
-  "repository": {
-    "type": "git",
-    "url": "git@github.com:jimkang/rehydrate.git"
-  },
-  "keywords": [
-    "request",
-    "http"
-  ],
-  "author": "Jim Kang",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/jimkang/rehydrate/issues"
-  },
-  "homepage": "https://github.com/jimkang/rehydrate",
-  "devDependencies": {
-    "eslint": "^6.8.0"
-  },
-  "dependencies": {
-    "@11ty/eleventy": "^2.0.1",
-    "@11ty/eleventy-plugin-rss": "^1.1.1",
-    "get-at-path": "^1.0.1",
-    "lodash.curry": "^4.1.1",
-    "yamljs": "^0.3.0"
-  }
+	"name": "rehydrate",
+	"version": "1.0.0",
+	"description": "The source for the Rehydrate podcast.",
+	"private": true,
+	"main": "index.html",
+	"scripts": {},
+	"repository": {
+		"type": "git",
+		"url": "git@github.com:jimkang/rehydrate.git"
+	},
+	"keywords": [
+		"request",
+		"http"
+	],
+	"author": "Jim Kang",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/jimkang/rehydrate/issues"
+	},
+	"homepage": "https://github.com/jimkang/rehydrate",
+	"devDependencies": {
+		"eslint": "^6.8.0"
+	},
+	"dependencies": {
+		"@11ty/eleventy": "^2.0.1",
+		"@11ty/eleventy-plugin-rss": "^1.1.1",
+		"get-at-path": "^1.0.1",
+		"lodash.curry": "^4.1.1",
+		"sass": "^1.72.0",
+		"yamljs": "^0.3.0"
+	}
 }

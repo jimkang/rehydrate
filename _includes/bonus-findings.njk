@@ -2,7 +2,7 @@
     <span class="title">{{ extra.title }}</span>
     <br />
     {{ extra.desc|safe }}
-    
+
     {% if extra.topics %}
       <h4>Topics</h4>
       <ul class="finding-links">
@@ -21,18 +21,3 @@
       </ul>
     {% endif %}
 </div>
-
-
-{# <p>
-  <span class="title">{{ extra.title }}</span>
-  <br />
-  {{ extra.desc|safe }}
-  {% if extra.links %}
-    <h4>References</h4>
-    <ul class="finding-links">
-    {% for link in extra.links %}
-      <li><a href="{{link.url}}">{{ link.name }}</a></li>
-    {% endfor %}
-    </ul>
-  {% endif %}
-</p> #}

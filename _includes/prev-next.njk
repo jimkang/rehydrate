@@ -1,11 +1,40 @@
 {% set previousPost = collections.episodes | getPreviousCollectionItem(episode) %}
+{% set previousPostData = previousPost | getEpisodeLink(rl, useSummary) %}
+
 {% set nextPost = collections.episodes | getNextCollectionItem(episode) %}
+{% set nextPostData = nextPost | getEpisodeLink(rl, useSummary) %}
+
+{% macro item(data) %}
+	{% if data %}
+		<div class="prev-next-meta-image">
+			<a href="{{ data.url }}">
+				<img src="/media/{{ data.image }}" class="prev-next-image" alt="Episode image" />
+			</a>
+		</div>
+		<div class="prev-next-meta-title">
+			<a href="{{ data.page_url }}">
+				<span class="prev-next-title">{{ data.title }}</span>
+			</a>
+			<br />
+			<span class="prev-next-season">{{ data.seasonTitle }}</span>
+			{% if data.summary %}
+				<br />
+				<a href="{{ data.summary }}">
+					<span class="prev-next-summary">Summary</span>
+				</a>
+			{% endif %}
+		</div>
+	{% endif %}
+{% endmacro %}
 
 <div id="prev-next" class="pane index-pane">
-  <div id="next">
-    {{ nextPost | getEpisodeLink(rl, useSummary) | safe }}
-  </div>
-  <div id="previous">
-    {{ previousPost | getEpisodeLink(rl, useSummary) | safe }}
-  </div>
+	<div id="next" class="prev-next-section">
+		{{ item(nextPostData) }}
+	</div>
+
+	<div id="middle" class="prev-next-section">&nbsp;</div>
+
+	<div id="previous" class="prev-next-section">
+		{{ item(previousPostData) }}
+	</div>
 </div>
