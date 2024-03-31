@@ -1,7 +1,7 @@
 {% set previousPost = collections.episodes | getPreviousCollectionItem(episode) %}
 {% set nextPost = collections.episodes | getNextCollectionItem(episode) %}
 
-<div id="prev-next" class="pane">
+<div id="prev-next" class="pane index-pane">
   <div id="next">
     {{ nextPost | getEpisodeLink(rl, useSummary) | safe }}
   </div>

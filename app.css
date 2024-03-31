@@ -257,16 +257,19 @@ header h1 {
 }
 
 .listening-directions {
-  margin-top: 1em;
   padding: 0.5em;
   border-radius: 0.25em;
   border: hsla(210, 80%, 66%, 0.8) 4px solid;
   background: hsla(210, 80%, 66%, 0.1);
 }
 
+.listening-directions p {
+  margin: 0.25em;
+}
+
 .listening-directions ul {
   list-style: none;
-  margin: 10px 0 0 0;
+  margin: 0;
   padding: 0;
 }
 
