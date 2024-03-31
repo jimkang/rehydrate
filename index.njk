@@ -1,6 +1,10 @@
 ---
 layout: layouts/main.njk
 title: Rehydrate
+pagination:
+  data: collections.episodes
+  size: 10
+  alias: episodes
 ---
 
 <section class="middle">
@@ -13,10 +17,18 @@ title: Rehydrate
   <h2>Episodes (<a href="/reading-list">Reading List</a>)</h2>
   <section class="media">
     <ul class="media-list centered-col">
-      {%- for episode in collections.episodes -%}
+      {%- for episode in episodes -%}
         {% set src = episode.data.stuff %}
         {% include 'index-episode-pane.njk' %}
       {%- endfor -%}
+
+      <div id="pagination">
+          {% if pagination.href.previous %}<a href="{{ pagination.href.previous }}">&laquo;</a>{% endif %}
+          {%- for pageEntry in pagination.pages %}
+            <a href="{{ pagination.hrefs[ loop.index0 ] }}"{% if page.url == pagination.hrefs[ loop.index0 ] %} aria-current="page"{% endif %}>{{ loop.index }}</a>
+          {%- endfor %}
+          {% if pagination.href.next %}<a href="{{ pagination.href.next }}">&raquo;</a>{% endif %}
+      </div>
     </ul>
   </section>
 </section>

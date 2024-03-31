@@ -396,6 +396,11 @@ dd {
   width: 50%;
 }
 
+#pagination a[aria-current] {
+  background-color: #ddd;
+  text-decoration: none;
+}
+
 @media all and (max-width: 586px) {
   body {
     font-size: 12px;
