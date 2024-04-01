@@ -12,15 +12,22 @@ html {
 }
 body {
 	font-family: $page_global_font;
-	font-size: 30px;
 	background-color: $page_background_color;
 	color: $page_text_color;
-	max-width: 50em;
 	margin: 0 auto;
 
-	> * {
-		width: 40rem;
-		max-width: 100%;
+	@media (max-width: $layout-breakpoint-small) {
+		font-size: 22px;
+		max-width: 95%;
+		overflow-x: hidden;
+	}
+
+	@media (min-width: $layout-breakpoint-small) {
+		font-size: 30px;
+		> * {
+			width: 40rem;
+			max-width: 100%;
+		}
 	}
 }
 a {
@@ -62,16 +69,14 @@ header {
 
 	h1 {
 		font-size: 4rem;
-		flex-grow: 1;
+		flex-grow: 0;
 		margin: 0;
-	}
 
-	img {
-		max-width: 100vw;
-		max-height: 97.2vw;
-		width: 360px;
-		height: 350px;
-		border-radius: 8px;
+		a, a:visited {
+			@media (max-width: $layout-breakpoint-small) {
+				font-size: 12vw;
+			}
+		}
 	}
 }
 dt {
@@ -367,17 +372,4 @@ audio.bonus {
 }
 .summary {
 	white-space: pre-wrap;
-}
-
-
-@media (max-width: $layout-breakpoint-small) {
-	body {
-		font-size: 22px;
-	}
-
-	header h1 {
-		font-size: 3em;
-		margin-left: 0;
-		text-align: center;
-	}
 }
