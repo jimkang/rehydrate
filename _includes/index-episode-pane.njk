@@ -55,17 +55,15 @@
 
 <!-- Bonus Content -->
 {%- if not hideBonus and src.extras and src.extras.length != 0 -%}
+<h4>Bonus Content</h4>
 <div class="bonus-section">
-  <h4>Bonus Content</h4>
-  <ul>
   {%- for extra in src.extras -%}
-      <li>
+      <div class="bonus-section-item">
       <a href="/episodes/{{ src.slug }}/index.html#{{ extra.episodeFilename }}" class="bonus-link">
       <img class="bonus" src="/media/{{ extra.imageFilename }}"/>
       </a>
-      </li>
+      </div>
   {%- endfor -%}
-  </ul>
 </div>
 {%- endif -%}
 

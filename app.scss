@@ -328,13 +328,11 @@ audio.bonus {
 		.bonus-section {
 			margin-top: 1rem;
 
-			ul {
-				display: flex;
-				margin-left: 0;
-				padding-left: 0;
-			}
+			display: flex;
+			flex-wrap: wrap;
+			gap: 8px;
 
-			li {
+			.bonus-section-item {
 				margin-bottom: 0;
 			}
 		}
