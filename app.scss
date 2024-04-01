@@ -20,6 +20,10 @@ body {
 		font-size: 22px;
 		max-width: 95%;
 		overflow-x: hidden;
+
+		// make words break
+		hyphens: auto;
+		word-break: break-word;
 	}
 
 	@media (min-width: $layout-breakpoint-small) {
@@ -127,7 +131,7 @@ audio.bonus {
 
 	.prev-next-section {
 		display: flex;
-		align-items: flex-end;
+		align-items: stretch;
 		gap: 10px;
 
 		.prev-next-meta-image {
@@ -144,7 +148,7 @@ audio.bonus {
 	}
 
 	#previous {
-		flex-direction: row-reverse;
+		flex-direction: column;
 		text-align: right;
 	}
 
@@ -153,7 +157,7 @@ audio.bonus {
 	}
 
 	#next {
-		flex-direction: row;
+		flex-direction: column;
 		text-align: left;
 	}
 }
