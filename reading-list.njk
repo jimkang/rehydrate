@@ -5,7 +5,10 @@ pageHeading: Reading List
 ---
 <div id="reading-list">
   {%- for season in readingList.seasons | reverse -%}
-  <h3>Season {{ season.number }} - <u>{{ season.title }}</u> by {{ season.author }}</h3>
+  <h3>Season {{ season.number }} - <u>{{ season.title }}</u>
+	  {% if season.author %} by {{ season.author }}{% endif %}
+	  {% if season.season %} Season {{ season.season }}{% endif %}
+  </h3>
   <ul>
   {%- for episode in season.episodes -%}
     {% set releasedEpisode = episode | getEpisodeForReadingListEntry(season, collections.episodes) %}

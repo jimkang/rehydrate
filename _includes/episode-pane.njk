@@ -4,17 +4,9 @@
 	<div class="episode-title">
 		<a href="/episodes/{{ src.slug }}/index.html">{{ src.title }}</a>
 		<div class="season-title">
-			{% if src.season %}
-				Season {{ src.season }}
-			{% endif %}
-
-			{% if src.number %}
-				, Episode {{ src.number }}
-			{% endif %}
-
+			{% if src.season %}Season {{ src.season }}{% endif %}{% if src.number %}, Episode {{ src.number }}{% endif %}
 			<br/>
-
-			<i>{{ rl.season.title }}</i> - {{ rl.season.author }}
+			<i>{{ rl.season.title }}</i>{% if rl.season.author %} - {{ rl.season.author }}{% endif %}
 
 		</div>
 	</div>

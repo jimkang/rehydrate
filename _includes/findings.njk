@@ -1,7 +1,7 @@
 <div>
     <h4>Episode Info</h4>
     <ul class="finding-links">
-      <li><i>{{ rl.season.title }}</i> - {{ rl.season.author }}</li>
+      <li><i>{{ rl.season.title }}</i>{% if rl.season.author %} - {{ rl.season.author }}{% endif %}</li>
       <li>
         {%- if rl.episode.chapters -%}
           {% if rl.episode.chapters.part %}
@@ -10,9 +10,7 @@
           Chapters: {{rl.episode.chapters.start}} - {{ rl.episode.chapters.end }}
         {%- endif -%}
 
-        {%- if rl.episode.episodes -%}
-          Episodes: {{rl.episode.episodes.start}} - {{ rl.episode.episodes.end }}
-        {%- endif -%}
+	    {%- if rl.season.season -%}Season {{ rl.season.season }}{%- endif -%}{%- if rl.episode.episodes -%}, Episodes: {{rl.episode.episodes.start}} - {{ rl.episode.episodes.end }}{%- endif -%}
       </li>
       {% if rl.episode.pages.start %}
       <li>Pages: {{ rl.episode.pages.start }} - {{ rl.episode.pages.end }}</li>

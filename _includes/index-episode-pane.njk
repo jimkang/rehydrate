@@ -11,19 +11,13 @@
       <div class="episode-title">
         <a href="/episodes/{{ src.slug }}/index.html">{{ src.title }}</a>
         <div class="season-title">
-          {% if src.season %}
-          Season {{src.season}}
-          {% endif %}
-
-          {% if src.number %}
-          , Episode {{src.number}}
-          {% endif %}
+          {% if src.season %}Season {{src.season}}{% endif %}{% if src.number %}, Episode {{src.number}} {% endif %}
         </div>
       </div>
       <div class="episode-metadata">
         {% set rl = src | getReadingListEntry(readingList) %}
 
-        <i>{{ rl.season.title }}</i> - {{ rl.season.author }}
+        <i>{{ rl.season.title }}</i>{% if rl.season.author %} - {{ rl.season.author }}{% endif %}
         {% if rl.episode.chapters %}
           <br />
           {% if rl.episode.chapters.part %}Part {{rl.episode.chapters.part}}, {% endif %}
@@ -33,9 +27,8 @@
           {% endif %}
         {% endif %}
 
-        {% if rl.episode.episodes %}
-          <br />
-          Ep. {{rl.episode.episodes.start}}
+	  	{% if rl.season.season %}<br />Season {{ rl.season.season }}{%- endif -%}
+        {% if rl.episode.episodes %}, Ep. {{rl.episode.episodes.start}}
           {% if rl.episode.episodes.start != rl.episode.episodes.end %}
             - {{ rl.episode.episodes.end }}
           {% endif %}

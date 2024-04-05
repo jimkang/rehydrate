@@ -529,8 +529,8 @@ seasons:
 
 
   - title: "3 Body Problem (TV)"
-    author: Liu Cixin
     number: 9
+    season: 1
 
     episodes:
       - number: 0
@@ -547,7 +547,7 @@ seasons:
         episodes:
           start: 4
           end: 5
-        url: ~
+        url: /episodes/judgement-day/index.html
       - number: 2
         title: The Stars Our Destination
         episodes:
