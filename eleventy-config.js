@@ -96,24 +96,6 @@ function getEpisodeLink(episode, readingListEntry, useSummary) {
 		}
 
 		return data;
-
-		// let episodeLinkParts = [
-		// 	`<a href="${url}">
-      //       <img src="/media/${stuff.imageFilename}" class="prev-next-image" alt="Episode image" />
-      // </a>`,
-		// 	`<a href="${episode.page.url}">
-      //       <span class="prev-next-title">${stuff.title}</span>
-      // </a>`,
-		// 	`<span class="prev-next-season">${seasonParts.join(", ")}</span>`,
-		// ]
-	  //
-		// if (stuff.episodeSummary) {
-		// 	episodeLinkParts.push(`<a href="${stuff.episodeSummary}">
-      //       <span class="prev-next-summary">Summary</span>
-      // </a>`)
-		// }
-	  //
-		// return episodeLinkParts.join("<br />")
 	} else {
 		return null;
 	}
@@ -197,6 +179,10 @@ function getEpisodeSubtitle(rl) {
 	if (rl.episode && rl.episode.chapters) {
 		titleParts.push(`Chapters ${rl.episode.chapters.start}-${rl.episode.chapters.end}`);
 	}
+
+  if (rl.season.season) {
+    titleParts.push(`Season ${rl.season.season}`)
+  }
 
 	if (rl.episode && rl.episode.episodes) {
 		titleParts.push(`Episodes ${rl.episode.episodes.start}-${rl.episode.episodes.end}`);
