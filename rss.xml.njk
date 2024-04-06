@@ -59,6 +59,7 @@ metadata:
       {%- set filePath -%}episodes/{{ filename }}{%- endset -%}
       {%- set imageURL -%}{{ metadata.url }}/media/{{ src.imageFilename }}{%- endset -%}
       {%- set rl = src | getReadingListEntry(readingList) -%}
+      {%- set fullURL -%}{{ metadata.url }}{%- endset -%}
       <item>
         <title><![CDATA[{{ src | getEpisodeTitle | safe }}]]></title>
         <itunes:title><![CDATA[{{ src | getEpisodeTitle | safe }}]]></itunes:title>

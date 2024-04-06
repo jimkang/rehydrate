@@ -16,7 +16,7 @@
       <li>Pages: {{ rl.episode.pages.start }} - {{ rl.episode.pages.end }}</li>
       {% endif %}
       {% if src.episodeSummary %}
-        <li><a class="summary-link" href="{{ src.episodeSummary }}">Summary</a></li>
+        <li><a class="summary-link" href="{{ fullURL }}{{ src.episodeSummary }}">Summary</a></li>
       {%  endif %}
     </ul>
 
