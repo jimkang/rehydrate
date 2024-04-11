@@ -548,9 +548,9 @@ seasons:
           start: 4
           end: 5
         url: /episodes/judgement-day/index.html
-      - number: 2
+      - number: 3
         title: The Stars Our Destination
         episodes:
           start: 6
           end: 8
-        url: ~
+        url: /episodes/the-stars-our-destination/index.html
