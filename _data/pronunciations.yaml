@@ -65,9 +65,9 @@ pronunciations:
       - name: Mozi
         chinese: 墨子
         audio: mozi.mp3
-      - name: Trisolarian
+      - name: Trisolaran
         chinese: 三体人
-        audio: trisolarian.mp3
+        audio: trisolaran.mp3
 
   - title: The Dark Forest
     names:
