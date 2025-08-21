@@ -565,7 +565,7 @@ seasons:
         chapters:
           start: 1
           end: 7
-        # url: /episodes/the-psychohistorians-and-encyclopedists/index.html
+        url: /episodes/astrophage/index.html
 
       - number: 2
         title: TBD
