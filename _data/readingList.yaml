@@ -554,3 +554,36 @@ seasons:
           start: 6
           end: 8
         url: /episodes/the-stars-our-destination/index.html
+
+  - title: "Project Hail Mary"
+    author: Andy Weir
+    number: 10
+
+    episodes:
+      - number: 1
+        title: Astrophage
+        chapters:
+          start: 1
+          end: 7
+        # url: /episodes/the-psychohistorians-and-encyclopedists/index.html
+
+      - number: 2
+        title: TBD
+        chapters:
+          start: 8
+          end: 14
+        # url: /episodes/the-mayors-and-traders/index.html
+
+      - number: 3
+        title: TBD
+        chapters:
+          start: 15
+          end: 22
+        # url: /episodes/the-merchant-princes/index.html
+
+      - number: 4
+        title: TBD
+        chapters:
+          start: 23
+          end: 30
+        # url: /episodes/the-general/index.html
