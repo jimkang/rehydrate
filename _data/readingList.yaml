@@ -568,11 +568,11 @@ seasons:
         url: /episodes/astrophage/index.html
 
       - number: 2
-        title: TBD
+        title: Jazz Hands
         chapters:
           start: 8
           end: 14
-        # url: /episodes/the-mayors-and-traders/index.html
+        url: /episodes/jazz-hands/index.html
 
       - number: 3
         title: TBD
