@@ -575,11 +575,11 @@ seasons:
         url: /episodes/jazz-hands/index.html
 
       - number: 3
-        title: TBD
+        title: Adrian
         chapters:
           start: 15
           end: 22
-        # url: /episodes/the-merchant-princes/index.html
+        url: /episodes/adrian/index.html
 
       - number: 4
         title: TBD
