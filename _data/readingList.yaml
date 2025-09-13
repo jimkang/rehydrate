@@ -582,8 +582,8 @@ seasons:
         url: /episodes/adrian/index.html
 
       - number: 4
-        title: TBD
+        title: Amaze
         chapters:
           start: 23
           end: 30
-        # url: /episodes/the-general/index.html
+        url: /episodes/amaze/index.html
